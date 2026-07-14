@@ -72,7 +72,9 @@ PY
 log "CUDA devel toolkit detected: $cuda_toolkit_version"
 
 gpu_name="$(nvidia-smi --query-gpu=name --format=csv,noheader | head -n 1)"
-vram_bytes="$(nvidia-smi --query-gpu=memory.total --format=csv,noheader,nounits | head -n 1 | awk '{print $1 * 1024 * 1024}')"
+vram_mib="$(nvidia-smi --query-gpu=memory.total --format=csv,noheader,nounits | head -n 1 | awk '{print $1}')"
+[[ "$vram_mib" =~ ^[0-9]+$ ]] || fail "Could not parse GPU VRAM: $vram_mib"
+vram_bytes=$((vram_mib * 1024 * 1024))
 python3 - "$gpu_name" "$vram_bytes" "$MIN_VRAM_GIB" <<'PY'
 import sys
 name, vram_bytes, minimum_gib = sys.argv[1:]
