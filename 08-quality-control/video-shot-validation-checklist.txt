@@ -1,0 +1,118 @@
+============================================================
+VIDEO SHOT VALIDATION CHECKLIST - "MIMPI YANG MENGEJAR"
+============================================================
+Gunakan setelah setiap shot selesai dirender, sebelum masuk media
+assembly atau editorial review.
+Dalam arsitektur terbaru, checklist ini dipakai sebelum shot masuk
+media assembly final atau final film assembly.
+
+Rujukan arsitektur:
+  - docs/architecture/ADR-002-wan22-self-hosted-video.md
+  - docs/architecture/ADR-004-headless-ffmpeg-assembly.md
+  - docs/architecture/ADR-006-human-approval-gates.md
+
+Bandingkan video shot dengan:
+  1. 01-project-bible/project-context.txt
+  2. 01-project-bible/screenplay.txt
+  3. 03-shots/shot-list.txt
+  4. 03-shots/prompts/shot-XX-prompt.txt
+  5. Reference image yang sudah APPROVED
+
+============================================================
+KEPUTUSAN
+============================================================
+
+APPROVED:
+  Shot boleh masuk media assembly/final film assembly sesuai statusnya.
+
+REVISE:
+  Shot bisa diperbaiki lewat edit, crop, color, masking, atau timing
+  non-dialog. Jangan mengubah speed/tempo/durasi dialogue master yang
+  sudah dipakai untuk S2V.
+
+REGENERATE:
+  Shot harus dibuat ulang.
+
+============================================================
+CHECKLIST PER SHOT
+============================================================
+
+VISUAL:
+  [ ] Hanya ada satu aksi utama.
+  [ ] Tidak ada karakter tambahan.
+  [ ] Identitas Adam konsisten.
+  [ ] Wajah Sang Pengejar tidak terlihat.
+  [ ] Pakaian dan properti konsisten.
+  [ ] Pistol tidak berubah bentuk/model.
+  [ ] Tidak ada morphing wajah/tubuh.
+  [ ] Tangan dan jari tidak rusak.
+  [ ] Gerakan tubuh memiliki berat/momentum natural.
+  [ ] Tidak ada flicker berat.
+  [ ] Lokasi, cuaca, arah cahaya konsisten.
+  [ ] Aspect ratio 2.39:1 terjaga.
+  [ ] Tidak ada watermark, logo, teks generator.
+
+KAMERA:
+  [ ] Gerakan kamera sesuai prompt.
+  [ ] Tidak ada instruksi kamera yang bertentangan.
+  [ ] Subjek tetap terbaca dalam frame.
+  [ ] Eyeline dan arah gerak tidak membingungkan.
+
+AUDIO / DIALOG:
+  [ ] Tidak ada dialog visual pada shot non-dialog.
+  [ ] Untuk S2V, lip-sync mengikuti WAV final.
+  [ ] Source dialogue sama dengan dialogue master yang digunakan S2V.
+  [ ] Dialogue master bersih: tanpa ambience, music, Foley, atau SFX.
+  [ ] Mulut berhenti bergerak ketika audio berhenti.
+  [ ] Timing dialog tidak dipercepat/diperlambat.
+  [ ] Tidak ada perubahan speed, tempo, jeda, atau durasi dialogue
+      setelah dipakai untuk lip-sync.
+  [ ] Sound effect sesuai aksi dan lokasi.
+  [ ] Ambience dan SFX tidak menutupi dialogue.
+  [ ] Music, bila ada, tidak menutupi dialogue atau SFX utama.
+  [ ] Tidak ada clipping.
+
+RAW / FINAL / METADATA:
+  [ ] `shot-XX-video-raw.mp4` adalah output langsung Wan2.2.
+  [ ] `shot-XX-final.mp4` adalah hasil media assembly per shot.
+  [ ] Raw dan final shot dapat dibedakan dengan jelas.
+  [ ] `shot-XX-metadata.json` tersedia.
+  [ ] Metadata mencatat input image, dialogue, ambience, Foley/SFX,
+      music, model, prompt, seed, duration, dan status.
+  [ ] `shot-XX-validation.md` tersedia.
+  [ ] Approval status tersedia: APPROVED / REVISE / REGENERATE /
+      REJECTED.
+  [ ] Shot belum masuk final film bila status belum APPROVED.
+
+KONTINUITAS KHUSUS:
+  [ ] Adam mimpi memakai sepatu.
+  [ ] Adam kamar tidak memakai sepatu.
+  [ ] Kamar memiliki lampu amber + moonlight biru.
+  [ ] Gang/underpass tetap mendung kering berdebu.
+  [ ] Transisi gelap dibuat di media assembly / optional editorial,
+      bukan dipaksakan AI.
+  [ ] Tagline dibuat di media assembly / optional editorial, bukan
+      digenerate di video.
+
+============================================================
+FORMAT LAPORAN
+============================================================
+
+SHOT:
+FILE VIDEO:
+FILE RAW:
+FILE FINAL:
+KEPUTUSAN: APPROVED / REVISE / REGENERATE
+APPROVAL STATUS:
+METADATA:
+
+Masalah:
+  - Timecode:
+  - Deskripsi:
+  - Tingkat: CRITICAL / MAJOR / MINOR
+  - Cara perbaikan termurah:
+  - Perlu regenerate: YA / TIDAK
+  - Bisa diperbaiki editing: YA / TIDAK
+
+Catatan untuk edit:
+  -

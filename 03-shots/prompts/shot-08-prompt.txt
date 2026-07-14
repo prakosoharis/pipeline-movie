@@ -1,0 +1,17 @@
+============================================================
+SHOT 08 — LOW ANGLE: SANG PENGEJAR MENEMbak MISS (I2V)
+============================================================
+DURASI: 3 detik | Model: I2V | 2.39:1 | 24fps
+Ref: 02-character/shot-images/shot-08-keyframe.png +
+     02-character/sang-pengejar/04-aiming-reference.png
+
+PROMPT VIDEO UTAMA:
+Tall slim man in black tuxedo (white collar, black tie, black fedora worn low, black leather gloves) standing ~10 meters away, raising a black generic semi-auto pistol with both gloved hands aiming forward toward camera. Pistol FIRES — muzzle flash, smoke, bullet strikes concrete pillar on side sending dust and concrete chips flying. Face in deep shadow under hat, only white collar and gloved hands lit. Strong backlight, dust particles. Cinematic 2.39:1, 50mm lens, photorealistic, anatomically correct hands.
+
+NEGATIVE PROMPT:
+visible face, sci-fi weapon, multiple shots, slow motion, smile, daylight, brand logo, casual clothes, cartoon, anime, 3d render, extra fingers, text, watermark.
+
+DIALOG: (none)
+SOUND: SFX-GUNSHOT-CONCRETE + SFX-DEBRIS-CONCRETE
+TRANSISI: Hard cut ke SHOT 09
+KONTINUITAS: Pistol semi-auto hitam. Muzzle flash singkat (1-3 frame). Bullet impact di pilar beton, BUKAN di Adam.

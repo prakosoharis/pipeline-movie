@@ -1,0 +1,17 @@
+============================================================
+SHOT 03 — POV ADAM: SANG PENGEJAR MUNCUL (I2V)
+============================================================
+DURASI: 3 detik | Model: I2V | 2.39:1 | 24fps
+Ref: 02-character/shot-images/shot-03-keyframe.png +
+     02-character/sang-pengejar/03-master-fullbody.png
+
+PROMPT VIDEO UTAMA:
+Tall slim man in black tuxedo (jacket, white spread-collar shirt, thin black tie), black wide-brim fedora worn low, black leather gloves, holding a black generic semi-auto pistol pointing down at his side. Standing at far end of a foggy dusty gritty alley, walking slowly and calmly forward. Face COMPLETELY HIDDEN IN SHADOW under hat brim — only white collar and gloved hands visible. Strong backlight rim outlining shoulders and hat, deep shadow on face. Overcast dry dusty yellow-grey light, dust particles in light. Cinematic 2.39:1, 50mm lens, photorealistic, mysterious neo-noir villain, anatomically correct hands.
+
+NEGATIVE PROMPT:
+visible face, visible eyes, fast walking, smile, sunlight, blue sky, multiple people, casual clothes, sneakers, hat off, gloves off, sci-fi weapon, brand logo, cartoon, anime, 3d render, text, watermark.
+
+DIALOG: (none)
+SOUND: SFX-FOOTSTEPS-PENGEJAR (langkah lambat berat) + AMB-ALLEY-DUST
+TRANSISI: Hard cut ke SHOT 04
+KONTINUITAS: Kerah putih + sarung tangan hitam = anchor visual. Pistol semi-auto hitam.

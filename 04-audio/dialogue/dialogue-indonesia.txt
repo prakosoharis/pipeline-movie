@@ -1,0 +1,534 @@
+============================================================
+DIALOGUE MASTER - "MIMPI YANG MENGEJAR"
+Bahasa Indonesia
+============================================================
+
+Dokumen ini adalah master dialog terucap untuk film.
+Fungsinya:
+- mengunci isi dialog final;
+- menjaga konsistensi emosi dan durasi;
+- menjadi acuan untuk TTS, rekaman manual, lip-sync, dan edit.
+
+Bahasa:
+- Indonesia netral;
+- baku natural;
+- mudah dipahami lintas daerah;
+- tidak terlalu teatrikal.
+
+Karakter yang berbicara:
+- ADAM;
+- Sang Pengejar tidak berbicara sama sekali.
+
+Prinsip dialog film ini:
+- dialog sangat sedikit;
+- mayoritas performa dibangun oleh napas, jeda, teriakan, dan sound design;
+- kata-kata harus singkat, tajam, dan mudah diucapkan dalam kondisi panik;
+- jangan membuat Adam terdengar terlalu puitis atau terlalu heroik.
+
+Total beat dialog terucap:
+6 beat
+
+============================================================
+ATURAN UMUM PEMAKAIAN
+============================================================
+
+1. Pilih satu versi final per beat:
+   - NATURAL;
+   - EMOSIONAL;
+   - SINGKAT.
+
+2. Jika memakai TTS:
+   - jadikan versi NATURAL sebagai baseline utama;
+   - versi lain dipakai hanya jika pacing edit menuntut.
+
+3. Jika rekam manual:
+   - ambil minimal 3 take per beat;
+   - satu take stabil;
+   - satu take lebih emosional;
+   - satu take lebih pendek untuk fleksibilitas edit.
+
+4. Beat yang wajib paling presisi:
+   - BEAT 5, karena dipakai untuk lip-sync dan menjadi kalimat kunci film.
+
+5. Beat yang dipotong oleh BANG:
+   - BEAT 4;
+   - BEAT 6;
+   harus diakhiri abrupt, bukan fade.
+
+============================================================
+MAPPING SHOT KE BEAT
+============================================================
+
+S02  -> BEAT 1
+S06  -> BEAT 2
+S11  -> BEAT 3
+S12  -> BEAT 4
+S15  -> BEAT 5
+S21  -> BEAT 6
+
+Catatan:
+- S04 adalah continuation rasa takut + napas dari BEAT 1, bukan dialog baru.
+- S13-S21 memakai blok realitas kamar, tetapi hanya S15 dan S21 yang punya
+  dialog terucap jelas.
+
+============================================================
+ALIAS VOKAL NON-VERBAL DI SHOT LIST
+============================================================
+
+Gunakan mapping berikut agar cue vokal konsisten:
+
+- VOCAL-NONVERB-PANT     = NV-01
+- VOCAL-NONVERB-GRUNT    = NV-02
+- VOCAL-NONVERB-SWALLOW  = NV-03
+- VOCAL-NONVERB-SIGH     = NV-04
+- VOCAL-NONVERB-GASP     = NV-05
+- VOCAL-NONVERB-SHOCK    = NV-06
+
+Catatan:
+- shot list saat ini terutama memakai `PANT`, `GRUNT`, `SWALLOW`,
+  `SIGH`, dan `GASP`;
+- `NV-06` tetap disiapkan jika nanti diperlukan di edit.
+
+============================================================
+BEAT 1
+S02 - Adam berlari di gang
+============================================================
+
+Konteks:
+Adam baru sadar dia dikejar. Dia masih lari, masih denial, dan belum
+paham apa yang sebenarnya terjadi.
+
+Emosi:
+- panik tertahan;
+- bingung;
+- napas berat;
+- belum menjadi teriakan penuh.
+
+Tempo:
+cepat, terpotong napas
+
+Durasi target:
+sekitar 2.5-3 detik
+
+VERSI NATURAL:
+"Tidak... tidak, tidak, tidak-"
+
+Arahan:
+- ada jeda kecil setelah "Tidak" pertama;
+- pengulangan berikutnya makin cepat;
+- jangan terlalu bersih pengucapannya;
+- terasa seperti ucapan sambil lari.
+
+VERSI EMOSIONAL:
+"Tidak... bukan... kenapa... tidak, tidak-"
+
+Arahan:
+- lebih gemetar;
+- lebih kacau;
+- cocok jika ingin Adam terdengar lebih hancur sejak awal.
+
+VERSI SINGKAT:
+"Tidak- tidak-"
+
+Arahan:
+- sangat ringkas;
+- cocok jika edit membutuhkan ruang lebih besar untuk SFX.
+
+Subteks:
+Adam menolak kenyataan bahwa dia sedang diburu.
+
+Pilihan rekomendasi final:
+VERSI NATURAL
+
+Nama file rekomendasi:
+04-audio/dialogue/beat-01-tidak-tidak.wav
+
+PEMERIKSAAN:
+[ ] Tidak terdengar seperti membaca naskah.
+[ ] Napas panik terasa.
+[ ] Durasi tidak terlalu panjang.
+[ ] Masih jelas dipahami walau pecah.
+
+============================================================
+BEAT 2
+S06 - Adam berteriak minta tolong di kolong jembatan
+============================================================
+
+Konteks:
+Adam masuk ke area yang lebih terbuka dan mencoba minta tolong, tetapi
+lingkungan tetap terasa kosong.
+
+Emosi:
+- putus asa;
+- teror;
+- suara pecah;
+- ledakan energi singkat.
+
+Tempo:
+cepat, keras, meledak
+
+Durasi target:
+sekitar 1-3 detik tergantung versi
+
+VERSI NATURAL:
+"TOLONG!! ADA ORANG-"
+
+Arahan:
+- "TOLONG" harus jadi ledakan utama;
+- bagian "ADA ORANG" bisa terpotong edit;
+- cocok jika ingin artikulasi lebih jelas.
+
+VERSI EMOSIONAL:
+"TOLONG!! TOLONG ADA ORANG- ADA-"
+
+Arahan:
+- lebih liar;
+- lebih hancur;
+- hanya pakai jika ingin rasa kacau maksimal.
+
+VERSI SINGKAT:
+"TOLONG!!"
+
+Arahan:
+- satu ledakan saja;
+- lalu sisakan ruang untuk napas dan ambience besar.
+
+Subteks:
+Adam masih berharap ada penyelamat, tetapi dunia tetap kosong.
+
+Pilihan rekomendasi final:
+VERSI SINGKAT
+
+Nama file rekomendasi:
+04-audio/dialogue/beat-02-tolong.wav
+
+PEMERIKSAAN:
+[ ] "Tolong" terasa seperti teriak nyata, bukan sekadar keras.
+[ ] Tidak terlalu panjang.
+[ ] Ada rasa pecah di suara.
+[ ] Masih menyisakan ruang untuk ambience underpass.
+
+============================================================
+BEAT 3
+S11 - Adam terpojok di gang buntu
+============================================================
+
+Konteks:
+Adam terdesak ke dinding. Sang Pengejar sudah mengacungkan pistol.
+Ini adalah pertanyaan terakhir Adam.
+
+Emosi:
+- putus asa;
+- bingung;
+- parau;
+- napas tertahan.
+
+Tempo:
+lambat tertahan
+
+Durasi target:
+sekitar 3-4 detik
+
+VERSI NATURAL:
+"Siapa kamu...? Apa maumu?!"
+
+Arahan:
+- ada jeda di tengah;
+- pertanyaan pertama lebih takut;
+- pertanyaan kedua lebih mendesak.
+
+VERSI EMOSIONAL:
+"Siapa kamu...?! Kenapa kamu mengejar aku...?! Apa- apa maumu dari aku?!"
+
+Arahan:
+- lebih panjang;
+- lebih menangis;
+- pakai hanya jika nanti edit memberi ruang cukup.
+
+VERSI SINGKAT:
+"Siapa... siapa kamu?!"
+
+Arahan:
+- fokus ke ketakutan;
+- cocok jika Anda ingin beat ini lebih pendek.
+
+Subteks:
+Adam ingin jawaban, tetapi film tidak akan memberinya.
+
+Pilihan rekomendasi final:
+VERSI NATURAL
+
+Nama file rekomendasi:
+04-audio/dialogue/beat-03-siapa-kamu.wav
+
+PEMERIKSAAN:
+[ ] Terdengar parau dan kehabisan tenaga.
+[ ] Jeda tengah terasa natural.
+[ ] Tidak terlalu melodramatis.
+[ ] Pertanyaan kedua terasa lebih mendesak dari yang pertama.
+
+============================================================
+BEAT 4
+S12 - Klimaks mimpi, terpotong tembakan
+============================================================
+
+Konteks:
+Adam melihat pelatuk ditarik dan menjerit, tetapi jeritannya dipotong
+oleh tembakan.
+
+Emosi:
+- horror murni;
+- refleks bertahan;
+- ledakan panik maksimum.
+
+Tempo:
+cepat, meledak, dipotong
+
+Durasi target:
+sekitar 1-1.5 detik sebelum cut
+
+VERSI NATURAL:
+"TIDAAAA-"
+
+Arahan:
+- tarik huruf A;
+- ujung suara dipotong oleh edit;
+- jangan dibuat turun pelan.
+
+VERSI EMOSIONAL:
+"JANGAN- TIDAAAA-"
+
+Arahan:
+- lebih panjang dan liar;
+- hanya pakai kalau ruang edit mendukung.
+
+VERSI SINGKAT:
+"TIDAK-"
+
+Arahan:
+- sangat cepat;
+- sangat efisien.
+
+Subteks:
+Penolakan terakhir Adam sebelum dunia mimpi "menembaknya".
+
+Pilihan rekomendasi final:
+VERSI NATURAL
+
+Nama file rekomendasi:
+04-audio/dialogue/beat-04-tidaaa-cut.wav
+
+PEMERIKSAAN:
+[ ] Jeritan terasa dari dada, bukan tipis.
+[ ] Akhirnya mudah dipotong abrupt.
+[ ] Tidak terlalu bersih atau terlalu rapi.
+[ ] Tidak ada tail panjang yang mengganggu BANG.
+
+============================================================
+BEAT 5
+S15 - Adam lega di kamar
+Kalimat kunci film
+============================================================
+
+Konteks:
+Adam merasa sudah selamat. Dia baru minum air, mulai tenang, dan bicara
+pelan kepada dirinya sendiri.
+
+Emosi:
+- lega;
+- lelah;
+- intim;
+- senyum tipis;
+- ironi yang belum ia sadari.
+
+Tempo:
+lambat, lembut, hampir berbisik
+
+Durasi target:
+sekitar 3-3.5 detik
+
+VERSI NATURAL:
+"Untunglah... hanya mimpi."
+
+Arahan:
+- jeda kecil setelah "Untunglah";
+- "hanya mimpi" sangat lembut;
+- artikulasi harus paling jelas di seluruh film.
+
+VERSI EMOSIONAL:
+"Untunglah... untunglah hanya mimpi..."
+
+Arahan:
+- lebih lega;
+- lebih rapuh;
+- sedikit lebih panjang.
+
+VERSI SINGKAT:
+"Hanya mimpi."
+
+Arahan:
+- sangat pendek;
+- kurang kuat secara ironi dibanding versi natural.
+
+Subteks:
+Adam percaya bahaya sudah lewat, padahal belum.
+
+Pilihan rekomendasi final:
+VERSI NATURAL
+
+Nama file rekomendasi:
+04-audio/dialogue/beat-05-untunglah-hanya-mimpi.wav
+
+CATATAN KHUSUS:
+- ini beat paling penting untuk lip-sync;
+- timing harus natural;
+- jangan terlalu cepat;
+- jangan terlalu banyak efek napas sampai teks kehilangan kejelasan.
+
+PEMERIKSAAN:
+[ ] Kalimat jelas dipahami sekali dengar.
+[ ] Ada rasa lega, bukan komedi.
+[ ] Durasi cocok untuk S15.
+[ ] Sangat cocok untuk lip-sync close-up.
+
+============================================================
+BEAT 6
+S21 - Twist akhir di kamar
+============================================================
+
+Konteks:
+Sang Pengejar muncul di pintu kamar. Adam menjerit lagi. Pola mimpi
+kembali, tetapi sekarang di realitas.
+
+Emosi:
+- shock;
+- horror puncak;
+- refleks bertahan hidup.
+
+Tempo:
+meledak dan dipotong
+
+Durasi target:
+sekitar 1-1.5 detik sebelum cut
+
+VERSI NATURAL:
+"Tidaaak-"
+
+Arahan:
+- sangat mirip energi beat 4, tetapi lebih personal dan lebih dekat;
+- tetap harus bisa dipotong oleh BANG.
+
+VERSI EMOSIONAL:
+"Jangan- tidaaak-"
+
+Arahan:
+- lebih pecah;
+- lebih memohon;
+- lebih panjang.
+
+VERSI SINGKAT:
+"Tidak-!"
+
+Arahan:
+- paling singkat;
+- cocok jika edit butuh jeda lebih besar setelah tembakan.
+
+Subteks:
+Mimpi dan realitas bertabrakan total.
+
+Pilihan rekomendasi final:
+VERSI NATURAL
+
+Nama file rekomendasi:
+04-audio/dialogue/beat-06-tidaaak-cut.wav
+
+PEMERIKSAAN:
+[ ] Energi terasa sangat tinggi.
+[ ] Akhir mudah di-cut abrupt.
+[ ] Tidak terdengar terlalu mirip beat 4, tetapi masih satu karakter.
+[ ] Cocok untuk klimaks terakhir.
+
+============================================================
+VOKAL NON-VERBAL
+Wajib direkam / digenerate terpisah
+============================================================
+
+NV-01 - Napas terengah chase
+- durasi per take: 4-6 detik;
+- variasi: kering, basah, serak;
+- minimum: 3 take.
+
+NV-02 - Erangan jatuh
+- contoh: "Uh!" / "Ahh!";
+- durasi: 1-2 detik;
+- minimum: 3 take.
+
+NV-03 - Menelan ludah
+- sangat halus;
+- durasi: sekitar 1 detik.
+
+NV-04 - Desahan lega
+- contoh: "Haaah...";
+- durasi: sekitar 2 detik.
+
+NV-05 - Tarikan napas tertahan
+- durasi: sekitar 1-1.5 detik;
+- dipakai saat dread build di kamar.
+
+NV-06 - Shock gasp kecil
+- contoh: "Hh!";
+- durasi: sekitar 0.5 detik.
+
+Nama file rekomendasi:
+- 04-audio/dialogue/nv-01-pant.wav
+- 04-audio/dialogue/nv-02-grunt.wav
+- 04-audio/dialogue/nv-03-swallow.wav
+- 04-audio/dialogue/nv-04-sigh.wav
+- 04-audio/dialogue/nv-05-gasp.wav
+- 04-audio/dialogue/nv-06-shock.wav
+
+Catatan:
+- non-verbal sama pentingnya dengan dialog;
+- simpan sebagai file terpisah;
+- jangan campur semua ekspresi ke satu file panjang.
+
+============================================================
+REKOMENDASI RANGKAIAN FINAL
+============================================================
+
+BEAT 1 -> VERSI NATURAL
+BEAT 2 -> VERSI SINGKAT
+BEAT 3 -> VERSI NATURAL
+BEAT 4 -> VERSI NATURAL
+BEAT 5 -> VERSI NATURAL
+BEAT 6 -> VERSI NATURAL
+
+Estimasi total dialog terucap:
+sekitar 13-14 detik
+
+Artinya:
+sisa film tetap ditopang oleh ambience, SFX, napas, jeda, dan hening.
+
+============================================================
+HAL YANG HARUS DIHINDARI
+============================================================
+
+- dialog terlalu panjang;
+- pilihan kata terlalu sastra;
+- pengucapan terlalu rapi saat panik;
+- Adam terdengar seperti dub trailer;
+- semua beat memakai intensitas yang sama;
+- beat 5 terdengar sarkastik atau bercanda;
+- beat 4 dan 6 fade out lembut;
+- terlalu banyak improvisasi yang mengubah makna utama.
+
+============================================================
+QC FINAL DIALOG
+============================================================
+
+[ ] Semua beat punya satu versi final yang dipilih.
+[ ] Durasi tiap beat cocok dengan shot terkait.
+[ ] Beat 5 paling jelas dan paling sinkron untuk lip-sync.
+[ ] Beat 4 dan 6 mudah dipotong oleh BANG.
+[ ] Karakter suara Adam konsisten di semua beat.
+[ ] Tidak ada kalimat yang terasa kepanjangan saat dipakai di edit.

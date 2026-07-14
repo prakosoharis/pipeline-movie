@@ -1,0 +1,913 @@
+============================================================
+SHOT LIST — "MIMPI YANG MENGEJAR"
+============================================================
+Total: 22 SHOT | Target durasi total: ~170 detik (2:50)
+Format: 2.39:1 | 24fps | 1080p/4K | Fotorealistik sinematik
+
+LEGENDA MODEL:
+  I2V = Image-to-Video (dari reference image karakter)
+  TI2V/T2V = Text-to-Video / Text+Image-to-Video untuk
+             shot tanpa karakter spesifik atau still insert
+  S2V = Speech-to-Video (lip-sync dari dialog.wav)
+  STOCK = Stock footage / library bila dibutuhkan dan berlisensi
+  EDIT = Media assembly / optional editorial (cut, overlay, fade)
+
+LEGENDA ARAH:
+  - Canonical keyframe per shot:
+    02-character/shot-images/shot-XX-keyframe.png
+  - Adam canonical refs:
+    02-character/adam/02-master-face.png
+    02-character/adam/03-master-fullbody.png
+    02-character/adam/04-reference-sheet.png
+  - Sang Pengejar canonical refs:
+    02-character/sang-pengejar/03-master-fullbody.png
+    02-character/sang-pengejar/04-aiming-reference.png
+    02-character/sang-pengejar/05-reference-sheet.png
+  - Set kamar canonical ref:
+    02-character/set-props/set-bedroom.png
+  - Nama flat seperti adam-portrait.png, adam-running.png,
+    adam-bedroom.png, pengejar-full.png, pengejar-aiming.png, dan
+    set-bedroom.png adalah alias kompatibilitas saja. Jangan gunakan
+    kandidat lama yang berstatus REJECTED di asset status report.
+  - Semua reference image wajib APPROVED lewat
+    08-quality-control/image-validation-checklist.txt
+    sebelum masuk Wan I2V/TI2V/S2V.
+============================================================
+
+╔══════════════════════════════════════════════════════╗
+║  ACT 1 — MIMPI / KEJAR-KEJARAN (Shot 1-9, ~70 dtk) ║
+╚══════════════════════════════════════════════════════╝
+
+────────────────────────────────────────────────────────
+SHOT 01 — COLD OPEN: KAKI BERLARI
+────────────────────────────────────────────────────────
+DURASI         : 3 detik
+TUJUAN SHOT    : Cold open. Hook audio-visual segera.
+JENIS MODEL    : TI2V/T2V (close-up kaki, tak perlu ref wajah)
+REFERENCE IMAGE: (none — generic)
+JENIS FRAME    : EXTREME CLOSE-UP
+SUDUT KAMERA   : Top-down / 45° low, kamera di aspal
+GERAK KAMERA   : Tracking lateral cepat mengikuti langkah
+AKSI KARAKTER  : Sepatu kanvas hitam usang menggesek aspal
+                 basah-debu, langkah cepat tidak berirama.
+                 Debu tipis terangkat setiap langkah.
+EKSPRESI       : N/A
+LINGKUNGAN     : Gang sempit, aspal beton basah-debu,
+                 dinding beton grafiti di samping.
+PENCAHAYAAN    : Mendung kering datar, abu-abu kekuningan.
+                 Highlight kuning lembab.
+PROMPT VIDEO UTAMA:
+  Extreme close-up of worn black canvas sneakers slapping
+  against damp-dusty asphalt in a narrow gritty alley,
+  running in panicked uneven strides, dust particles
+  kicking up with each step. Concrete walls with faded
+  graffiti at sides. Overcast dry yellow-grey flat tired
+  light, no rain, no sun. Camera tracks laterally fast at
+  ground level keeping shoes in frame, slight handheld
+  shake. Cinematic 2.39:1, photorealistic, gritty neo-
+  noir thriller mood.
+HAL YANG HARUS DIHINDARI:
+  - Wajah terlihat, karakter lain, langkah tenang,
+    langkah berirama, matahari, hujan, blue sky.
+DIALOG         : (none) — Sound: langkah cepat + napas jauh
+SOUND EFFECT   : SFX-FOOTSTEPS-CHASE, AMB-ALLEY-DUST
+TRANSISI       : Hard cut ke SHOT 02
+CATATAN KONTINUITAS: Sepatu kanvas hitam usang konsisten.
+
+────────────────────────────────────────────────────────
+SHOT 02 — ADAM BERLARI DI GANG (Wide)
+────────────────────────────────────────────────────────
+DURASI         : 4 detik
+TUJUAN SHOT    : Establish Adam & lokasi chase.
+JENIS MODEL    : I2V (pakai adam-running.png)
+REFERENCE IMAGE: adam-running.png + adam-portrait.png
+JENIS FRAME    : WIDE / FULL BODY
+SUDUT KAMERA   : Eye-level frontal 3/4
+GERAK KAMERA   : Tracking backward menghadap Adam,
+                 subjek tetap di frame.
+AKSI KARAKTER  : Adam berlari menyusuri gang sempit antar
+                 dua dinding beton grafiti. Mid-stride,
+                 arms pumping. Wajah pucat, mata liar.
+EKSPRESI       : Panik, mulut terbuka terengah.
+LINGKUNGAN     : Gang sempit, grafiti pudar, mendung.
+PENCAHAYAAN    : Mendung datar lelah, debu tipis.
+PROMPT VIDEO UTAMA:
+  Same 30-year-old Indonesian man (oval face, messy black
+  hair, thin stubble, mole under left eye, dark circles,
+  dark heather grey crew-neck t-shirt, black long jogger
+  pants, black canvas sneakers) running in panic through
+  narrow gritty urban alley between two concrete walls
+  with faded graffiti. Mid-stride, arms pumping, mouth
+  open panting, eyes wide in fear, sweat on forehead.
+  Overcast dry dusty yellow-grey sky, dust particles in
+  flat tired light, no rain, no sun. Camera tracks
+  backward facing subject at eye level, slight handheld.
+  Cinematic 2.39:1, 35mm lens, shallow depth of field,
+  photorealistic, gritty neo-noir chase.
+HAL YANG HARUS DIHINDARI:
+  - Wajah berubah, pakaian beda, matahari, hujan,
+    karakter tambahan, senyum.
+DIALOG         : BEAT 1 (versi natural):
+                 "Tidak... tidak, tidak, tidak—"
+SOUND EFFECT   : SFX-FOOTSTEPS-CHASE, AMB-ALLEY-DUST,
+                 VOCAL-NONVERB-PANT
+TRANSISI       : Hard cut ke SHOT 03
+CATATAN KONTINUITAS: Tahi lalat di bawah mata kiri Adam.
+                      Sepatu kanvas hitam.
+
+────────────────────────────────────────────────────────
+SHOT 03 — POV ADAM: MENOLEH KE BELAKANG
+────────────────────────────────────────────────────────
+DURASI         : 3 detik
+TUJUAN SHOT    : Reveal Sang Pengejar untuk pertama kali.
+JENIS MODEL    : I2V (pakai pengejar-full.png)
+REFERENCE IMAGE: pengejar-full.png
+JENIS FRAME    : MEDIUM WIDE
+SUDUT KAMERA   : POV Adam (first-person look back)
+GERAK KAMERA   : Whip-pan dari depan ke belakang, lalu
+                 stabil (handheld)
+AKSI KARAKTER  : Di ujung gang yang suram, dari kabut
+                 debu, sosok Sang Pengejar muncul perlahan.
+                 Tuxedo hitam, fedora hitam, wajah SILUET.
+                 Berjalan tenang, pistol di sisi badan.
+EKSPRESI       : N/A (wajah dalam shadow)
+LINGKUNGAN     : Ujung gang, kabut debu, suram.
+PENCAHAYAAN    : Backlight kuat dari belakang Sang Pengejar
+                 → outline tuxedo + fedora terlihat. Wajah
+                 dalam deep shadow.
+PROMPT VIDEO UTAMA:
+  Tall slim man in black tuxedo (jacket, white spread-
+  collar shirt, thin black tie), black wide-brim fedora
+  worn low, black leather gloves, holding a black generic
+  semi-auto pistol pointing down at his side. Standing at
+  far end of a foggy dusty gritty alley, walking slowly
+  and calmly forward. Face COMPLETELY HIDDEN IN SHADOW
+  under hat brim — only white collar and gloved hands
+  visible. Strong backlight rim outlining shoulders and
+  hat, deep shadow on face. Overcast dry dusty yellow-grey
+  light, dust particles in light. Cinematic 2.39:1, 50mm
+  lens, photorealistic, mysterious neo-noir villain,
+  anatomically correct hands.
+HAL YANG HARUS DIHINDARI:
+  - Wajah terlihat jelas, mata terlihat, langkah cepat,
+    senyum, matahari, blue sky, multiple people.
+DIALOG         : (none)
+SOUND EFFECT   : SFX-FOOTSTEPS-PENGEJAR (langkah lambat
+                 berat), AMB-ALLEY-DUST
+TRANSISI       : Hard cut ke SHOT 04
+CATATAN KONTINUITAS: Kerah putih + sarung tangan hitam =
+                      anchor visual. Pistol semi-auto.
+
+────────────────────────────────────────────────────────
+SHOT 04 — CU ADAM: TAKUT
+────────────────────────────────────────────────────────
+DURASI         : 2 detik
+TUJUAN SHOT    : Reaksi wajah Adam melihat pengejar.
+JENIS MODEL    : I2V (pakai adam-portrait.png)
+REFERENCE IMAGE: adam-portrait.png
+JENIS FRAME    : CLOSE-UP wajah
+SUDUT KAMERA   : Eye-level frontal
+GERAK KAMERA   : Static dengan subtle handheld shake
+AKSI KARAKTER  : Adam menoleh kembali ke depan (dari POV).
+                 Wajah takut. Mulut terbuka, mata membelalak.
+EKSPRESI       : Ngeri, denial.
+LINGKUNGAN     : Latar blur gang di belakang.
+PENCAHAYAAN    : Soft key depan, debu partikel.
+PROMPT VIDEO UTAMA:
+  Close-up of same 30-year-old Indonesian man (oval face,
+  messy black hair, thin stubble, mole under left eye,
+  dark circles, dark heather grey crew-neck t-shirt),
+  turning head back to front, face filled with terror,
+  eyes wide, mouth open panting. Background blurred gritty
+  alley. Soft directional key light front, dust particles.
+  Subtle handheld shake. Cinematic 2.39:1, 85mm lens,
+  shallow depth of field, photorealistic.
+HAL YANG HARUS DIHINDARI:
+  - Wajah berubah, tatapan tenang, senyum.
+DIALOG         : (continuation BEAT 1) napas cepat
+SOUND EFFECT   : VOCAL-NONVERB-PANT, AMB-ALLEY-DUST
+TRANSISI       : Hard cut ke SHOT 05
+CATATAN KONTINUITAS: Tahi lalat di bawah mata kiri.
+
+────────────────────────────────────────────────────────
+SHOT 05 — TRANSISI LOKASI: KOLONG JEMBATAN (Wide establishing)
+────────────────────────────────────────────────────────
+DURASI         : 3 detik
+TUJUAN SHOT    : Transisi lokasi & escalation luas.
+JENIS MODEL    : TI2V/T2V
+REFERENCE IMAGE: (none)
+JENIS FRAME    : WIDE
+SUDUT KAMERA   : Low-angle wide
+GERAK KAMERA   : Static, slow push-in
+AKSI KARAKTER  : Adam muncul dari gang, berlari ke kolong
+                 jembatan dengan pilar-pilar besar beton.
+EKSPRESI       : Panik.
+LINGKUNGAN     : Kolong jembatan beton, pilar besar, debu
+                 menebal. Cahaya lebih datar.
+PENCAHAYAAN    : Mendung datar, debu tebal.
+PROMPT VIDEO UTAMA:
+  Wide establishing of a man running into a large concrete
+  underpass space with massive concrete pillars, dusty
+  atmosphere, overcast flat dry yellow-grey light, dust
+  particles thick in air. Industrial urban emptiness.
+  Cinematic 2.39:1, 24mm wide lens, deep focus, slow push-
+  in, photorealistic, gritty thriller. No specific face
+  detail needed at this distance.
+HAL YANG HARUS DIHINDARI:
+  - Bright sunlight, blue sky, rain, multiple people.
+DIALOG         : (none) — Sound: napas terengah + langkah
+SOUND EFFECT   : SFX-FOOTSTEPS-CHASE, AMB-UNDERPASS-ECHO
+TRANSISI       : Match cut ke SHOT 06
+CATATAN KONTINUITAS: Kolong jembatan / pilar besar beton.
+
+────────────────────────────────────────────────────────
+SHOT 06 — TRACKING ADAM DI KOLONG JEMBATAN
+────────────────────────────────────────────────────────
+DURASI         : 4 detik
+TUJUAN SHOT    : Chase di ruang terbuka + reveal Sang
+                 Pengejar di latar.
+JENIS MODEL    : I2V (pakai adam-running.png)
+REFERENCE IMAGE: adam-running.png
+JENIS FRAME    : MEDIUM FULL
+SUDUT KAMERA   : Tracking dari belakang Adam
+GERAK KAMERA   : Tracking forward mengikuti Adam,
+                 handheld
+AKSI KARAKTER  : Adam berlari melewati pilar beton besar.
+                 Di latar belakang jauh (frame edge), Sang
+                 Pengejar muncul — berjalan tenang.
+EKSPRESI       : Panik, napas berat.
+LINGKUNGAN     : Kolong jembatan, pilar besar, debu.
+PENCAHAYAAN    : Mendung datar, debu tebal.
+PROMPT VIDEO UTAMA:
+  Same 30-year-old Indonesian man (oval face, messy black
+  hair, thin stubble, mole under left eye, dark heather
+  grey t-shirt, black joggers, black canvas sneakers)
+  running between massive concrete pillars in a dusty
+  underpass. Camera tracks behind him handheld. Far in the
+  background at frame edge, a tall slim figure in black
+  tuxedo and black fedora walks calmly (face in shadow).
+  Overcast flat dry dusty yellow-grey light. Cinematic
+  2.39:1, 35mm lens, shallow depth of field on Adam,
+  photorealistic.
+HAL YANG HARUS DIHINDARI:
+  - Sang Pengejar tiba-tiba dekat, wajah Pengejar terlihat,
+    matahari.
+DIALOG         : BEAT 2 (versi singkat): "TOLONG!!"
+SOUND EFFECT   : SFX-FOOTSTEPS-CHASE, AMB-UNDERPASS-ECHO,
+                 VOCAL-NONVERB-PANT
+TRANSISI       : Hard cut ke SHOT 07
+CATATAN KONTINUITAS: Posisi Sang Pengejar di background.
+
+────────────────────────────────────────────────────────
+SHOT 07 — ADAM TERSANDUNG & JATUH
+────────────────────────────────────────────────────────
+DURASI         : 4 detik
+TUJUAN SHOT    : Vulnerability, escalation ancaman.
+JENIS MODEL    : I2V (pakai adam-running.png)
+REFERENCE IMAGE: adam-running.png
+JENIS FRAME    : MEDIUM LOW
+SUDUT KAMERA   : Low-angle from ground
+GERAK KAMERA   : Static low, subtle handheld shake
+AKSI KARAKTER  : Adam tersandung puing beton — jatuh
+                 telunjuk kaki, tangan menahan tubuh di
+                 aspal. Debu berhamburan. Mendongak.
+EKSPRESI       : Shock, napas terpotong.
+LINGKUNGAN     : Kolong jembatan, puing beton di tanah.
+PENCAHAYAAN    : Mendung datar, debu partikel.
+PROMPT VIDEO UTAMA:
+  Same 30-year-old Indonesian man (oval face, messy black
+  hair, thin stubble, mole under left eye, dark heather
+  grey t-shirt, black joggers, black canvas sneakers)
+  tripping over a piece of broken concrete and falling
+  forward, hands catching himself on dusty ground. Dust
+  scatters. Camera low angle from ground, subtle handheld
+  shake. Background underpass pillars, overcast flat dusty
+  yellow-grey light. Cinematic 2.39:1, 35mm lens, shallow
+  depth of field, photorealistic, gritty.
+HAL YANG HARUS DIHINDARI:
+  - Slow motion, gerak tidak natural, tangan rusak,
+    extra limbs.
+DIALOG         : VOCAL-NONVERB-GRUNT (erangan jatuh)
+SOUND EFFECT   : SFX-FOOTSTEPS-CHASE, SFX-IMPACT-CONCRETE,
+                 AMB-UNDERPASS-ECHO
+TRANSISI       : Hard cut ke SHOT 08
+CATATAN KONTINUITAS: Puing beton / debris.
+
+────────────────────────────────────────────────────────
+SHOT 08 — LOW ANGLE: SANG PENGEJAR MENEMbak (MISS)
+────────────────────────────────────────────────────────
+DURASI         : 3 detik
+TUJUAN SHOT    : Konfirmasi ancaman nyata (pistol aktif).
+JENIS MODEL    : I2V (pakai pengejar-aiming.png)
+REFERENCE IMAGE: pengejar-aiming.png
+JENIS FRAME    : MEDIUM
+SUDUT KAMERA   : Low-angle from Adam's POV di tanah
+GERAK KAMERA   : Static, slight handheld
+AKSI KARAKTER  : Sang Pengejar berdiri ~10 meter di
+                 belakang, mengangkat pistol perlahan.
+                 Laras mengarah ke Adam. MENEMBAK.
+                 Peluru mengenai pilar beton di samping —
+                 debu beton berhamburan.
+EKSPRESI       : N/A (wajah shadow)
+LINGKUNGAN     : Latar kolong jembatan, pilar beton.
+PENCAHAYAAN    : Backlight kuat di belakang Sang Pengejar.
+PROMPT VIDEO UTAMA:
+  Tall slim man in black tuxedo (white collar, black tie,
+  black fedora worn low, black leather gloves) standing
+  ~10 meters away, raising a black generic semi-auto
+  pistol with both gloved hands aiming forward toward
+  camera. Pistol FIRES — muzzle flash, smoke, bullet
+  strikes concrete pillar on side sending dust and
+  concrete chips flying. Face in deep shadow under hat,
+  only white collar and gloved hands lit. Strong backlight,
+  dust particles. Cinematic 2.39:1, 50mm lens, photorealis-
+  tic, anatomically correct hands.
+HAL YANG HARUS DIHINDARI:
+  - Wajah Pengejar terlihat, sci-fi weapon, multiple
+    shots, slow motion, smile.
+DIALOG         : (none)
+SOUND EFFECT   : SFX-GUNSHOT-CONCRETE, SFX-DEBRIS-CONCRETE
+TRANSISI       : Hard cut ke SHOT 09
+CATATAN KONTINUITAS: Pistol semi-auto hitam. Muzzle flash
+                      singkat (1-3 frame).
+
+────────────────────────────────────────────────────────
+SHOT 09 — ADAM MENGHINDAR & LARI LAGI
+────────────────────────────────────────────────────────
+DURASI         : 3 detik
+TUJUAN SHOT    : Reaksi Adam pada tembakan; lanjut lari.
+JENIS MODEL    : I2V (pakai adam-running.png)
+REFERENCE IMAGE: adam-running.png
+JENIS FRAME    : MEDIUM
+SUDUT KAMERA   : Side 3/4
+GERAK KAMERA   : Whip pan mengikuti gerak menghindar
+AKSI KARAKTER  : Adam menggulingkan tubuh ke samping,
+                 bangkit cepat, lari lagi. Napas terengah
+                 terpotong.
+EKSPRESI       : Horror + adrenalin.
+LINGKUNGAN     : Kolong jembatan, pilar beton.
+PENCAHAYAAN    : Mendung datar, debu.
+PROMPT VIDEO UTAMA:
+  Same 30-year-old Indonesian man (oval face, messy black
+  hair, thin stubble, mole under left eye, dark heather
+  grey t-shirt, black joggers, black canvas sneakers)
+  rolling sideways to dodge, then quickly rising and
+  running again. Camera whip-pans following motion,
+  handheld. Background concrete pillars, dust, overcast
+  flat yellow-grey light. Cinematic 2.39:1, 35mm lens,
+  photorealistic.
+HAL YANG HARUS DIHINDARI:
+  - Slow motion, tangan rusak, gerak tidak natural,
+    character morphing.
+DIALOG         : VOCAL-NONVERB-PANT (cepat terpotong)
+SOUND EFFECT   : SFX-FOOTSTEPS-CHASE, AMB-UNDERPASS-ECHO
+TRANSISI       : Hard cut ke SHOT 10
+CATATAN KONTINUITAS: Pakaian & sepatu konsisten.
+
+╔══════════════════════════════════════════════════════╗
+║  ACT 2 — KLIMAKS MIMPI (Shot 10-12, ~14 dtk)        ║
+╚══════════════════════════════════════════════════════╝
+
+────────────────────────────────────────────────────────
+SHOT 10 — GANG BUNTU (Wide reveal)
+────────────────────────────────────────────────────────
+DURASI         : 4 detik
+TUJUAN SHOT    : Establish trap. Klimaks mendekat.
+JENIS MODEL    : I2V (pakai adam-running.png)
+REFERENCE IMAGE: adam-running.png
+JENIS FRAME    : MEDIUM WIDE
+SUDUT KAMERA   : Frontal eye-level
+GERAK KAMERA   : Static, slight push-in
+AKSI KARAKTER  : Adam berbelok tajam — gang buntu. Dinding
+                 beton tinggi di depan, tangga besi
+                 berkarat. Berhenti, dada kembang-kempis.
+                 Menoleh kiri-kanan — tidak ada jalan.
+EKSPRESI       : Putus asa.
+LINGKUNGAN     : Pojok gang buntu, dinding beton, tangga
+                 besi berkarat.
+PENCAHAYAAN    : Mendung datar, debu partikel.
+PROMPT VIDEO UTAMA:
+  Same 30-year-old Indonesian man (oval face, messy black
+  hair, thin stubble, mole under left eye, dark heather
+  grey t-shirt, black joggers, black canvas sneakers)
+  stopping abruptly at a dead-end alley corner, tall
+  concrete wall in front, rusty iron staircase. Chest
+  heaving, looking left and right desperately — no way
+  out. Background dead-end alley, overcast flat dusty
+  yellow-grey light, dust particles. Camera frontal eye-
+  level, slight slow push-in. Cinematic 2.39:1, 35mm
+  lens, photorealistic.
+HAL YANG HARUS DIHINDARI:
+  - Pintu keluar, karakter tambahan, senyum.
+DIALOG         : VOCAL-NONVERB-PANT (tertahan)
+SOUND EFFECT   : AMB-ALLEY-DUST, SFX-FOOTSTEPS-PENGEJAR
+TRANSISI       : Hard cut ke SHOT 11
+CATATAN KONTINUITAS: Gang buntu, tangga besi berkarat.
+
+────────────────────────────────────────────────────────
+SHOT 11 — SANG PENGEJAR MUNCUL + ADAM TERPOJOK
+────────────────────────────────────────────────────────
+DURASI         : 5 detik
+TUJUAN SHOT    : Konfrontasi. Adam bertanya parau.
+JENIS MODEL    : I2V (composite 2 karakter — gunakan
+                 shot Adam foreground + Pengejar background)
+REFERENCE IMAGE: adam-portrait.png + pengejar-aiming.png
+JENIS FRAME    : MEDIUM, 2-shot komposisi
+SUDUT KAMERA   : Side profile / 3/4 dari samping
+GERAK KAMERA   : Static, slow push-in
+AKSI KARAKTER  : Adam menempel punggung ke dinding, tangan
+                 gemetar, menghadap jalan masuk. Sang
+                 Pengejar muncul perlahan di ujung gang,
+                 bayangannya memanjang di aspal. Berhenti.
+                 Pistol teracung lurus ke Adam.
+EKSPRESI       : Adam — parau, bibir bergetar.
+                 Pengejar — N/A (siluet).
+LINGKUNGAN     : Gang buntu, aspal basah-debu.
+PENCAHAYAAN    : Backlight Pengejar, deep shadow wajah.
+PROMPT VIDEO UTAMA:
+  Same 30-year-old Indonesian man (oval face, messy black
+  hair, thin stubble, mole under left eye, dark heather
+  grey t-shirt, black joggers, black canvas sneakers)
+  pressed back against a concrete wall at the end of a
+  dead-end alley, hands shaking, facing the alley entrance.
+  At the other end, a tall slim man in black tuxedo, black
+  fedora, black gloves raises a black semi-auto pistol
+  aiming at him (face in deep shadow under hat, only white
+  collar visible). Shadow of the tuxedo figure stretches
+  long on the damp-dusty ground. Cinematic 2.39:1, 50mm
+  lens, photorealistic, dramatic low-key chiaroscuro,
+  anatomically correct hands.
+HAL YANG HARUS DIHINDARI:
+  - Wajah Pengejar terlihat, senyum, gerak tidak natural,
+    extra limbs.
+DIALOG         : BEAT 3 (versi natural):
+                 "Siapa kamu...? Apa maumu?!"
+SOUND EFFECT   : AMB-ALLEY-DUST, SFX-FOOTSTEPS-PENGEJAR,
+                 VOCAL-NONVERB-SWALLOW
+TRANSISI       : Hard cut ke SHOT 12
+CATATAN KONTINUITAS: Posisi pistol teracung lurus.
+
+────────────────────────────────────────────────────────
+SHOT 12 — CU JARI SARUNG TANGAN DI PELATUK → BANG
+────────────────────────────────────────────────────────
+DURASI         : 3 detik
+TUJUAN SHOT    : Klimaks tembakan mimpi → transisi ke
+                 realitas.
+JENIS MODEL    : I2V (pakai pengejar-aiming.png — crop)
+REFERENCE IMAGE: pengejar-aiming.png
+JENIS FRAME    : EXTREME CLOSE-UP tangan + pelatuk
+SUDUT KAMERA   : Macro eye-level
+GERAK KAMERA   : Static
+AKSI KARAKTER  : CLOSE-UP jari Sang Pengejar (sarung
+                 tangan hitam) di pelatuk pistol. Tekan.
+                 FLASH. Adam teriak "TIDAAAA—" terpotong.
+EKSPRESI       : N/A
+LINGKUNGAN     : Latar gelap blur.
+PENCAHAYAAN    : Low-key, hanya pelatuk & jari yang terlihat.
+PROMPT VIDEO UTAMA:
+  Extreme close-up of a black leather gloved finger
+  pulling the trigger of a black generic semi-auto pistol,
+  sharp macro detail, then MUZZLE FLASH. Background blurred
+  dark. Low-key lighting, only trigger and gloved finger
+  sharply lit. Cinematic 2.39:1, 100mm macro lens, photo-
+  realistic, anatomically correct hands.
+HAL YANG HARUS DIHINDARI:
+  - Sci-fi weapon, brand logo, slow motion, multiple
+    fingers, glove missing.
+DIALOG         : BEAT 4 (versi natural):
+                 "TIDAAAA—" [cut oleh BANG]
+SOUND EFFECT   : SFX-GUNSHOT-MAIN, kemudian SILENCE-0.5S
+TRANSISI       : HARD CUT TO BLACK (0.5 dtk) → SHOT 13
+CATATAN KONTINUITAS: Sarung tangan kulit hitam. Pistol
+                      semi-auto.
+
+╔══════════════════════════════════════════════════════╗
+║  ACT 3 — FALSE AWAKENING (Shot 13-17, ~40 dtk)      ║
+╚══════════════════════════════════════════════════════╝
+
+────────────────────────────────────────────────────────
+SHOT 13 — CU WAJAH ADAM TERBANGUN
+────────────────────────────────────────────────────────
+DURASI         : 4 detik
+TUJUAN SHOT    : Transisi mimpi→realitas. Hook emosi.
+JENIS MODEL    : I2V (pakai adam-portrait.png + adam-bedroom.png)
+REFERENCE IMAGE: adam-portrait.png, adam-bedroom.png
+JENIS FRAME    : CLOSE-UP wajah di ranjang
+SUDUT KAMERA   : Slight high-angle (dari samping atas)
+GERAK KAMERA   : Static, very slow push-in
+AKSI KARAKTER  : Wajah Adam. Mata terbuka lebar membelalak
+                 mendadak. Napas terengah. Keringat menetes
+                 dari pelipis ke bantal. Memusing ke samping.
+EKSPRESI       : Shock lingering, napas berat.
+LINGKUNGAN     : Bantal ranjang, kamar blur hangat.
+PENCAHAYAAN    : Lampu meja kuning hangat + sedikit
+                 moonlight biru dari samping.
+PROMPT VIDEO UTAMA:
+  Close-up of same 30-year-old Indonesian man (oval face,
+  messy black hair, thin stubble, mole under left eye,
+  dark circles, dark heather grey crew-neck t-shirt) lying
+  in bed, eyes suddenly snapping wide open, panting heavily,
+  sweat dripping from temple to pillow. Background blurred
+  warm bedroom with yellow lamp glow. Warm amber key from
+  right, faint blue moonlight rim from left. Camera slight
+  high angle, very slow push-in. Cinematic 2.39:1, 85mm
+  lens, shallow depth of field, photorealistic.
+HAL YANG HARUS DIHINDARI:
+  - Daytime, bright, formal clothes, sepatu, senyum,
+    karakter tambahan, modern luxury.
+DIALOG         : VOCAL-NONVERB-PANT (terengah berat)
+SOUND EFFECT   : AMB-BEDROOM-NIGHT, VOCAL-NONVERB-PANT
+TRANSISI       : Hard cut ke SHOT 14
+CATATAN KONTINUITAS: Kaos abu tua, BAREFOOT (tanpa sepatu).
+
+────────────────────────────────────────────────────────
+SHOT 14 — ADAM DUDUK & MINUM AIR
+────────────────────────────────────────────────────────
+DURASI         : 6 detik
+TUJUAN SHOT    : Adam menenangkan diri. Aksi minum.
+JENIS MODEL    : S2V (atau I2V + sound design)
+REFERENCE IMAGE: adam-bedroom.png
+JENIS FRAME    : MEDIUM
+SUDUT KAMERA   : 3/4 dari depan
+GERAK KAMERA   : Static, subtle handheld
+AKSI KARAKTER  : Adam membalik tubuh, duduk di tepi ranjang.
+                 Tangan gemetar mengusap wajah. Meraih
+                 GELAS AIR di nakas — setengah penuh. Minum
+                 beberapa tegok besar. Air menetes dari sudut
+                 bibir. Meletakkan gelas kembali. Mengusap
+                 mulut punggung tangan.
+EKSPRESI       : Lelah, masih shock, mulai tenang.
+LINGKUNGAN     : Kamar tidur kecil, nakas, lampu meja kuning,
+                 ranjang sprei putih kusut.
+PENCAHAYAAN    : Hangat amber lampu + blue rim jendela.
+PROMPT VIDEO UTAMA:
+  Same 30-year-old Indonesian man (oval face, messy black
+  hair, thin stubble, mole under left eye, dark circles,
+  dark heather grey crew-neck t-shirt, barefoot) sitting
+  on edge of a simple bed in a small modest bedroom,
+  trembling hand wiping face. He reaches for a half-full
+  clear water glass on a wooden nightstand with a warm
+  yellow bedside lamp, drinks several large gulps, water
+  dripping from corner of mouth. Sets glass back, wipes
+  mouth with back of hand. White rumpled bedsheet, small
+  window with sheer curtain and faint blue moonlight behind.
+  Warm amber key from lamp right, cool blue rim from
+  window left. Camera 3/4 frontal, subtle handheld.
+  Cinematic 2.39:1, 50mm lens, photorealistic, anatomically
+  correct hands.
+HAL YANG HARUS DIHINDARI:
+  - Daytime, sepatu, formal wear, modern luxury, multiple
+    people, hands morphing.
+DIALOG         : (none — action only)
+SOUND EFFECT   : SFX-DRINK-WATER, AMB-BEDROOM-NIGHT,
+                 VOCAL-NONVERB-SIGH
+TRANSISI       : Hard cut ke SHOT 15
+CATATAN KONTINUITAS: Gelas bening setengah penuh. Nakas
+                      kayu. Adam BAREFOOT.
+
+────────────────────────────────────────────────────────
+SHOT 15 — CU ADAM: SENYUM LEGA + KALIMAT KUNCI
+────────────────────────────────────────────────────────
+DURASI         : 4 detik
+TUJUAN SHOT    : Kalimat kunci film: "Untunglah hanya mimpi."
+JENIS MODEL    : S2V (lip-sync WAJIB — kalimat terucap)
+REFERENCE IMAGE: adam-portrait.png + adam-bedroom.png
+JENIS FRAME    : CLOSE-UP wajah
+SUDUT KAMERA   : Frontal eye-level
+GERAK KAMERA   : Static, very subtle push-in
+AKSI KARAKTER  : Perlahan senyum tipis muncul di wajah
+                 Adam. Lega. Berkata lirih pada diri sendiri.
+                 Bahu turun, menghela napas panjang.
+EKSPRESI       : Lega + senyum tipis, mata menyipit.
+LINGKUNGAN     : Kamar blur hangat di belakang.
+PENCAHAYAAN    : Hangat amber + faint blue.
+PROMPT VIDEO UTAMA:
+  Close-up of same 30-year-old Indonesian man (oval face,
+  messy black hair, thin stubble, mole under left eye,
+  dark circles, dark heather grey crew-neck t-shirt) in a
+  small warm bedroom at night. A small relieved smile forms
+  on his face. He speaks softly to himself, shoulders
+  dropping, exhaling long. Warm amber key from lamp right,
+  faint blue rim from window left. Camera frontal eye-level,
+  very subtle slow push-in. Cinematic 2.39:1, 85mm lens,
+  shallow depth of field, photorealistic.
+HAL YANG HARUS DIHINDARI:
+  - Senyum lebar, tertawa, daytime, sepatu, formal wear.
+DIALOG         : BEAT 5 (versi natural):
+                 "Untunglah... hanya mimpi."
+SOUND EFFECT   : AMB-BEDROOM-NIGHT, VOCAL-NONVERB-SIGH
+TRANSISI       : Hard cut ke SHOT 16
+CATATAN KONTINUITAS: ⚠️ LIP-SYNC PRIORITAS — kalimat kunci
+                      film. Pastikan mulut sync presisi.
+
+────────────────────────────────────────────────────────
+SHOT 16 — ADAM MENUNDUK, MATA SETENGAH TUTUP
+────────────────────────────────────────────────────────
+DURASI         : 5 detik
+TUJUAN SHOT    : Jeda tenang palsu sebelum twist.
+JENIS MODEL    : I2V
+REFERENCE IMAGE: adam-bedroom.png
+JENIS FRAME    : MEDIUM CLOSE-UP
+SUDUT KAMERA   : 3/4 side
+GERAK KAMERA   : Static
+AKSI KARAKTER  : Adam menundukkan kepala, mata setengah
+                 tertutup — setengah tertidur lagi.
+                 Beristirahat. Hening 2 detik.
+EKSPRESI       : Tenang, lelah, hampir tidur.
+LINGKUNGAN     : Kamar hangat.
+PENCAHAYAAN    : Hangat amber.
+PROMPT VIDEO UTAMA:
+  Same 30-year-old Indonesian man (oval face, messy black
+  hair, thin stubble, mole under left eye, dark heather
+  grey t-shirt) bowing head, eyes half-closed, almost
+  falling back asleep, sitting on edge of bed in small
+  warm bedroom at night. Warm amber lamp light, faint blue
+  moonlight from window. Camera 3/4 side, static.
+  Cinematic 2.39:1, 50mm lens, shallow depth of field,
+  photorealistic.
+HAL YANG HARUS DIHINDARI:
+  - Twist muncul terlalu cepat, daytime, bright.
+DIALOG         : (none) — Sound: hening + AMB-BEDROOM
+SOUND EFFECT   : AMB-BEDROOM-NIGHT, lalu SFX-FOOTSTEPS-
+                 WOOD muncul di akhir shot
+TRANSISI       : Hard cut ke SHOT 17 (audio prelaps)
+CATATAN KONTINUITAS: Adam posisi duduk di tepi ranjang.
+
+╔══════════════════════════════════════════════════════╗
+║  ACT 4 — TWIST ENDING (Shot 17-22, ~40 dtk)         ║
+╚══════════════════════════════════════════════════════╝
+
+────────────────────────────────────────────────────────
+SHOT 17 — KRAK. LANGKAH KAKI DI LANTAI KAYU (OFF-SCREEN)
+────────────────────────────────────────────────────────
+DURASI         : 4 detik
+TUJUAN SHOT    : Dread build #1. Audio-driven.
+JENIS MODEL    : I2V
+REFERENCE IMAGE: adam-bedroom.png
+JENIS FRAME    : MEDIUM CLOSE-UP
+SUDUT KAMERA   : 3/4
+GERAK KAMERA   : Static, slight handheld shake (makin gemetar)
+AKSI KARAKTER  : Adam membeku. Mata terbuka penuh.
+                 Kepalanya berputar perlahan ke arah pintu
+                 tertutup — celah bawah pintu gelap.
+EKSPRESI       : Beku, mata membelalak, napas tertahan.
+LINGKUNGAN     : Kamar. Pintu tertutup di latar belakang.
+PENCAHAYAAN    : Hangat amber, deep shadow di sudut.
+PROMPT VIDEO UTAMA:
+  Same 30-year-old Indonesian man (oval face, messy black
+  hair, thin stubble, mole under left eye, dark heather
+  grey t-shirt) suddenly freezing mid-motion, eyes wide
+  open, head slowly turning toward a closed bedroom door
+  in the background. Warm amber lamp light, deep shadows
+  in corners. Camera 3/4, slight handheld shake intensifying.
+  Cinematic 2.39:1, 50mm lens, photorealistic.
+HAL YANG HARUS DIHINDARI:
+  - Pintu terbuka dulu, twist muncul dulu, daytime.
+DIALOG         : VOCAL-NONVERB-GASP (tarikan napas tertahan)
+SOUND EFFECT   : SFX-FOOTSTEPS-WOOD (langkah lambat di
+                 luar), AMB-BEDROOM-NIGHT
+TRANSISI       : Hard cut ke SHOT 18
+CATATAN KONTINUITAS: Pintu TERTUTUP. Adam di tepi ranjang.
+
+────────────────────────────────────────────────────────
+SHOT 18 — BAYANGAN SANG PENGEJAR DI DINDING
+────────────────────────────────────────────────────────
+DURASI         : 4 detik
+TUJUAN SHOT    : Dread build #2. Reveal visual halus.
+JENIS MODEL    : I2V (composite — siluet recycled dari mimpi)
+REFERENCE IMAGE: pengejar-full.png (siluet only) +
+                 set-bedroom.png
+JENIS FRAME    : MEDIUM (dinding kamar)
+SUDUT KAMERA   : Frontal ke dinding
+GERAK KAMERA   : Static, slow push-in
+AKSI KARAKTER  : Bayangan siluet SOSOK TINGGI bertopi
+                 fedora MUMBESAR perlahan di dinding kamar
+                 (cahaya jendela). Recycle siluet Sang
+                 Pengejar dari mimpi.
+EKSPRESI       : N/A
+LINGKUNGAN     : Dinding kamar, jendela dengan tirai tipis.
+PENCAHAYAAN    : Blue moonlight dari jendela membentuk
+                 bayangan di dinding.
+PROMPT VIDEO UTAMA:
+  Shadow silhouette of a tall slim figure wearing a wide-
+  brim fedora hat growing larger on a bedroom wall as
+  backlight from a window with sheer curtain shifts. The
+  shadow has the unmistakable outline of a tuxedo figure
+  in a fedora. No actual figure visible, only the shadow
+  on the off-white aged wall. Cinematic 2.39:1, 35mm lens,
+  photorealistic, eerie dread, no people in frame.
+HAL YANG HARUS DIHINDARI:
+  - Sosok nyata terlihat, wajah, hands, multiple shadows,
+    daytime.
+DIALOG         : (none)
+SOUND EFFECT   : SFX-FOOTSTEPS-WOOD, AMB-BEDROOM-NIGHT,
+                 MUSIC-DRONE-LOW (sub-bass muncul)
+TRANSISI       : Hard cut ke SHOT 19
+CATATAN KONTINUITAS: Bayangan fedora = konsisten dengan
+                      mimpi.
+
+────────────────────────────────────────────────────────
+SHOT 19 — CU ADAM: MENOLEH KE DINDING
+────────────────────────────────────────────────────────
+DURASI         : 3 detik
+TUJUAN SHOT    : Reaksi Adam pada bayangan.
+JENIS MODEL    : I2V
+REFERENCE IMAGE: adam-portrait.png + adam-bedroom.png
+JENIS FRAME    : CLOSE-UP wajah
+SUDUT KAMERA   : Profile
+GERAK KAMERA   : Static, slow push-in
+AKSI KARAKTER  : Adam menoleh ke dinding — mata membelalak
+                 ngeri melihat bayangan. Menelan ludah.
+                 Napas tertahan.
+EKSPRESI       : Horror lambat, dread.
+LINGKUNGAN     : Kamar blur.
+PENCAHAYAAN    : Hangat amber, deep shadow.
+PROMPT VIDEO UTAMA:
+  Close-up profile of same 30-year-old Indonesian man
+  (oval face, messy black hair, thin stubble, mole under
+  left eye, dark heather grey t-shirt) turning his head
+  slowly toward a wall, eyes widening in horror as he sees
+  something off-frame. Swallowing hard, breath held. Warm
+  amber lamp light, deep shadow. Camera profile, slow
+  push-in. Cinematic 2.39:1, 85mm lens, photorealistic.
+HAL YANG HARUS DIHINDARI:
+  - Senyum, tenang, twist muncul dulu.
+DIALOG         : VOCAL-NONVERB-SWALLOW (menelan ludah)
+SOUND EFFECT   : SFX-FOOTSTEPS-WOOD, AMB-BEDROOM-NIGHT,
+                 MUSIC-DRONE-LOW
+TRANSISI       : Hard cut ke SHOT 20
+CATATAN KONTINUITAS: Posisi Adam duduk di tepi ranjang.
+
+────────────────────────────────────────────────────────
+SHOT 20 — PINTU TERBUKA PERLAHAN + SANG PENGEJAR DI AMBANG
+────────────────────────────────────────────────────────
+DURASI         : 5 detik
+TUJUAN SHOT    : Reveal twist puncak.
+JENIS MODEL    : I2V (pakai pengejar-aiming.png)
+REFERENCE IMAGE: pengejar-aiming.png + set-bedroom.png
+JENIS FRAME    : MEDIUM WIDE (pintu kamar)
+SUDUT KAMERA   : Dari POV Adam (low-angle dari ranjang)
+GERAK KAMERA   : Static, slight handheld
+AKSI KARAKTER  : CLOSE-UP — pintu terbuka PERLAHAN sendiri.
+                 Derit engsel. Di ambang pintu: SILUET SANG
+                 PENGEJAR. Tuxedo hitam, fedora, kerah putih,
+                 sarung tangan. Wajah gelap. Pistol teracung
+                 ke arah Adam.
+EKSPRESI       : N/A
+LINGKUNGAN     : Pintu kamar, ambang gelap, lantai kayu.
+PENCAHAYAAN    : Hangat dari dalam kamar, deep shadow dari
+                 luar pintu → siluet Pengejar.
+PROMPT VIDEO UTAMA:
+  Wooden bedroom door slowly creaking open by itself, and
+  in the doorway stands the tall slim man in black tuxedo,
+  black fedora worn low, black leather gloves, white collar
+  sharp against shadow, raising a black generic semi-auto
+  pistol aiming forward. Face completely in deep shadow,
+  only white collar and gloved hands visible. Warm amber
+  light from bedroom inside, deep shadow from hallway
+  outside. Camera low-angle from bed POV, slight handheld.
+  Cinematic 2.39:1, 35mm lens, photorealistic, anatomically
+  correct hands, no extra limbs.
+HAL YANG HARUS DIHINDARI:
+  - Wajah Pengejar terlihat, sci-fi weapon, daytime,
+    smiling.
+DIALOG         : (none — building)
+SOUND EFFECT   : SFX-DOOR-CREAK (derit engsel), SFX-FOOT-
+                 STEPS-WOOD, MUSIC-DRONE-LOW builds
+TRANSISI       : Hard cut ke SHOT 21
+CATATAN KONTINUITAS: Pistol semi-auto. Kerah putih. Wajah
+                      dalam shadow.
+
+────────────────────────────────────────────────────────
+SHOT 21 — ADAM TERBELAKANG + TERIAK + BANG (KLIMAKS TWIST)
+────────────────────────────────────────────────────────
+DURASI         : 3 detik
+TUJUAN SHOT    : Klimaks twist. Jerit + tembak.
+JENIS MODEL    : S2V (untuk jerit) atau I2V + sound design
+REFERENCE IMAGE: adam-bedroom.png + adam-portrait.png
+JENIS FRAME    : MEDIUM (Adam di ranjang)
+SUDUT KAMERA   : 3/4 dari samping
+GERAK KAMERA   : Static, slight handheld shake intensifies
+AKSI KARAKTER  : Adam terbelakang di ranjang, tergeser ke
+                 headboard. Tangan terangkat defensif.
+                 Menjerit "Tidaaak—". BANG.
+EKSPRESI       : Horror puncak, mulut lebar, mata terbelalak.
+LINGKUNGAN     : Kamar, headboard ranjang.
+PENCAHAYAAN    : Hangat amber, deep shadow.
+PROMPT VIDEO UTAMA:
+  Same 30-year-old Indonesian man (oval face, messy black
+  hair, thin stubble, mole under left eye, dark heather
+  grey t-shirt) scrambling backward on the bed against the
+  headboard, hands raised defensively, mouth open screaming
+  in horror. Warm amber lamp light, deep shadow. Camera 3/4
+  side, slight handheld shake intensifying. Cinematic 2.39:1,
+  35mm lens, photorealistic.
+HAL YANG HARUS DIHINDARI:
+  - Darah berlebihan, gore detail, gerak tidak natural.
+DIALOG         : BEAT 6 (versi natural):
+                 "Tidaaak—" [cut oleh BANG]
+SOUND EFFECT   : SFX-GUNSHOT-MAIN, MUSIC-STING-HIGH,
+                 kemudian SILENCE 1.5 dtk
+TRANSISI       : HARD CUT TO BLACK (1.5 dtk) → SHOT 22
+CATATAN KONTINUITAS: Tembak implisit — reaksi wajah Adam
+                      + audio BANG, BUKAN muzzle flash ke
+                      tubuh.
+
+╔══════════════════════════════════════════════════════╗
+║  EPILOG / STINGER (Shot 22, ~14 dtk)                ║
+╚══════════════════════════════════════════════════════╝
+
+────────────────────────────────────────────────────────
+SHOT 22 — FEDORA DI LANTAI + TAGLINE
+────────────────────────────────────────────────────────
+DURASI         : 14 detik total (4 still + 4 hold + 4 text
+                 + 2 fade)
+TUJUAN SHOT    : Epilog ambigu. Tagline. END.
+JENIS MODEL    : TI2V/T2V (still / very subtle motion) +
+                 EDIT (text overlay)
+REFERENCE IMAGE: insert-fedora.png
+JENIS FRAME    : CLOSE-UP still life
+SUDUT KAMERA   : Top-down 45°
+GERAK KAMERA   : Static (atau very slow drift)
+AKSI KARAKTER  : Tidak ada karakter. Hanya topi fedora
+                 hitam tergeletak di lantai kayu kamar,
+                 sedikit miring. Debu partikel melayang
+                 lambat. Hening 3 detik. Fade to black.
+                 TEXT fade in: "Hati-hatilah dengan mimpimu."
+                 Hold 4 detik. Fade out.
+EKSPRESI       : N/A
+LINGKUNGAN     : Lantai kayu kamar, lampu amber dari luar
+                 frame.
+PENCAHAYAAN    : Amber hangat, deep shadow, debu.
+PROMPT VIDEO UTAMA:
+  Close-up still life of a single black wool-felt wide-brim
+  fedora hat (~7cm brim, classic center-crease crown) lying
+  slightly tilted on bare aged wooden floor planks in a dim
+  bedroom. Soft warm amber light falling from off-frame
+  right, dust particles drifting slowly in the light beam.
+  No people in frame. Mood: ominous ambiguous aftermath.
+  Camera top-down 45°, static with very slow drift.
+  Cinematic 2.39:1, 50mm lens, shallow depth of field,
+  photorealistic.
+HAL YANG HARUS DIHINDARI:
+  - People, hands, bright lighting, daytime, multiple hats,
+    colorful hat.
+DIALOG         : (none)
+SOUND EFFECT   : AMB-BEDROOM-NIGHT (sangat pelan), lalu
+                 SILENCE
+TEXT OVERLAY (EDIT):
+  Font: Sans-serif tipis putih (Inter / Helvetica Light)
+  Posisi: Center frame, lower third
+  Animasi: Fade in 1.5 dtk → hold 4 dtk → fade out 1.5 dtk
+  Teks: "Hati-hatilah dengan mimpimu."
+TRANSISI       : SLOW FADE TO BLACK (2 dtk) → END
+CATATAN KONTINUITAS: Fedora hitam blend lebar = sama
+                      persis dengan topi Sang Pengejar.
+
+============================================================
+RINGKASAN SHOT LIST (TIMELINE)
+============================================================
+ACT 1 (mimpi chase)    S01-S09    ~31 dtk
+ACT 2 (klimaks mimpi)  S10-S12    ~12 dtk
+— TRANSISI BLACK       0.5 dtk
+ACT 3 (false awake)    S13-S16    ~19 dtk
+ACT 4 (twist)          S17-S21    ~19 dtk
+— TRANSISI BLACK       1.5 dtk
+EPILOG (fedora+text)   S22        ~14 dtk
+─────────────────────────────────────────
+TOTAL                            ~97 dtk (minimum)
+
+Catatan: Durasi aktual bisa lebih panjang dengan pacing
+natural, jeda, dan breathing room. Target final ~150-170
+dtk (2:30-2:50).
+
+============================================================
+RISIKO PRODUKSI PER SHOT (PRIORITAS QC)
+============================================================
+  - S03, S08, S11, S20 (Sang Pengejar): risiko AI
+    "mengisi" wajah. ALWAYS strong backlight + shadow.
+  - S12 (trigger CU): risiko sarung tangan berubah / pistol
+    berubah. Gunakan
+    02-character/sang-pengejar/04-aiming-reference.png sebagai strict ref.
+  - S15 (lip-sync): kalimat kunci. WAJIB S2V presisi.
+  - S18 (bayangan dinding): risiko bayangan tidak match
+    dengan lighting. Test dengan tunggal lampu backlight.
+  - S22 (fedora): risk fedora berubah model. Lock dengan
+    insert-fedora.png.
+
+============================================================
+REKOMENDASI URUTAN PRODUKSI (BUKAN URUTAN CERITA)
+============================================================
+1. Generate semua reference image dulu (A-I).
+2. Lock wajah Adam via 02-character/adam/04-reference-sheet.png.
+3. Lock outfit Pengejar via
+   02-character/sang-pengejar/05-reference-sheet.png.
+4. Generate shot Actor-only dulu (S01, S02, S04, S07,
+   S09, S13, S14, S15, S16, S17, S19, S21) → paling
+   aman, hasil terbaik untuk QC wajah.
+5. Generate shot Pengejar-only (S03, S08, S12, S20) →
+   risiko wajah.
+6. Generate composite (S06, S11, S18) → paling sulit,
+   sisa akhir.
+7. Generate epilog still (S22) → paling mudah.
+8. Render & QC per shot sebelum final composite.

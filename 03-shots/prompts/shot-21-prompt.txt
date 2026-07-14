@@ -1,0 +1,19 @@
+============================================================
+SHOT 21 — ADAM TERBELAKANG + TERIAK + BANG (KLIMAKS TWIST)
+============================================================
+DURASI: 3 detik | Model: S2V (jerit) / I2V + sound design | 2.39:1 | 24fps
+Ref: 02-character/shot-images/shot-21-keyframe.png +
+     02-character/adam/02-master-face.png +
+     02-character/set-props/set-bedroom.png
+
+PROMPT VIDEO UTAMA:
+Same 30-year-old Indonesian man (oval face, messy black hair, thin stubble, mole under left eye, dark heather grey t-shirt) scrambling backward on the bed against the headboard, hands raised defensively, mouth open screaming in horror. Warm amber lamp light, deep shadow. Camera 3/4 side, slight handheld shake intensifying. Cinematic 2.39:1, 35mm lens, photorealistic.
+
+NEGATIVE PROMPT:
+excessive blood, gore detail, unnatural motion, daytime, smile, cartoon, anime, 3d render, extra limbs, text, watermark.
+
+DIALOG: BEAT 6 (natural): "Tidaaak—" [cut oleh BANG]
+SOUND: SFX-GUNSHOT-MAIN + MUSIC-STING-HIGH → SILENCE 1.5 dtk
+TRANSISI: HARD CUT TO BLACK (1.5 dtk) → SHOT 22
+KONTINUITAS: Tembak implisit — reaksi wajah Adam + audio BANG,
+             BUKAN muzzle flash ke tubuh.

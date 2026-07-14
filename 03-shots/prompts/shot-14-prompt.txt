@@ -1,0 +1,18 @@
+============================================================
+SHOT 14 — ADAM DUDUK & MINUM AIR (I2V / S2V)
+============================================================
+DURASI: 6 detik | Model: I2V | 2.39:1 | 24fps
+Ref: 02-character/shot-images/shot-14-keyframe.png +
+     02-character/adam/04-reference-sheet.png +
+     02-character/set-props/set-bedroom.png
+
+PROMPT VIDEO UTAMA:
+Same 30-year-old Indonesian man (oval face, messy black hair, thin stubble, mole under left eye, dark circles, dark heather grey crew-neck t-shirt, barefoot) sitting on edge of a simple bed in a small modest bedroom, trembling hand wiping face. He reaches for a half-full clear water glass on a wooden nightstand with a warm yellow bedside lamp, drinks several large gulps, water dripping from corner of mouth. Sets glass back, wipes mouth with back of hand. White rumpled bedsheet, small window with sheer curtain and faint blue moonlight behind. Warm amber key from lamp right, cool blue rim from window left. Camera 3/4 frontal, subtle handheld. Cinematic 2.39:1, 50mm lens, photorealistic, anatomically correct hands.
+
+NEGATIVE PROMPT:
+daytime, shoes, formal wear, modern luxury, multiple people, hands morphing, cartoon, anime, 3d render, extra fingers, text, watermark.
+
+DIALOG: (none — action only)
+SOUND: SFX-DRINK-WATER + AMB-BEDROOM-NIGHT + VOCAL-NONVERB-SIGH
+TRANSISI: Hard cut ke SHOT 15
+KONTINUITAS: Gelas bening setengah penuh. Nakas kayu. Adam BAREFOOT.

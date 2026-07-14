@@ -1,0 +1,17 @@
+============================================================
+SHOT 07 — ADAM TERSANDUNG & JATUH (I2V)
+============================================================
+DURASI: 4 detik | Model: I2V | 2.39:1 | 24fps
+Ref: 02-character/shot-images/shot-07-keyframe.png +
+     02-character/adam/04-reference-sheet.png
+
+PROMPT VIDEO UTAMA:
+Same 30-year-old Indonesian man (oval face, messy black hair, thin stubble, mole under left eye, dark heather grey t-shirt, black joggers, black canvas sneakers) tripping over a piece of broken concrete and falling forward, hands catching himself on dusty ground. Dust scatters. Camera low angle from ground, subtle handheld shake. Background underpass pillars, overcast flat dusty yellow-grey light. Cinematic 2.39:1, 35mm lens, shallow depth of field, photorealistic, gritty.
+
+NEGATIVE PROMPT:
+slow motion, unnatural motion, broken hands, extra limbs, smile, daytime, cartoon, anime, 3d render, text, watermark.
+
+DIALOG: VOCAL-NONVERB-GRUNT (erangan jatuh)
+SOUND: SFX-FOOTSTEPS-CHASE + SFX-IMPACT-CONCRETE + AMB-UNDERPASS-ECHO
+TRANSISI: Hard cut ke SHOT 08
+KONTINUITAS: Puing beton / debris di tanah.

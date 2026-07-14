@@ -1,0 +1,16 @@
+============================================================
+SHOT 05 — TRANSISI: KOLONG JEMBATAN (TI2V/T2V)
+============================================================
+DURASI: 3 detik | Model: TI2V/T2V | 2.39:1 | 24fps
+Ref: (none — wide establishing)
+
+PROMPT VIDEO UTAMA:
+Wide establishing of a man running into a large concrete underpass space with massive concrete pillars, dusty atmosphere, overcast flat dry yellow-grey light, dust particles thick in air. Industrial urban emptiness. Cinematic 2.39:1, 24mm wide lens, deep focus, slow push-in, photorealistic, gritty thriller. No specific face detail needed at this distance.
+
+NEGATIVE PROMPT:
+bright sunlight, blue sky, rain, multiple people, modern clean, cartoon, anime, 3d render, text, watermark.
+
+DIALOG: (none)
+SOUND: VOCAL-NONVERB-PANT (jauh) + SFX-FOOTSTEPS-CHASE + AMB-UNDERPASS-ECHO
+TRANSISI: Match cut ke SHOT 06
+KONTINUITAS: Kolong jembatan dengan pilar besar beton.

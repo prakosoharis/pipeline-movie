@@ -1,0 +1,17 @@
+============================================================
+SHOT 04 — CU ADAM: TAKUT (I2V)
+============================================================
+DURASI: 2 detik | Model: I2V | 2.39:1 | 24fps
+Ref: 02-character/shot-images/shot-04-keyframe.png +
+     02-character/adam/02-master-face.png
+
+PROMPT VIDEO UTAMA:
+Close-up of same 30-year-old Indonesian man (oval face, messy black hair, thin stubble, mole under left eye, dark circles, dark heather grey crew-neck t-shirt), turning head back to front, face filled with terror, eyes wide, mouth open panting. Background blurred gritty alley. Soft directional key light front, dust particles. Subtle handheld shake. Cinematic 2.39:1, 85mm lens, shallow depth of field, photorealistic.
+
+NEGATIVE PROMPT:
+face change, calm gaze, smile, sunlight, rain, formal clothes, jewelry, cartoon, anime, 3d render, extra limbs, text, watermark.
+
+DIALOG: (continuation BEAT 1) napas cepat
+SOUND: VOCAL-NONVERB-PANT + AMB-ALLEY-DUST
+TRANSISI: Hard cut ke SHOT 05
+KONTINUITAS: Tahi lalat di bawah mata kiri.

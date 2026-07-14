@@ -1,0 +1,18 @@
+============================================================
+SHOT 20 — PINTU TERBUKA + SANG PENGEJAR DI AMBANG (I2V)
+============================================================
+DURASI: 5 detik | Model: I2V | 2.39:1 | 24fps
+Ref: 02-character/shot-images/shot-20-keyframe.png +
+     02-character/sang-pengejar/04-aiming-reference.png +
+     02-character/set-props/set-bedroom.png
+
+PROMPT VIDEO UTAMA:
+Wooden bedroom door slowly creaking open by itself, and in the doorway stands the tall slim man in black tuxedo, black fedora worn low, black leather gloves, white collar sharp against shadow, raising a black generic semi-auto pistol aiming forward. Face completely in deep shadow, only white collar and gloved hands visible. Warm amber light from bedroom inside, deep shadow from hallway outside. Camera low-angle from bed POV, slight handheld. Cinematic 2.39:1, 35mm lens, photorealistic, anatomically correct hands, no extra limbs.
+
+NEGATIVE PROMPT:
+visible face of pursuer, sci-fi weapon, daytime, smiling, casual clothes, gloves missing, brand logo, cartoon, anime, 3d render, extra fingers, text, watermark.
+
+DIALOG: (none — building)
+SOUND: SFX-DOOR-CREAK (derit engsel) + SFX-FOOTSTEPS-WOOD + MUSIC-DRONE-LOW builds
+TRANSISI: Hard cut ke SHOT 21
+KONTINUITAS: Pistol semi-auto hitam. Kerah putih. Wajah dalam shadow.

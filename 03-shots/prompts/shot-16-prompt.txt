@@ -1,0 +1,17 @@
+============================================================
+SHOT 16 — ADAM MENUNDUK, MATA SETENGAH TUTUP (I2V)
+============================================================
+DURASI: 5 detik | Model: I2V | 2.39:1 | 24fps
+Ref: 02-character/shot-images/shot-16-keyframe.png +
+     02-character/set-props/set-bedroom.png
+
+PROMPT VIDEO UTAMA:
+Same 30-year-old Indonesian man (oval face, messy black hair, thin stubble, mole under left eye, dark heather grey t-shirt) bowing head, eyes half-closed, almost falling back asleep, sitting on edge of bed in small warm bedroom at night. Warm amber lamp light, faint blue moonlight from window. Camera 3/4 side, static. Cinematic 2.39:1, 50mm lens, shallow depth of field, photorealistic.
+
+NEGATIVE PROMPT:
+twist appearing too early, daytime, bright, smile, formal wear, cartoon, anime, 3d render, extra limbs, text, watermark.
+
+DIALOG: (none)
+SOUND: AMB-BEDROOM-NIGHT → muncul SFX-FOOTSTEPS-WOOD di akhir shot
+TRANSISI: Hard cut ke SHOT 17 (audio prelaps footsteps)
+KONTINUITAS: Adam posisi duduk di tepi ranjang.

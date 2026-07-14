@@ -1,0 +1,282 @@
+============================================================
+ASSET STATUS REPORT - "MIMPI YANG MENGEJAR"
+============================================================
+Tanggal audit: 2026-07-12
+
+Tujuan:
+  Mencatat status aset agar tidak ada gambar yang belum lolos QC
+  dipakai sebagai reference video.
+
+Catatan arsitektur:
+  Laporan ini mencatat status asset dan approval, bukan bukti bahwa
+  pipeline video atau final assembly sudah berjalan.
+  Keputusan arsitektur formal berada di `docs/architecture/`.
+
+============================================================
+STATUS ADAM
+============================================================
+
+02-character/adam/01-character-spec.md
+  Status: EXISTS
+  Keputusan: APPROVED sebagai text identity lock awal.
+
+02-character/adam/02-master-face.png
+  Status: EXISTS
+  Keputusan: APPROVED.
+  Catatan: ini adalah sumber identitas wajah utama untuk semua gambar
+  Adam berikutnya. PNG asli, 1122x1402, aspect ratio 4:5.
+
+02-character/adam/03-master-fullbody.png
+  Status: EXISTS
+  Keputusan: APPROVED.
+  Catatan: PNG asli, 1024x1536, aspect ratio 2:3. Seluruh tubuh
+  dan sepatu terlihat, wardrobe mimpi/chase sesuai, tanpa aksesori.
+
+02-character/adam/04-reference-sheet.png
+  Status: EXISTS
+  Keputusan: APPROVED.
+  Catatan: PNG asli, 1536x1024, landscape lebar. Panel wajah dan tubuh
+  konsisten, wardrobe tetap, cocok untuk panduan continuity.
+
+02-character/adam/05-expression-sheet.png
+  Status: EXISTS
+  Keputusan: APPROVED.
+  Catatan: PNG asli, 1536x1024, landscape. Dua belas ekspresi utama
+  terbaca dengan identitas Adam tetap stabil dan tanpa teks overlay.
+
+02-character/adam/06-pose-sheet.png
+  Status: EXISTS
+  Keputusan: APPROVED.
+  Catatan: PNG asli, 1536x1024, landscape. Pose-pose aksi dan defensif
+  terbaca jelas, anatomi cukup natural, dan identitas Adam tetap stabil.
+
+02-character/adam/07-wardrobe-sheet.png
+  Status: EXISTS
+  Keputusan: APPROVED.
+  Catatan: PNG asli, 1536x1024, landscape. Wardrobe A dan B terpisah
+  jelas; perbedaan sepatu vs barefoot terbaca bersih tanpa mengubah
+  identitas atau kostum inti Adam.
+
+============================================================
+STATUS SANG PENGEJAR
+============================================================
+
+02-character/sang-pengejar/01-character-spec.md
+  Status: EXISTS
+  Keputusan: APPROVED sebagai text identity lock awal.
+
+02-character/sang-pengejar/02-master-silhouette.png
+  Status: EXISTS
+  Keputusan: APPROVED.
+  Catatan: PNG asli, 1024x1536, aspect ratio 2:3. Wajah tetap shadow
+  total, fedora/kerah putih/gloves/pistol terbaca jelas, cocok sebagai
+  anchor visual utama Sang Pengejar.
+
+02-character/sang-pengejar/03-master-fullbody.png
+  Status: EXISTS
+  Keputusan: APPROVED.
+  Catatan: format internal JPEG walau ekstensi .png, 848x1264 portrait.
+  Siluet tubuh, fedora, tuxedo, gloves, dan pistol konsisten dengan
+  master silhouette; layak dipakai sebagai full body continuity ref.
+
+02-character/sang-pengejar/04-aiming-reference.png
+  Status: EXISTS
+  Keputusan: APPROVED.
+  Catatan: format internal JPEG walau ekstensi .png, 1376x768 landscape.
+  Pose aiming dua tangan, fedora low brim, wajah tetap shadow, dan
+  pistol semi-auto terbaca jelas; cocok untuk ref shot ancaman/tembak.
+
+02-character/sang-pengejar/05-reference-sheet.png
+  Status: EXISTS
+  Keputusan: APPROVED.
+  Catatan: format internal JPEG walau ekstensi .png, 1376x768 landscape.
+  Menyediakan turnarounds dan pose utilitas yang konsisten dengan
+  silhouette/fullbody/aiming; cocok sebagai identity pack Sang Pengejar.
+
+============================================================
+STATUS SET DAN PROP
+============================================================
+
+02-character/set-props/set-bedroom.png
+  Status: EXISTS
+  Keputusan: APPROVED.
+  Catatan: format internal JPEG walau ekstensi .png, 1376x768 landscape.
+  Kamar sederhana dengan ranjang kayu, nakas, lampu hangat, dan jendela
+  ber-cahaya biru redup; sesuai worldbuilding bedroom reality.
+
+02-character/set-props/insert-fedora.png
+  Status: EXISTS
+  Keputusan: APPROVED.
+  Catatan: format internal JPEG walau ekstensi .png, 1376x768 landscape.
+  Fedora hitam di lantai kayu tua, cahaya warm side-light, debu
+  melayang; sangat cocok untuk insert/ending ambiguity shot 22.
+
+============================================================
+STATUS VISUAL KEYFRAMES
+============================================================
+
+02-character/shot-images/shot-01-keyframe.png s.d.
+02-character/shot-images/shot-22-keyframe.png
+  Status: EXISTS
+  Keputusan: APPROVED sebagai paket keyframe awal Step 8.
+  Catatan: total 22 file tersedia lengkap untuk shot 01-22. Mayoritas
+  resolusi berada di kisaran 1935-1940 px x 811-813 px dengan framing
+  sinematik mendekati 2.39:1. Kontinuitas Adam, Sang Pengejar, kamar,
+  dan fedora sudah mengikuti reference pack terbaru.
+
+  Status produksi:
+  - keyframe tersedia;
+  - keyframe dapat dipakai untuk POC Wan2.2 setelah mengikuti approval
+    gate;
+  - belum ada output video final yang tercatat di laporan ini.
+
+============================================================
+KANDIDAT LAMA DI ROOT 02-character
+============================================================
+
+02-character/adam-portrait.png
+  Status: EXISTS - CANDIDATE OLD
+  Keputusan: REJECTED untuk master final.
+  Alasan: file berisi data JPEG walau ekstensi .png; aspect ratio
+  portrait, bukan aset workflow baru; belum terbukti konsisten dengan
+  running dan bedroom.
+
+02-character/adam-running.png
+  Status: EXISTS - CANDIDATE OLD
+  Keputusan: REJECTED untuk master final.
+  Alasan: file berisi data JPEG walau ekstensi .png; aspect ratio
+  square; ada watermark/teks samar dan sosok lain di background;
+  wajah tidak konsisten dengan portrait/bedroom.
+
+02-character/adam-bedroom.png
+  Status: EXISTS - CANDIDATE OLD
+  Keputusan: REJECTED untuk master final.
+  Alasan: file berisi data JPEG walau ekstensi .png; aspect ratio
+  square; wajah/rambut tidak konsisten dengan portrait dan running.
+
+============================================================
+STATUS AUDIO ASSET
+============================================================
+
+04-audio/dialogue/dialogue-indonesia.txt
+  Status: EXISTS
+  Keputusan: APPROVED sebagai text dialogue master.
+  Catatan: file ini mengunci isi dialog, mapping beat, dan vokal
+  non-verbal. Dialogue audio master final masih harus dipilih,
+  disetujui, dan dikunci sebelum S2V.
+
+04-audio/dialogue/*.mp3
+  Status: EXISTS untuk beberapa take/generation awal.
+  Keputusan: IN PROGRESS.
+  Catatan: dialogue generation sedang dikerjakan. Belum semua file
+  dinyatakan sebagai final dialogue master LOCKED untuk S2V.
+
+  File aktual saat audit:
+  - 04-audio/dialogue/beat-01-tidak-tidak.mp3
+  - 04-audio/dialogue/beat-02-tolong.mp3
+  - 04-audio/dialogue/beat-03-siapa-kamu.mp3
+  - 04-audio/dialogue/beat-04-tidaaa-cut.mp3
+  - 04-audio/dialogue/beat-05-untunglah-hanya-mimpi.mp3
+  - 04-audio/dialogue/beat-06-tidaaak-cut.mp3
+  - 04-audio/dialogue/nv-01-pant.mp3
+  - 04-audio/dialogue/nv-02-grunt.mp3
+  - 04-audio/dialogue/nv-03-swallow.mp3
+  - 04-audio/dialogue/nv-04-sigh.mp3
+  - 04-audio/dialogue/nv-05-gasp.mp3
+  - 04-audio/dialogue/nv-06-shock.mp3
+
+  Catatan keselarasan:
+  Dokumen workflow audio memakai nama `.wav` sebagai target final.
+  File `.mp3` di atas adalah kandidat/take awal sampai dipilih,
+  disetujui, dikonversi bila perlu, dan ditandai LOCKED sebagai dialogue
+  master final.
+
+04-audio/ambience/ambience-prompts.txt
+  Status: EXISTS
+  Keputusan: APPROVED sebagai prompt plan.
+  Catatan: ambience masih dalam tahap asset generation atau approval.
+  Jangan tandai ambience final selesai sebelum WAV final tersedia dan
+  lolos QC.
+
+  File MP3 kandidat tersedia:
+  - 04-audio/ambience/amb-001-alley-dust.mp3
+  - 04-audio/ambience/amb-002-underpass-echo.mp3
+  - 04-audio/ambience/amb-003-bedroom-night.mp3
+
+04-audio/sound-effects/sound-effect-prompts.txt
+  Status: EXISTS
+  Keputusan: APPROVED sebagai prompt plan.
+  Catatan: Foley/SFX masih dalam tahap asset generation atau approval.
+  Jangan tandai SFX final selesai sebelum WAV final tersedia dan lolos
+  QC.
+
+  File MP3 kandidat tersedia:
+  - 04-audio/sound-effects/sfx-001-footsteps-chase.mp3
+  - 04-audio/sound-effects/sfx-002-footsteps-pengejar.mp3
+  - 04-audio/sound-effects/sfx-003-footsteps-wood.mp3
+  - 04-audio/sound-effects/sfx-004-gunshot-concrete.mp3
+  - 04-audio/sound-effects/sfx-005a-gunshot-main-outdoor.mp3
+  - 04-audio/sound-effects/sfx-005b-gunshot-main-indoor.mp3
+  - 04-audio/sound-effects/sfx-006-debris-concrete.mp3
+  - 04-audio/sound-effects/sfx-007-drink-water.mp3
+  - 04-audio/sound-effects/sfx-008-door-creak.mp3
+  - 04-audio/sound-effects/sfx-009-glass-set-down.mp3
+  - 04-audio/sound-effects/sfx-010-impact-body-fall.mp3
+
+  Catatan: SFX-005a dan SFX-005b memakai audio kandidat yang sama sesuai
+  keputusan produksi saat ini. Dua nama file tetap dipertahankan agar
+  mapping S12 outdoor dan S21 indoor jelas di shot list dan assembly.
+
+04-audio/music/music-prompts.txt
+  Status: EXISTS
+  Keputusan: APPROVED sebagai optional music plan.
+  Catatan: music bersifat opsional dan tidak terkunci pada satu provider.
+  Music masih dalam tahap asset generation atau approval.
+
+  File MP3 kandidat tersedia:
+  - 04-audio/music/mus-001-drone-low.mp3
+  - 04-audio/music/mus-002-sting-high.mp3
+
+============================================================
+STATUS VIDEO GENERATION DAN ASSEMBLY
+============================================================
+
+Wan2.2 POC
+  Status: NOT STARTED
+  Keputusan: Belum dijalankan.
+  Catatan: belum ada bukti output raw Wan2.2 I2V/TI2V/S2V yang disimpan
+  sebagai `05-generated-video/shot-XX/shot-XX-video-raw.mp4`.
+
+Per-shot final MP4
+  Status: NOT STARTED
+  Keputusan: Belum tersedia.
+  Catatan: belum ada `05-generated-video/shot-XX/shot-XX-final.mp4`
+  yang tercatat sebagai hasil media assembly final.
+
+Final film assembly
+  Status: NOT STARTED
+  Keputusan: Belum dijalankan.
+  Catatan: `07-final/film-final.mp4` belum dibuat melalui assembly 22
+  approved shot.
+
+Architecture Decision Records
+  Status: EXISTS
+  Keputusan: CREATED sebagai dokumentasi arsitektur.
+  Catatan: ADR tersedia di `docs/architecture/` dan tidak menandai
+  audio/video/final assembly sebagai selesai.
+
+============================================================
+ATURAN PAKAI
+============================================================
+
+1. Jangan gunakan aset berstatus REJECTED untuk Wan I2V/TI2V/S2V.
+2. Jangan lanjut ke tahap berikutnya sebelum tahap sebelumnya APPROVED.
+3. Gunakan root filename lama hanya sebagai alias/salinan bila tool
+   atau shot prompt masih memerlukannya.
+4. Setelah generate ulang, validasi dengan:
+   08-quality-control/image-validation-checklist.txt
+5. Jika lolos, ubah status di dokumen ini menjadi APPROVED.
+6. Jangan menandai audio/video/final assembly selesai jika file final
+   belum tersedia dan belum lolos approval.
+7. Dialogue master harus APPROVED dan LOCKED sebelum dipakai untuk
+   Wan2.2-S2V.

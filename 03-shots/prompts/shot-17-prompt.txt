@@ -1,0 +1,17 @@
+============================================================
+SHOT 17 — KRAK. LANGKAH KAKI DI LANTAI KAYU (I2V)
+============================================================
+DURASI: 4 detik | Model: I2V | 2.39:1 | 24fps
+Ref: 02-character/shot-images/shot-17-keyframe.png +
+     02-character/set-props/set-bedroom.png
+
+PROMPT VIDEO UTAMA:
+Same 30-year-old Indonesian man (oval face, messy black hair, thin stubble, mole under left eye, dark heather grey t-shirt) suddenly freezing mid-motion, eyes wide open, head slowly turning toward a closed bedroom door in the background. Warm amber lamp light, deep shadows in corners. Camera 3/4, slight handheld shake intensifying. Cinematic 2.39:1, 50mm lens, photorealistic.
+
+NEGATIVE PROMPT:
+door already open, twist appearing too early, daytime, smile, calm, cartoon, anime, 3d render, extra limbs, text, watermark.
+
+DIALOG: VOCAL-NONVERB-GASP (tarikan napas tertahan)
+SOUND: SFX-FOOTSTEPS-WOOD (langkah lambat di luar) + AMB-BEDROOM-NIGHT
+TRANSISI: Hard cut ke SHOT 18
+KONTINUITAS: Pintu TERTUTUP. Adam di tepi ranjang.

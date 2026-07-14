@@ -1,0 +1,144 @@
+============================================================
+IDE CERITA — ALTERNATIF & PILIHAN
+============================================================
+(Catatan: Anda sudah punya konsep yang jelas. Dokumen ini
+menyajikan 3 varian kecil dari konsep Anda agar punya
+ruang pilih sebelum screenplay dikunci. Variansi HANYA
+pada eksekusi & nuansa, bukan premis inti.)
+
+------------------------------------------------------------
+IDE 1 — "MIMPI YANG MENGEJAR" (Versi standar — REKOMENDASI)
+------------------------------------------------------------
+1. Judul sementara: Mimpi Yang Mengejar
+2. Logline: Pria dikejar sosok tuxedo misterius lewat
+   gang kota; setelah "terbangun", dia yakin itu cuma
+   mimpi buruk — sampai sosok itu kembali, dan mimpi itu
+   ternyata tidak pernah berakhir.
+3. Premis utama: Pelarian panik dalam mimpi → lega palsu
+   → kenyataan bahwa "pengejar" bisa melintasi batas
+   mimpi ke realitas.
+4. Protagonis: Adam, pria 30-an biasa.
+5. Tujuan: Bertahan hidup & memahami kenapa dia dikejar.
+6. Hambatan: Tidak tahu siapa pengejar, tidak tahu arah,
+   fisik lelah, cuaca muram, pistol beneran.
+7. Antagonistic force: Sang Pengejar (tuxedo+fedora,
+   wajah siluet). Multi-tafsir: kematian / dosa /
+   bayangan diri / loop mimpi.
+8. Taruhan: Nyawa Adam — dan kewarasannya.
+9. Perubahan emosional: panik → shock → lega palsu →
+   dread → horror.
+10. Struktur: 3-act (chase → false awakening → twist).
+11. Nilai unik: Twist multi-tafsir, fedora terakhir di
+    lantai kamar sebagai clue ambigu (nyata? atau dia
+    sendiri sang pengejar?).
+12. Kesulitan AI: SEDANG. Chase butuh shot aksi, tapi
+    sebagian bisa dibatasi ke close-up napas/kaki. Twist
+    bisa recycle shot siluet dari mimpi.
+13. Jenis shot: close-up napas, tracking lari, OTS kejar,
+    wide gang, low-angle siluet, CU wajah terbangun,
+    insert fedora.
+14. Risiko konsistensi: wajah Adam (terutama setelah
+    "bangun"), warna tuxedo, lokasi gang, gelas air.
+15. Penyederhanaan: Aksi tembak implisit (audio + reaksi
+    wajah), bukan slow-mo CGI.
+
+------------------------------------------------------------
+IDE 2 — "BAYANGAN DI GANG" (Lebih atmosferik, kurang aksi)
+------------------------------------------------------------
+1. Judul: Bayangan di Gang
+2. Logline: Mirip Ide 1, tapi pengejar tidak pernah
+   berlari — hanya berjalan. Adam lari tapi jarak tak
+   pernah bertambah. Twist ending sama.
+3. Perbedaan eksekusi: Kurang aksi fisik, lebih dread
+   lambat (vibe "It Follows"). Lebih murah di AI.
+4. Pro: Paling aman untuk konsistensi AI.
+5. Kontra: Pacing lebih lambat, kurang "thriller/aksi".
+
+------------------------------------------------------------
+IDE 3 — "SANG PENGEJAR" (Lebih brutal, ending gorier)
+------------------------------------------------------------
+1. Judul: Sang Pengejar
+2. Logline: Mirip Ide 1, tapi twist ending menampilkan
+   Adam yang JATUH & darah tersirat di akhir (sebelum
+   gelap). Lebih horor.
+3. Perbedaan eksekusi: Rating naik ke 16+, ada暗示
+   kekerasan visual.
+4. Pro: Shock value tinggi.
+5. Kontra: Anda pilih 13+ & tembakan implisit → tolak.
+
+============================================================
+PILIHAN: IDE 1 — "MIMPI YANG MENGEJAR"
+============================================================
+ALASAN PEMILIHAN:
+- Kekuatan cerita: twist multi-tafsir + clue fedora di
+  akhir = paling memorable, mengundang penonton berpikir.
+- Biaya produksi: realistis. 2 karakter, 2 lokasi utama.
+- Kompleksitas teknis: menengah. Chase bisa dipecah ke
+  shot pendek close-up (lebih aman AI daripada wide
+  action panjang).
+- Kebutuhan video generation: I2V untuk close-up emosi,
+  TI2V/T2V untuk gang wide, S2V untuk dialog minim ("untunglah
+  hanya mimpi", "tidaaak"), stock/ambience untuk cuaca.
+- Potensi kualitas akhir: tinggi. Tone neo-noir + twist
+  psikologis cocok dengan kekuatan AI video saat ini.
+
+============================================================
+KONSISTENSI KEY (PROJECT BIBLE LOCK)
+============================================================
+Untuk menjaga konsistensi di semua prompt berikutnya,
+elemen berikut DIKUNCI dan tidak boleh berubah:
+
+  KARAKTER ADAM:
+  - Pria Indonesia, ~30 thn.
+  - Rambut hitam pendek berantakan.
+  - Jenggot tipis 2-3 hari.
+  - Mata coklat gelap, lelah, lingkaran mata gelap.
+  - Tinggi rata-rata, postur biasa (tidak atletis
+    berlebih).
+  - Pakaian (DIKUNCI, sama di mimpi & realitas):
+    * Kaos katun lusuh warna ABU TUA / heather grey.
+    * Celana training hitam pendek di bawah lutut ATAU
+      panjang (pilih satu & konsisten — rekomendasi:
+      PANJANG hitam, tali pinggang longgar).
+    - Tidak pakai sepatu di kamar (TAPI di mimpi PAKAI
+      sepatu kanvas hitam usang — clue halus "ada yang
+      ganjil").
+
+  KARAKTER SANG PENGEJAR:
+  - Pria tinggi kurus ~185cm, postur tegak dingin.
+  - Tuxedo hitam lengkap, jas satuan satu kancing.
+  - Kemeja putih, dasi hitam tipis (opsional).
+  - Topi fedora hitam dengan blend lebar.
+  - SARUNG TANGAN hitam kulit.
+  - Wajah: SELALU dalam shadow/siluet. Tidak pernah
+    terlihat jelas. Hanya kerah putih & tangan gloves
+    yang jadi penanda kontras.
+  - Sepatu oxford hitam mengkilap.
+  - Senjata: pistol semi-auto gelap (model generik, bukan
+    merek spesifik).
+
+  PISTOL:
+  - Semi-auto hitam, slide metalik, grip polimer.
+  - Konsisten di semua shot (jangan revoler di satu,
+    semi-auto di lain).
+
+  PROPerti KAMAR (CONSISTENT INSERT SET):
+  - Nakas kayu sederhana di sisi kanan ranjang.
+  - Gelas air bening setengah penuh di nakas.
+  - Lampu meja kuning hangat (bulb exposed atau shade
+    kertas).
+  - Ranjang spring/busa sederhana, sprei putih kusut.
+  - Jendela kecil dengan tirai tipis (backlight bulan
+    biru lemah).
+  - Baju Adam terlipat / tergantung di sudut.
+
+  CUACA MIMPI:
+  - Mendung kering (tidak hujan).
+  - Debu tipis di udara, partikel terlihat di cahaya.
+  - Langit abu-abu kekuningan muram.
+  - Tidak ada pelangi, tidak ada matahari.
+
+  TAGLINE AKHIR:
+  - Bahasa Indonesia: "Hati-hatilah dengan mimpimu."
+  - Font: sans-serif tipis putih, center frame, fade
+    in/out lambat. Background hitam total.

@@ -1,0 +1,372 @@
+============================================================
+PROMPT AMBIENCE - "MIMPI YANG MENGEJAR"
+============================================================
+
+Dokumen ini berisi ambience master untuk seluruh film.
+Target utama: 3 track ambience loopable, masing-masing 30 detik,
+untuk dipotong dan dipasang ulang sesuai kebutuhan shot.
+
+Tujuan ambience:
+- mengunci identitas ruang mimpi vs realitas;
+- menjaga kontinuitas tonal antar shot;
+- memberi dasar mix yang stabil sebelum dialog dan SFX masuk.
+
+Spesifikasi output master:
+- format: WAV;
+- sample rate: 48kHz;
+- bit depth: 24-bit jika tersedia, minimal 16-bit;
+- stereo;
+- durasi: 30 detik seamless loop;
+- level: sisakan headroom, jangan terlalu keras;
+- tanpa musik;
+- tanpa suara manusia jelas;
+- tanpa elemen one-shot yang terlalu menonjol.
+
+Aturan umum ambience film ini:
+- ambience harus terasa natural, sinematik, dan fotorealistis;
+- jangan terlalu ramai;
+- jangan terdengar seperti sound design trailer;
+- jangan mengandung ritme yang terasa seperti musik;
+- utamakan tekstur ruang, udara, resonansi, dan jarak;
+- ambience mimpi harus kering, suram, dan lelah;
+- ambience realitas kamar harus hampir hening tetapi tetap hidup.
+
+============================================================
+ALIAS NAMA CUE DI SHOT LIST
+============================================================
+
+Gunakan mapping berikut:
+
+- AMB-ALLEY-DUST      = AMB-001
+- AMB-UNDERPASS-ECHO  = AMB-002
+- AMB-BEDROOM-NIGHT   = AMB-003
+- AMB-BEDROOM         = AMB-003
+
+Aturan:
+- dokumen ambience memakai kode master `AMB-00x`;
+- shot list dan shot prompt boleh memakai nama cue pendek di atas.
+
+============================================================
+AMB-001 - ALLEY DUST
+Gang kota sempit, sepi, berdebu, mendung
+============================================================
+
+Digunakan di:
+S01, S02, S03, S04, S10, S11
+
+Fungsi dramatis:
+Ambience dasar untuk dunia mimpi bagian gang. Harus memberi rasa
+kota yang kosong, tidak aman, kering, dan menahan napas.
+
+Spesifikasi ruang:
+- lokasi: gang kota sempit antar beton;
+- ukuran ruang: lorong sempit, dinding beton dua sisi;
+- material dominan: beton, aspal, debu;
+- cuaca: mendung kering, bukan hujan;
+- perspektif mic: stationary mic di gang;
+- intensitas: rendah, background only.
+
+AI AUDIO GENERATOR PROMPT:
+Create a seamless 30-second stereo ambience loop for a narrow empty
+urban concrete alley on an overcast dry dusty day. The space feels
+tight, abandoned, and eerie. Include faint dry wind movement, very
+distant city hum, subtle air movement between concrete walls, and
+occasional tiny dust-texture movement. No close vehicles, no crowds,
+no footsteps, no voices, no sirens foreground. The ambience should
+feel sparse, tense, empty, and gritty, with a neo-noir thriller mood.
+Naturalistic environmental recording style, not musical, not stylized
+cinematic boominess. Output feel: dry urban dread, restrained, usable
+as low-level background ambience.
+
+NEGATIVE PROMPT / HAL YANG HARUS DIHINDARI:
+- hujan;
+- petir;
+- burung dominan;
+- anjing menggonggong dekat;
+- klakson dekat;
+- suara motor atau mobil lewat jelas;
+- langkah kaki jelas;
+- suara manusia;
+- sirene polisi dominan;
+- ambience terlalu ramai;
+- texture terlalu bass-heavy;
+- bunyi tonal seperti musik atau drone scoring.
+
+SOUND LIBRARY SEARCH:
+"empty alley ambience" "urban quiet alley" "concrete alley wind"
+"distant city hum" "dry industrial alley" "overcast urban ambience"
+
+Filter pencarian:
+- location=urban alley;
+- weather=dry / overcast;
+- crowd=none;
+- traffic=distant only;
+- mood=eerie / empty / restrained.
+
+PEMERIKSAAN:
+[ ] Terasa seperti gang sempit beton, bukan jalan besar.
+[ ] Tidak ada suara manusia atau kendaraan dekat.
+[ ] Suasana kosong, kering, dan mendung terbaca.
+[ ] Loop 30 detik menyambung halus.
+[ ] Tidak terasa seperti musik.
+[ ] Aman dipakai di bawah dialog dan SFX langkah.
+
+------------------------------------------------------------
+PROMPT REVISI AMBIENCE
+------------------------------------------------------------
+Edit ambience alley yang baru saja dibuat.
+
+Pertahankan:
+- karakter ruang gang sempit beton;
+- rasa kota kosong;
+- tekstur debu kering;
+- level ambience yang rendah.
+
+Ubah hanya:
+[DESKRIPSI_PERUBAHAN]
+
+Jangan menambahkan musik, dialog, langkah kaki, kendaraan dekat,
+atau elemen agresif yang merusak fungsi background ambience.
+
+============================================================
+AMB-002 - UNDERPASS ECHO
+Kolong jembatan beton besar
+============================================================
+
+Digunakan di:
+S05, S06, S07, S08, S09
+
+Fungsi dramatis:
+Ambience dasar untuk chase di kolong jembatan. Harus terasa lebih
+besar, lebih berongga, lebih dingin, dan lebih mengancam daripada
+AMB-001.
+
+Spesifikasi ruang:
+- lokasi: kolong jembatan beton besar dengan pilar;
+- ukuran ruang: sangat besar, reverberant;
+- material dominan: beton besar;
+- perspektif mic: stationary mic di bawah jembatan;
+- intensitas: rendah-sedang;
+- karakter utama: ruang besar dan echo lembut.
+
+AI AUDIO GENERATOR PROMPT:
+Create a seamless 30-second stereo ambience loop for a large concrete
+underpass beneath a bridge with massive pillars and a highly reverberant
+space. Include faint wind blowing through open concrete space, distant
+traffic hum from above, occasional sparse water drip with long soft echo,
+and cold industrial emptiness. The sound should feel wide, hollow,
+slightly ominous, and physically larger than a normal alley. No music,
+no close cars, no voices, no footsteps, no heavy construction activity.
+Natural location-recording realism, usable as suspense background for a
+thriller chase sequence.
+
+NEGATIVE PROMPT / HAL YANG HARUS DIHINDARI:
+- suara kendaraan dekat dan keras;
+- crowd ambience;
+- hujan deras;
+- burung ramai;
+- mesin industri aktif dekat;
+- dentuman cinematic berlebihan;
+- reverb palsu yang terlalu besar;
+- one-shot metal hit menonjol;
+- suara langkah kaki jelas;
+- suara tembakan;
+- musik drone atau scoring.
+
+SOUND LIBRARY SEARCH:
+"underpass ambience" "concrete underpass reverb" "bridge underside hum"
+"large concrete space ambience" "industrial echo empty"
+"distant highway hum under bridge"
+
+Filter pencarian:
+- location=underpass / bridge beneath;
+- reverb=high but natural;
+- traffic=distant overhead;
+- human activity=none;
+- mood=ominous / empty / cold.
+
+PEMERIKSAAN:
+[ ] Ruang terasa besar dan berongga.
+[ ] Echo lembut natural, bukan efek reverb murahan.
+[ ] Ada rasa lalu lintas jauh dari atas, bukan dekat.
+[ ] Tidak ada suara manusia, langkah, atau kendaraan foreground.
+[ ] Loop 30 detik menyatu dengan halus.
+[ ] Cocok menjadi dasar chase + tembakan tanpa konflik frekuensi.
+
+------------------------------------------------------------
+PROMPT REVISI AMBIENCE
+------------------------------------------------------------
+Edit ambience underpass yang baru saja dibuat.
+
+Pertahankan:
+- rasa ruang beton besar;
+- distant overhead hum;
+- echo natural;
+- tone dingin dan kosong.
+
+Ubah hanya:
+[DESKRIPSI_PERUBAHAN]
+
+Jangan menambahkan musik, suara tembakan, langkah kaki jelas, atau
+kendaraan foreground.
+
+============================================================
+AMB-003 - BEDROOM NIGHT
+Kamar tidur kecil, malam, hampir hening
+============================================================
+
+Digunakan di:
+S13, S14, S15, S16, S17, S18, S19, S20, S21
+
+Fungsi dramatis:
+Ambience dasar dunia realitas kamar. Ini ambience terpenting untuk
+paruh akhir film karena harus menopang rasa lega palsu, lalu berubah
+menjadi tegang tanpa benar-benar menjadi ramai.
+
+Spesifikasi ruang:
+- lokasi: kamar tidur kecil sederhana, malam hari;
+- ukuran ruang: kecil, relatif dry, sedikit reverb alami;
+- material dominan: kayu, dinding tipis, kain;
+- perspektif mic: stationary mic di dalam kamar;
+- intensitas: sangat rendah;
+- karakter utama: hampir hening tetapi tetap hidup.
+
+AI AUDIO GENERATOR PROMPT:
+Create a seamless 30-second stereo ambience loop for a small modest
+bedroom at night. The room should feel intimate, vulnerable, still,
+and almost silent. Include extremely faint distant electric fan hum
+or old room tone, very subtle house settling creaks, and a barely
+audible trace of soft wind against a window. Keep the ambience dry,
+close, and delicate, with very low intensity. No voices, no television,
+no traffic foreground, no insects dominating, no dramatic horror stings.
+The result should feel realistic, quiet, slightly tense, and suitable
+for dialogue-heavy scenes and slow suspense escalation.
+
+NEGATIVE PROMPT / HAL YANG HARUS DIHINDARI:
+- ambience terlalu ramai;
+- jangkrik dominan;
+- hujan deras di jendela;
+- suara TV, radio, atau tetangga;
+- detak jam keras dan ritmis;
+- dengung listrik kasar;
+- suara manusia;
+- kendaraan dekat;
+- musik horror;
+- low drone tonal;
+- creak terlalu sering atau terlalu keras.
+
+SOUND LIBRARY SEARCH:
+"quiet bedroom night ambience" "room tone night interior"
+"distant fan hum bedroom" "subtle house creaks night"
+"small room ambience quiet tense"
+
+Filter pencarian:
+- location=bedroom interior;
+- time=night;
+- activity=almost none;
+- reverb=low;
+- mood=quiet / vulnerable / slightly tense.
+
+PEMERIKSAAN:
+[ ] Ruang terasa kecil dan intim.
+[ ] Level sangat rendah, cocok di bawah dialog dekat.
+[ ] Tidak ada elemen ritmis yang mengganggu.
+[ ] Tidak terdengar terlalu horror sejak awal.
+[ ] Loop 30 detik halus.
+[ ] Masih bisa dipakai untuk build tension dari S15 ke S21.
+
+------------------------------------------------------------
+PROMPT REVISI AMBIENCE
+------------------------------------------------------------
+Edit ambience bedroom yang baru saja dibuat.
+
+Pertahankan:
+- rasa kamar kecil malam;
+- level yang sangat rendah;
+- keheningan rapuh;
+- tekstur room tone yang natural.
+
+Ubah hanya:
+[DESKRIPSI_PERUBAHAN]
+
+Jangan menambahkan musik, suara manusia, jam keras, TV, atau elemen
+besar yang merusak nuansa intimate.
+
+============================================================
+DAFTAR FILE OUTPUT
+============================================================
+
+04-audio/ambience/amb-001-alley-dust.wav
+04-audio/ambience/amb-002-underpass-echo.wav
+04-audio/ambience/amb-003-bedroom-night.wav
+
+============================================================
+ATURAN PAKAI PER SHOT
+============================================================
+
+AMB-001:
+- dasar ambience untuk bagian gang mimpi;
+- pakai di S01, S02, S03, S04, S10, S11;
+- SFX langkah, napas, dan pistol harus tetap lebih fokus.
+
+AMB-002:
+- dasar ambience untuk bagian kolong jembatan;
+- pakai di S05, S06, S07, S08, S09;
+- sisakan ruang untuk gunshot, debris, dan chase movement.
+
+AMB-003:
+- dasar ambience untuk seluruh blok kamar realitas;
+- pakai di S13-S21;
+- pertahankan terus sebagai bed ambience, lalu bangun dread lewat SFX
+  tambahan, bukan dengan membuat ambience menjadi ramai.
+
+S22:
+- gunakan ambience bedroom yang sama sebagai jejak dunia realitas;
+- lalu turunkan menuju hening untuk ending ambiguity.
+
+============================================================
+TIPS MIXING AMBIENCE
+============================================================
+
+1. Volume ambience:
+   - target umum: -18 dB sampai -22 dB di bawah fokus utama;
+   - untuk scene dialog dekat, turunkan lagi jika perlu.
+
+2. Ducking:
+   - turunkan ambience sekitar -3 dB saat dialog aktif;
+   - hindari pumping berlebihan.
+
+3. Stereo image:
+   - ambience boleh stereo lebar;
+   - dialog tetap mono/center agar ruang terasa terbuka.
+
+4. Fade:
+   - gunakan fade in/out 0.3-0.5 detik di awal/akhir pemakaian;
+   - untuk perpindahan antarlokasi, buat crossfade halus jika perlu.
+
+5. Transisi mimpi ke realitas:
+   - S12: AMB-002 underpass fade out cepat saat BANG;
+   - beri 0.5 detik silence;
+   - S13: AMB-003 fade in sekitar 1 detik saat Adam terbangun.
+
+6. Build twist realitas:
+   - dari S15 ke S16, AMB-003 tetap stabil;
+   - rasa takut dibangun lewat SFX footsteps wood dan detail ruang,
+     bukan menaikkan ambience terlalu keras.
+
+7. Epilog S22:
+   - mulai dari sisa ambience kamar yang sangat tipis;
+   - fade out menuju hampir hening pada awal shot;
+   - tagline hadir di dalam ruang hening.
+
+============================================================
+QC FINAL AMBIENCE
+============================================================
+
+[ ] Semua file output tersedia dalam WAV 48kHz stereo.
+[ ] Semua ambience loopable 30 detik.
+[ ] Tidak ada ambience yang mengandung musik.
+[ ] Tidak ada dialog atau suara manusia jelas.
+[ ] Perbedaan karakter ruang antara gang, underpass, dan kamar terbaca.
+[ ] AMB-003 cukup halus untuk scene dialog dan lip-sync.
+[ ] Semua track masih menyisakan ruang untuk SFX utama.

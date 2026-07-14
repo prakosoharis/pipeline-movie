@@ -1,0 +1,36 @@
+============================================================
+SHOT 22 — FEDORA DI LANTAI + TAGLINE (TI2V/T2V + EDIT)
+============================================================
+DURASI: 14 detik total | Model: TI2V/T2V (still/very slow drift) + EDIT (text)
+Ref: 02-character/shot-images/shot-22-keyframe.png +
+     02-character/set-props/insert-fedora.png
+
+PROMPT VIDEO UTAMA:
+Close-up still life of a single black wool-felt wide-brim fedora hat (~7cm brim, classic center-crease crown) lying slightly tilted on bare aged wooden floor planks in a dim bedroom. Soft warm amber light falling from off-frame right, dust particles drifting slowly in the light beam. No people in frame. Mood: ominous ambiguous aftermath. Camera top-down 45°, static with very slow drift. Cinematic 2.39:1, 50mm lens, shallow depth of field, photorealistic.
+
+NEGATIVE PROMPT:
+people, hands, bright lighting, daytime, multiple hats, colorful hat, cartoon, anime, 3d render, text, watermark.
+
+DIALOG: (none)
+SOUND: AMB-BEDROOM-NIGHT (sangat pelan) → SILENCE
+
+TEXT OVERLAY (MEDIA ASSEMBLY / OPTIONAL EDITORIAL):
+  Font       : Sans-serif tipis putih (Inter Light / Helvetica Light)
+  Posisi     : Center frame, lower third
+  Animasi    : Fade in 1.5 dtk → hold 4 dtk → fade out 1.5 dtk
+  Teks       : "Hati-hatilah dengan mimpimu."
+  Timing     : Muncul SETELAH 5 dtk still fedora, hold 4 dtk, fade out
+
+TIMELINE SHOT 22:
+  0:00-0:05  Still fedora (hening, debu melayang)
+  0:05-0:06  Fade to black 1 dtk
+  0:06-0:07  Hold black 1 dtk
+  0:07-0:08  Text fade in 1 dtk
+  0:08-0:12  Text hold 4 dtk
+  0:12-0:13  Text fade out 1 dtk
+  0:13-0:14  Black 1 dtk
+  END
+
+TRANSISI: SLOW FADE TO BLACK → END
+KONTINUITAS: Fedora hitam blend lebar = sama persis dengan
+             topi Sang Pengejar (multi-tafsir: nyata? dia sendiri?).

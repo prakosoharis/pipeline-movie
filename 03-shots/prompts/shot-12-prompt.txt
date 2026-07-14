@@ -1,0 +1,17 @@
+============================================================
+SHOT 12 — CU JARI DI PELATUK → BANG (I2V macro)
+============================================================
+DURASI: 3 detik | Model: I2V | 2.39:1 | 24fps
+Ref: 02-character/shot-images/shot-12-keyframe.png +
+     02-character/sang-pengejar/04-aiming-reference.png
+
+PROMPT VIDEO UTAMA:
+Extreme close-up of a black leather gloved finger pulling the trigger of a black generic semi-auto pistol, sharp macro detail, then MUZZLE FLASH. Background blurred dark. Low-key lighting, only trigger and gloved finger sharply lit. Cinematic 2.39:1, 100mm macro lens, photorealistic, anatomically correct hands.
+
+NEGATIVE PROMPT:
+sci-fi weapon, brand logo, slow motion, multiple fingers, glove missing, visible face, cartoon, anime, 3d render, text, watermark.
+
+DIALOG: BEAT 4 (natural): "TIDAAAA—" [cut oleh BANG]
+SOUND: SFX-GUNSHOT-MAIN → SILENCE 0.5 dtk
+TRANSISI: HARD CUT TO BLACK (0.5 dtk) → SHOT 13
+KONTINUITAS: Sarung tangan kulit hitam. Pistol semi-auto hitam.

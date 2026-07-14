@@ -1,0 +1,31 @@
+============================================================
+SHOT 15 — CU ADAM: SENYUM LEGA + KALIMAT KUNCI (S2V)
+============================================================
+⚠️ PRIORITAS LIP-SYNC — kalimat kunci film
+DURASI: 4 detik | Model: S2V (lip-sync WAJIB) | 2.39:1 | 24fps
+Ref: 02-character/shot-images/shot-15-keyframe.png +
+     02-character/adam/02-master-face.png +
+     02-character/set-props/set-bedroom.png
+Audio sync: 04-audio/dialogue/beat-05-untunglah-hanya-mimpi.wav
+            (target final dialogue master; must be APPROVED and LOCKED)
+
+PROMPT VIDEO UTAMA:
+Close-up of same 30-year-old Indonesian man (oval face, messy black hair, thin stubble, mole under left eye, dark circles, dark heather grey crew-neck t-shirt) in a small warm bedroom at night. A small relieved smile forms on his face. He speaks softly to himself, shoulders dropping, exhaling long. Warm amber key from lamp right, faint blue rim from window left. Camera frontal eye-level, very subtle slow push-in. Cinematic 2.39:1, 85mm lens, shallow depth of field, photorealistic.
+
+INSTRUKSI LIP-SYNC:
+- Sinkronkan gerakan bibir dengan audio secara presisi.
+- Timing audio asli, jangan percepat/lambatkan.
+- Bentuk mulut ikuti bunyi ucapan natural.
+- Tambahkan kedipan dan gerakan mata natural.
+- Ekspresi mengikuti emosi audio (lega + senyum tipis).
+- Gerakan kepala & bahu halus, tidak berlebihan.
+- Setelah kalimat selesai, mulut kembali posisi natural.
+- Pertahankan panjang video = panjang audio.
+
+NEGATIVE PROMPT:
+big smile, laugh, daytime, shoes, formal wear, lip-sync lag, mouth moving without sound, face morphing, excessive blinking, cartoon, anime, 3d render, text, watermark.
+
+DIALOG: BEAT 5 (natural): "Untunglah... hanya mimpi."
+SOUND: AMB-BEDROOM-NIGHT + VOCAL-NONVERB-SIGH
+TRANSISI: Hard cut ke SHOT 16
+KONTINUITAS: Kalimat kunci film — lip-sync WAJIB presisi.

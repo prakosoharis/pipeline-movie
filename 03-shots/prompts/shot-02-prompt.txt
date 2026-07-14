@@ -1,0 +1,18 @@
+============================================================
+SHOT 02 — ADAM BERLARI DI GANG (Wide, I2V)
+============================================================
+DURASI: 4 detik | Model: I2V | 2.39:1 | 24fps
+Ref: 02-character/shot-images/shot-02-keyframe.png +
+     02-character/adam/02-master-face.png +
+     02-character/adam/04-reference-sheet.png
+
+PROMPT VIDEO UTAMA:
+Same 30-year-old Indonesian man (oval face, messy black hair, thin stubble, mole under left eye, dark circles, dark heather grey crew-neck t-shirt, black long jogger pants, black canvas sneakers) running in panic through narrow gritty urban alley between two concrete walls with faded graffiti. Mid-stride, arms pumping, mouth open panting, eyes wide in fear, sweat on forehead. Overcast dry dusty yellow-grey sky, dust particles in flat tired light, no rain, no sun. Camera tracks backward facing subject at eye level, slight handheld. Cinematic 2.39:1, 35mm lens, shallow depth of field, photorealistic, gritty neo-noir chase.
+
+NEGATIVE PROMPT:
+face change, different clothes, sunlight, rain, additional characters, smile, cartoon, anime, 3d render, extra limbs, mutated hands, text, watermark.
+
+DIALOG: BEAT 1 (natural): "Tidak... tidak, tidak, tidak—"
+SOUND: SFX-FOOTSTEPS-CHASE + AMB-ALLEY-DUST + VOCAL-NONVERB-PANT
+TRANSISI: Hard cut ke SHOT 03
+KONTINUITAS: Tahi lalat kecil di bawah mata kiri Adam. Sepatu kanvas hitam usang.

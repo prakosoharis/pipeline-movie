@@ -1,0 +1,17 @@
+============================================================
+SHOT 09 — ADAM MENGHINDAR & LARI LAGI (I2V)
+============================================================
+DURASI: 3 detik | Model: I2V | 2.39:1 | 24fps
+Ref: 02-character/shot-images/shot-09-keyframe.png +
+     02-character/adam/04-reference-sheet.png
+
+PROMPT VIDEO UTAMA:
+Same 30-year-old Indonesian man (oval face, messy black hair, thin stubble, mole under left eye, dark heather grey t-shirt, black joggers, black canvas sneakers) rolling sideways to dodge, then quickly rising and running again. Camera whip-pans following motion, handheld. Background concrete pillars, dust, overcast flat yellow-grey light. Cinematic 2.39:1, 35mm lens, photorealistic.
+
+NEGATIVE PROMPT:
+slow motion, broken hands, unnatural motion, character morphing, smile, daytime, cartoon, anime, 3d render, extra limbs, text, watermark.
+
+DIALOG: VOCAL-NONVERB-PANT (cepat terpotong)
+SOUND: SFX-FOOTSTEPS-CHASE + AMB-UNDERPASS-ECHO
+TRANSISI: Hard cut ke SHOT 10
+KONTINUITAS: Pakaian & sepatu konsisten.

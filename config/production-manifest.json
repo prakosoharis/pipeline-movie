@@ -1,0 +1,15 @@
+[
+  {
+    "shot_id": "shot-15",
+    "enabled": true,
+    "status": "READY",
+    "model_type": "S2V",
+    "task": "s2v-14B",
+    "model_dir_env": "WAN_S2V_CKPT_DIR",
+    "image": "02-character/shot-images/shot-15-keyframe.png",
+    "audio": "04-audio/dialogue/beat-05-untunglah-hanya-mimpi.wav",
+    "prompt_file": "03-shots/prompts/shot-15-wan-prompt.txt",
+    "size": "1024*704",
+    "output": "05-generated-video/shot-15/shot-15-video-raw.mp4"
+  }
+]

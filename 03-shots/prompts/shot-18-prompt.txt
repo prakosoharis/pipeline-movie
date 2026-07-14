@@ -1,0 +1,18 @@
+============================================================
+SHOT 18 — BAYANGAN SANG PENGEJAR DI DINDING (I2V composite)
+============================================================
+DURASI: 4 detik | Model: I2V | 2.39:1 | 24fps
+Ref: 02-character/shot-images/shot-18-keyframe.png +
+     02-character/sang-pengejar/03-master-fullbody.png +
+     02-character/set-props/set-bedroom.png
+
+PROMPT VIDEO UTAMA:
+Shadow silhouette of a tall slim figure wearing a wide-brim fedora hat growing larger on a bedroom wall as backlight from a window with sheer curtain shifts. The shadow has the unmistakable outline of a tuxedo figure in a fedora. No actual figure visible, only the shadow on the off-white aged wall. Cinematic 2.39:1, 35mm lens, photorealistic, eerie dread, no people in frame.
+
+NEGATIVE PROMPT:
+real figure visible, face, hands, multiple shadows, daytime, cartoon, anime, 3d render, text, watermark.
+
+DIALOG: (none)
+SOUND: SFX-FOOTSTEPS-WOOD + AMB-BEDROOM-NIGHT + MUSIC-DRONE-LOW (muncul)
+TRANSISI: Hard cut ke SHOT 19
+KONTINUITAS: Bayangan fedora = konsisten dengan topi mimpi.

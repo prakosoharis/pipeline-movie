@@ -1,0 +1,18 @@
+============================================================
+SHOT 11 — SANG PENGEJAR MUNCUL + ADAM TERPOJOK (I2V composite)
+============================================================
+DURASI: 5 detik | Model: I2V | 2.39:1 | 24fps
+Ref: 02-character/shot-images/shot-11-keyframe.png +
+     02-character/adam/02-master-face.png +
+     02-character/sang-pengejar/04-aiming-reference.png
+
+PROMPT VIDEO UTAMA:
+Same 30-year-old Indonesian man (oval face, messy black hair, thin stubble, mole under left eye, dark heather grey t-shirt, black joggers, black canvas sneakers) pressed back against a concrete wall at the end of a dead-end alley, hands shaking, facing the alley entrance. At the other end, a tall slim man in black tuxedo, black fedora, black gloves raises a black semi-auto pistol aiming at him (face in deep shadow under hat, only white collar visible). Shadow of the tuxedo figure stretches long on the damp-dusty ground. Cinematic 2.39:1, 50mm lens, photorealistic, dramatic low-key chiaroscuro, anatomically correct hands.
+
+NEGATIVE PROMPT:
+visible face of pursuer, smile, unnatural motion, extra limbs, sci-fi weapon, brand logo, daylight, cartoon, anime, 3d render, text, watermark.
+
+DIALOG: BEAT 3 (natural): "Siapa kamu...? Apa maumu?!"
+SOUND: AMB-ALLEY-DUST + SFX-FOOTSTEPS-PENGEJAR + VOCAL-NONVERB-SWALLOW
+TRANSISI: Hard cut ke SHOT 12
+KONTINUITAS: Posisi pistol teracung lurus ke Adam. Bayangan memanjang di aspal.

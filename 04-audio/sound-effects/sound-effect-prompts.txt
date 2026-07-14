@@ -1,0 +1,746 @@
+============================================================
+PROMPT SOUND EFFECT - "MIMPI YANG MENGEJAR"
+============================================================
+
+Dokumen ini adalah master SFX untuk film.
+Fungsinya:
+- mengunci daftar efek utama;
+- memberi prompt siap pakai untuk AI audio generator;
+- memberi kata kunci pencarian library;
+- menjaga kontinuitas bunyi antar shot;
+- membantu mixing dan QC.
+
+Platform target:
+- AI audio generator: ElevenLabs SFX, Stability Audio, AudioLDM, dll.
+- sound library: Freesound, Zapsplat, Epidemic, Boom, Pro Sound Effects.
+
+Spesifikasi output umum:
+- format: WAV;
+- sample rate: 48kHz;
+- mono untuk efek terfokus, stereo jika memang perlu ruang;
+- no clipping;
+- sisakan headroom;
+- tanpa musik.
+
+Prioritas mix:
+dialogue > SFX utama > ambience > music
+
+============================================================
+DAFTAR SOUND EFFECT
+============================================================
+
+FOOTSTEPS
+- SFX-001  Footsteps chase
+- SFX-002  Footsteps pengejar
+- SFX-003  Footsteps wood
+
+GUN / IMPACT
+- SFX-004  Gunshot concrete
+- SFX-005a Gunshot main outdoor
+- SFX-005b Gunshot main indoor
+- SFX-006  Debris concrete
+- SFX-010  Impact body fall
+
+PROPS / ROOM
+- SFX-007  Drink water
+- SFX-008  Door creak
+- SFX-009  Glass set down
+
+Catatan:
+- ambience dibahas di `04-audio/ambience/ambience-prompts.txt`
+- dialogue dan vocal non-verbal dibahas di folder `04-audio/dialogue`
+- music dibahas di `04-audio/music/music-prompts.txt`
+
+============================================================
+ALIAS NAMA CUE DI SHOT LIST
+============================================================
+
+Gunakan mapping berikut agar nama cue di shot list, prompt shot, dan
+dokumen audio tetap sinkron:
+
+- SFX-FOOTSTEPS-CHASE    = SFX-001
+- SFX-FOOTSTEPS-PENGEJAR = SFX-002
+- SFX-FOOTSTEPS-WOOD     = SFX-003
+- SFX-GUNSHOT-CONCRETE   = SFX-004
+- SFX-GUNSHOT-MAIN       = varian sesuai shot:
+  - S12 -> SFX-005a
+  - S21 -> SFX-005b
+- SFX-DEBRIS-CONCRETE    = SFX-006
+- SFX-DRINK-WATER        = SFX-007
+- SFX-DOOR-CREAK         = SFX-008
+- SFX-GLASS-SET-DOWN     = SFX-009
+- SFX-IMPACT-CONCRETE    = SFX-010
+
+Aturan:
+- dokumen ini memakai kode master `SFX-00x`;
+- shot prompt boleh memakai alias pendek selama mapping ini dipatuhi.
+
+============================================================
+ATURAN UMUM SFX FILM INI
+============================================================
+
+- SFX harus realistis dan sinematik, bukan kartun;
+- hindari efek yang terlalu "boomy" kecuali memang klimaks;
+- footsteps harus punya identitas karakter;
+- bunyi pistol harus tajam dan menakutkan, bukan sci-fi;
+- bunyi props kamar harus intimate dan dekat;
+- dunia mimpi boleh sedikit lebih keras dan kasar;
+- dunia kamar harus lebih kecil, kering, dan rapuh.
+
+============================================================
+SFX-001 - FOOTSTEPS CHASE
+Adam, sepatu kanvas di aspal
+============================================================
+
+Used in:
+S01, S02, S05, S06, S07, S09
+
+Fungsi dramatis:
+Memberi energi utama untuk lari panik Adam.
+
+Spesifikasi:
+- lokasi: gang kota / area beton kasar;
+- permukaan: aspal basah-debu / beton berdebu;
+- jarak: dekat;
+- intensitas: tinggi;
+- durasi target: 3-5 detik, loopable;
+- perspektif: dekat, mengikuti gerak Adam.
+
+AI AUDIO GENERATOR PROMPT:
+Rapid panicked running footsteps of worn canvas sneakers on damp dusty
+asphalt and rough concrete, close perspective, uneven urgent pace,
+slight gritty scrape and dust texture, realistic chase energy. No
+other sounds, no voices, no music. 4-5 second loopable take. Mono.
+Natural thriller realism.
+
+NEGATIVE PROMPT / HAL YANG HARUS DIHINDARI:
+- sepatu formal;
+- langkah ritmis rapi;
+- langkah santai;
+- permukaan kayu;
+- suara crowd;
+- suara napas tercampur;
+- tail reverb panjang;
+- kesan kartun.
+
+SOUND LIBRARY SEARCH:
+"running footsteps sneakers asphalt"
+"panic running concrete"
+"canvas shoes alley"
+"fast footsteps gritty pavement"
+
+PEMERIKSAAN:
+[ ] Terasa panik dan tidak berirama.
+[ ] Surface terdengar keras dan kering.
+[ ] Tidak terdengar seperti sepatu olahraga modern bersih.
+[ ] Loop mudah dipotong / disusun ulang.
+
+------------------------------------------------------------
+PROMPT REVISI SFX
+------------------------------------------------------------
+Edit footsteps chase yang baru dibuat.
+
+Pertahankan:
+- sepatu kanvas;
+- rasa lari panik;
+- tekstur aspal/beton;
+- perspektif dekat.
+
+Ubah hanya:
+[DESKRIPSI_PERUBAHAN]
+
+============================================================
+SFX-002 - FOOTSTEPS PENGEJAR
+Oxford / leather sole di beton
+============================================================
+
+Used in:
+S03, S06, S10, S11
+
+Fungsi dramatis:
+Menjadi tanda kehadiran Sang Pengejar. Harus dingin, pelan, yakin,
+dan mengancam.
+
+Spesifikasi:
+- permukaan: beton;
+- jenis sepatu: leather sole / oxford;
+- jarak: sedang sampai jauh;
+- intensitas: rendah-sedang;
+- durasi target: 3-4 detik, loopable;
+- karakter: langkah lambat, berat, terukur.
+
+AI AUDIO GENERATOR PROMPT:
+Slow measured heavy footsteps of polished leather oxford shoes on
+concrete in an empty urban or industrial space, slightly distant,
+calm and deliberate, hard heel strikes, cold threatening pace, mild
+natural echo. No voices, no music, no other actions. 4 second loopable
+take. Mono. Villain approach realism.
+
+NEGATIVE PROMPT / HAL YANG HARUS DIHINDARI:
+- sneakers;
+- langkah cepat;
+- langkah ringan;
+- sepatu boot militer;
+- kayu;
+- suara napas;
+- crowd;
+- echo berlebihan.
+
+SOUND LIBRARY SEARCH:
+"slow leather footsteps concrete"
+"dress shoes concrete"
+"menacing footsteps"
+"oxford shoes echo"
+
+PEMERIKSAAN:
+[ ] Langkah terdengar tenang dan terukur.
+[ ] Ada perbedaan jelas dari footsteps Adam.
+[ ] Tidak terlalu dekat kecuali memang ingin didorong di mix.
+[ ] Terasa dingin dan mengancam.
+
+------------------------------------------------------------
+PROMPT REVISI SFX
+------------------------------------------------------------
+Edit footsteps pengejar yang baru dibuat.
+
+Pertahankan:
+- leather shoes;
+- langkah lambat;
+- ancaman tenang;
+- nuansa beton.
+
+Ubah hanya:
+[DESKRIPSI_PERUBAHAN]
+
+============================================================
+SFX-003 - FOOTSTEPS WOOD
+Langkah di luar kamar
+============================================================
+
+Used in:
+S16, S17, S18, S19, S20
+
+Fungsi dramatis:
+Build dread di blok kamar. Harus terdengar dari luar pintu, bukan di
+dalam ruangan bersama Adam.
+
+Spesifikasi:
+- lokasi: lorong rumah di luar kamar;
+- permukaan: lantai kayu tua;
+- jarak: jauh / di balik pintu;
+- intensitas: rendah;
+- durasi target: 3-4 langkah dalam 4 detik;
+- karakter: muffled, lambat, mengancam.
+
+AI AUDIO GENERATOR PROMPT:
+Slow heavy footsteps on old wooden floorboards outside a closed bedroom
+door, muffled and distant as heard from inside the room, with slight
+creaks on each step, threatening slow approach, no voices, no music,
+no door movement yet. 4 second take. Mono. Quiet horror realism.
+
+NEGATIVE PROMPT / HAL YANG HARUS DIHINDARI:
+- langkah jelas di dalam kamar;
+- langkah cepat;
+- sepatu sneaker;
+- bunyi kayu terlalu keras;
+- suara pintu ikut terbuka;
+- ambience angin;
+- musik horror.
+
+SOUND LIBRARY SEARCH:
+"muffled footsteps behind door"
+"wood floor footsteps distant"
+"creaky floorboards steps"
+"horror footsteps wood"
+
+PEMERIKSAAN:
+[ ] Terasa dari luar ruangan.
+[ ] Ada unsur kayu tua, tapi tidak terlalu ramai.
+[ ] Langkah lambat dan pasti.
+[ ] Cocok diprelap dari S16 ke S17.
+
+------------------------------------------------------------
+PROMPT REVISI SFX
+------------------------------------------------------------
+Edit footsteps wood yang baru dibuat.
+
+Pertahankan:
+- langkah lambat;
+- rasa di balik pintu;
+- kayu tua;
+- intensitas rendah.
+
+Ubah hanya:
+[DESKRIPSI_PERUBAHAN]
+
+============================================================
+SFX-004 - GUNSHOT CONCRETE
+Tembakan miss ke pilar
+============================================================
+
+Used in:
+S08
+
+Fungsi dramatis:
+Tembakan pertama yang benar-benar meledak di dunia mimpi dan terasa
+dekat dengan Adam.
+
+Spesifikasi:
+- senjata: semi-auto pistol 9mm;
+- lokasi: kolong jembatan beton;
+- target: pilar beton;
+- intensitas: tinggi;
+- durasi target: sekitar 1.5 detik total.
+
+Catatan desain:
+Jika memungkinkan, buat sebagai composite:
+1. muzzle blast
+2. concrete impact crack
+3. debris scatter
+4. underpass echo tail
+
+AI AUDIO GENERATOR PROMPT:
+Single 9mm semi-auto pistol shot in a large concrete underpass, followed
+immediately by a hard bullet impact into a concrete pillar, with sharp
+crack, dust burst, small concrete chips, and a short natural concrete
+space echo tail. No voices, no music. Mono. Realistic thriller gunshot.
+
+NEGATIVE PROMPT / HAL YANG HARUS DIHINDARI:
+- sci-fi blaster;
+- explosion boom besar;
+- indoor bedroom tail;
+- automatic weapon;
+- multiple shots;
+- metallic ricochet dominan;
+- crowd reaction.
+
+SOUND LIBRARY SEARCH:
+"9mm gunshot concrete impact"
+"bullet hit concrete pillar"
+"underpass gunshot echo"
+"concrete impact debris handgun"
+
+PEMERIKSAAN:
+[ ] Shot terasa tajam dan realistis.
+[ ] Ada impact beton yang jelas.
+[ ] Tail cocok dengan ruang underpass.
+[ ] Tidak terdengar seperti film aksi berlebihan.
+
+------------------------------------------------------------
+PROMPT REVISI SFX
+------------------------------------------------------------
+Edit gunshot concrete yang baru dibuat.
+
+Pertahankan:
+- pistol 9mm;
+- impact ke beton;
+- tail underpass;
+- satu tembakan saja.
+
+Ubah hanya:
+[DESKRIPSI_PERUBAHAN]
+
+============================================================
+SFX-005a - GUNSHOT MAIN OUTDOOR
+Klimaks mimpi
+============================================================
+
+Used in:
+S12
+
+Fungsi dramatis:
+BANG utama di klimaks mimpi. Harus kuat dan memberi cut ke silence.
+
+Spesifikasi:
+- lokasi: gang outdoor sempit;
+- jarak: dekat;
+- intensitas: sangat tinggi;
+- tail: pendek-menengah, outdoor concrete reflections.
+
+AI AUDIO GENERATOR PROMPT:
+Single sharp close 9mm semi-auto pistol gunshot in a narrow outdoor
+concrete alley, powerful muzzle crack, brief reflection off nearby
+walls, realistic, dry but impactful, no voices, no music. Mono.
+
+NEGATIVE PROMPT / HAL YANG HARUS DIHINDARI:
+- indoor bedroom tone;
+- tail terlalu panjang;
+- sci-fi energy;
+- multiple shots;
+- explosion-like bass boom.
+
+SOUND LIBRARY SEARCH:
+"close 9mm alley gunshot"
+"outdoor handgun crack"
+"narrow alley pistol shot"
+
+PEMERIKSAAN:
+[ ] Sangat tajam dan shocking.
+[ ] Tail outdoor terasa, tapi tidak kepanjangan.
+[ ] Mudah diikuti silence 0.5 detik.
+
+============================================================
+SFX-005b - GUNSHOT MAIN INDOOR
+Twist ending
+============================================================
+
+Used in:
+S21
+
+Fungsi dramatis:
+BANG terakhir di kamar. Lebih dekat, lebih kering, lebih intim, dan
+lebih mengganggu.
+
+Spesifikasi:
+- lokasi: kamar tidur kecil;
+- jarak: sangat dekat;
+- intensitas: sangat tinggi;
+- tail: pendek, indoor kecil.
+
+AI AUDIO GENERATOR PROMPT:
+Single sharp close 9mm semi-auto pistol gunshot inside a small bedroom,
+very near perspective, dry and intimate blast, short room reflection,
+realistic and frightening, no voices, no music. Mono.
+
+NEGATIVE PROMPT / HAL YANG HARUS DIHINDARI:
+- outdoor echo;
+- sci-fi energy;
+- long cinematic reverb;
+- multiple shots;
+- explosion boom.
+
+SOUND LIBRARY SEARCH:
+"indoor handgun bedroom"
+"small room gunshot"
+"close pistol blast interior"
+
+PEMERIKSAAN:
+[ ] Lebih dry daripada versi outdoor.
+[ ] Sangat dekat dan mengganggu.
+[ ] Mudah dipotong ke silence 1.5 detik.
+
+------------------------------------------------------------
+PROMPT REVISI SFX
+------------------------------------------------------------
+Edit gunshot main yang baru dibuat.
+
+Pertahankan:
+- satu tembakan;
+- karakter pistol semi-auto;
+- kedekatan kamera;
+- realism.
+
+Ubah hanya:
+[DESKRIPSI_PERUBAHAN]
+
+============================================================
+SFX-006 - DEBRIS CONCRETE
+Pecahan beton jatuh
+============================================================
+
+Used in:
+S08
+
+Fungsi dramatis:
+Memberi aftermath kecil setelah peluru menghantam pilar.
+
+Spesifikasi:
+- material: serpihan beton kecil;
+- lokasi: lantai keras beton;
+- intensitas: sedang;
+- durasi target: 1-1.5 detik.
+
+AI AUDIO GENERATOR PROMPT:
+Small concrete chips and dust falling and scattering on hard concrete
+ground after an impact, dry gritty texture, multiple tiny pieces
+bouncing and settling, no other sounds, mono, realistic.
+
+NEGATIVE PROMPT / HAL YANG HARUS DIHINDARI:
+- batu besar;
+- ledakan;
+- serpihan kaca;
+- metal clatter;
+- suara manusia.
+
+SOUND LIBRARY SEARCH:
+"concrete debris falling"
+"small rubble scatter"
+"concrete chips impact"
+
+PEMERIKSAAN:
+[ ] Skala debris kecil, bukan runtuhan besar.
+[ ] Tekstur kering dan gritty terasa.
+[ ] Cocok dilayer sesudah SFX-004.
+
+============================================================
+SFX-007 - DRINK WATER
+Adam minum air
+============================================================
+
+Used in:
+S14
+
+Fungsi dramatis:
+Meng-ground-kan realitas kamar dan memberi jeda fisik setelah mimpi.
+
+Spesifikasi:
+- material: gelas kaca, air, mulut;
+- jarak: dekat;
+- intensitas: rendah;
+- durasi target: 3-4 detik.
+
+AI AUDIO GENERATOR PROMPT:
+Close intimate sound of a tired man drinking water from a glass, several
+large gulps, subtle swallowing, slight breath between gulps, quiet room
+context, no voices, no music. Mono. Realistic.
+
+NEGATIVE PROMPT / HAL YANG HARUS DIHINDARI:
+- botol plastik;
+- straw;
+- suara bicara;
+- ambience terlalu ramai;
+- efek komedi.
+
+SOUND LIBRARY SEARCH:
+"drinking water glass close"
+"gulping water male"
+"thirsty drink glass"
+
+PEMERIKSAAN:
+[ ] Terasa dekat dan intim.
+[ ] Tidak terlalu jorok atau berlebihan.
+[ ] Cocok dengan mood kamar malam.
+
+============================================================
+SFX-008 - DOOR CREAK
+Pintu kayu terbuka perlahan
+============================================================
+
+Used in:
+S20
+
+Fungsi dramatis:
+SFX ancaman utama sebelum reveal Sang Pengejar di ambang pintu.
+
+Spesifikasi:
+- material: kayu tua + engsel tua;
+- jarak: sedang;
+- intensitas: rendah tapi fokus;
+- durasi target: sekitar 2.5 detik.
+
+AI AUDIO GENERATOR PROMPT:
+Old wooden bedroom door slowly creaking open with a long tense hinge
+squeak and slight wood groan, no footsteps, no wind, no voices, no
+music, close enough to feel threatening, mono, realistic horror.
+
+NEGATIVE PROMPT / HAL YANG HARUS DIHINDARI:
+- pintu modern bersih;
+- slam;
+- footsteps tercampur;
+- angin;
+- metal gate;
+- efek horror kartun.
+
+SOUND LIBRARY SEARCH:
+"slow horror door creak"
+"old wooden hinge squeak"
+"bedroom door opens slow"
+
+PEMERIKSAAN:
+[ ] Derit terasa panjang dan menegangkan.
+[ ] Tidak terlalu ramai dengan elemen lain.
+[ ] Cocok dilayer dengan footsteps wood.
+
+============================================================
+SFX-009 - GLASS SET DOWN
+Gelas diletakkan di nakas
+============================================================
+
+Used in:
+S14
+
+Fungsi dramatis:
+Detail kecil realitas yang membuat kamar terasa nyata dan dekat.
+
+Spesifikasi:
+- material: gelas kaca ke kayu;
+- jarak: dekat;
+- intensitas: rendah;
+- durasi target: 0.5-1 detik.
+
+AI AUDIO GENERATOR PROMPT:
+Close sound of a drinking glass being gently set down on a wooden
+nightstand, small glass-to-wood contact, slight slide, no other sounds,
+mono, realistic.
+
+NEGATIVE PROMPT / HAL YANG HARUS DIHINDARI:
+- botol;
+- meja metal;
+- pecah kaca;
+- bunyi terlalu keras;
+- geser panjang berlebihan.
+
+SOUND LIBRARY SEARCH:
+"glass set down wood"
+"drinking glass table close"
+"glass clink wood"
+
+PEMERIKSAAN:
+[ ] Bunyi kecil tapi terbaca.
+[ ] Tidak terlalu nyaring.
+[ ] Cocok dengan SFX-007.
+
+============================================================
+SFX-010 - IMPACT BODY FALL
+Adam jatuh di beton
+============================================================
+
+Used in:
+S07
+
+Fungsi dramatis:
+Memberi berat tubuh Adam saat tersandung dan jatuh di ruang chase.
+
+Spesifikasi:
+- surface: beton / aspal berdebu;
+- jarak: dekat;
+- intensitas: sedang-tinggi;
+- durasi target: sekitar 1 detik.
+
+AI AUDIO GENERATOR PROMPT:
+Human body falling forward onto dusty hard concrete, hands slapping down
+to catch the fall, knees and clothing hitting ground, small dust scatter,
+realistic painful impact, no voices, no music, mono.
+
+NEGATIVE PROMPT / HAL YANG HARUS DIHINDARI:
+- tulang patah gore;
+- jatuh ke kayu;
+- suara crowd;
+- exaggerated stunt boom;
+- darah / squish.
+
+SOUND LIBRARY SEARCH:
+"body fall concrete"
+"hands slap pavement"
+"falling forward hard ground"
+
+PEMERIKSAAN:
+[ ] Ada berat tubuh manusia.
+[ ] Tidak terlalu stunt-movie.
+[ ] Cocok sebelum Adam langsung bangkit lagi.
+
+============================================================
+SILENCE / TRANSITIONS
+Di editing, tidak perlu generate
+============================================================
+
+SILENCE-0.5S:
+- sesudah BANG S12;
+- transisi mimpi ke realitas.
+
+SILENCE-1.5S:
+- sesudah BANG S21;
+- transisi ke epilog.
+
+SILENCE-3S:
+- epilog fedora / tagline;
+- hening total.
+
+============================================================
+DAFTAR FILE OUTPUT
+============================================================
+
+04-audio/sound-effects/sfx-001-footsteps-chase.wav
+04-audio/sound-effects/sfx-002-footsteps-pengejar.wav
+04-audio/sound-effects/sfx-003-footsteps-wood.wav
+04-audio/sound-effects/sfx-004-gunshot-concrete.wav
+04-audio/sound-effects/sfx-005a-gunshot-main-outdoor.wav
+04-audio/sound-effects/sfx-005b-gunshot-main-indoor.wav
+04-audio/sound-effects/sfx-006-debris-concrete.wav
+04-audio/sound-effects/sfx-007-drink-water.wav
+04-audio/sound-effects/sfx-008-door-creak.wav
+04-audio/sound-effects/sfx-009-glass-set-down.wav
+04-audio/sound-effects/sfx-010-impact-body-fall.wav
+
+============================================================
+ATURAN PAKAI DI EDITING
+============================================================
+
+- chase scene:
+  SFX-001 + ambience + panting;
+
+- pengejar hadir:
+  SFX-002 harus lebih subtle tapi ikonik;
+
+- dread kamar:
+  SFX-003 masuk perlahan, jangan terlalu keras;
+
+- shot 08:
+  SFX-004 + SFX-006 bisa di-stack;
+
+- shot 14:
+  SFX-007 dan SFX-009 memberi detail realitas;
+
+- shot 20:
+  SFX-008 + SFX-003 adalah pasangan utama build reveal;
+
+- shot 12 dan 21:
+  SFX-005a / SFX-005b harus diikuti silence sesuai desain.
+
+============================================================
+TIPS MIXING
+============================================================
+
+1. Level relatif acuan:
+- dialogue: acuan utama;
+- vocal non-verbal: sedikit di bawah dialogue;
+- gunshot klimaks: sedikit di atas dialogue;
+- footsteps chase: jelas tetapi tidak menutupi vocal;
+- footsteps wood: lebih rendah dan distant;
+- ambience: paling rendah;
+- music: selalu di bawah dialogue kecuali sting.
+
+2. Layering:
+- SFX-004 bisa ditumpuk dengan debris dan tail ruang;
+- footsteps bisa diulang manual untuk sync yang presisi;
+- jangan terlalu mengandalkan satu file AI panjang.
+
+3. EQ umum:
+- potong low mud jika SFX terlalu boomy;
+- pertahankan transien pada gunshot dan glass;
+- footsteps wood jangan terlalu bright.
+
+4. Reverb tambahan:
+- outdoor gunshot: decay lebih panjang;
+- indoor gunshot: decay pendek;
+- door creak: room kecil, tipis saja.
+
+============================================================
+TROUBLESHOOTING
+============================================================
+
+Jika AI SFX terdengar mulur:
+- pakai library untuk bunyi presisi seperti gunshot dan impact.
+
+Jika footsteps tidak cocok timing:
+- generate loop pendek;
+- potong manual di DAW / NLE.
+
+Jika gunshot terdengar sci-fi:
+- ganti kata "boom" / "explosion" menjadi
+  "sharp 9mm semi-auto pistol crack".
+
+Jika door creak kurang bagus:
+- utamakan library dibanding AI.
+
+============================================================
+QC FINAL SFX
+============================================================
+
+[ ] Semua file output tersedia.
+[ ] Nama file konsisten.
+[ ] Footsteps Adam dan Pengejar jelas berbeda.
+[ ] SFX kamar terasa lebih intimate dari dunia mimpi.
+[ ] Gunshot outdoor dan indoor jelas berbeda ruangnya.
+[ ] Tidak ada SFX yang terdengar kartun atau sci-fi.
+[ ] Semua SFX masih menyisakan ruang untuk dialogue dan ambience.

@@ -1,0 +1,18 @@
+============================================================
+SHOT 06 — TRACKING ADAM DI KOLONG JEMBATAN (I2V composite)
+============================================================
+DURASI: 4 detik | Model: I2V | 2.39:1 | 24fps
+Ref: 02-character/shot-images/shot-06-keyframe.png +
+     02-character/adam/04-reference-sheet.png +
+     02-character/sang-pengejar/05-reference-sheet.png
+
+PROMPT VIDEO UTAMA:
+Same 30-year-old Indonesian man (oval face, messy black hair, thin stubble, mole under left eye, dark heather grey t-shirt, black joggers, black canvas sneakers) running between massive concrete pillars in a dusty underpass. Camera tracks behind him handheld. Far in the background at frame edge, a tall slim figure in black tuxedo and black fedora walks calmly (face in shadow). Overcast flat dry dusty yellow-grey light. Cinematic 2.39:1, 35mm lens, shallow depth of field on Adam, photorealistic.
+
+NEGATIVE PROMPT:
+Pengejar too close, Pengejar face visible, sunlight, casual clothes, smile, cartoon, anime, 3d render, extra limbs, text, watermark.
+
+DIALOG: BEAT 2 (singkat): "TOLONG!!"
+SOUND: SFX-FOOTSTEPS-CHASE + AMB-UNDERPASS-ECHO + VOCAL-NONVERB-PANT
+TRANSISI: Hard cut ke SHOT 07
+KONTINUITAS: Posisi Sang Pengejar di background frame edge.

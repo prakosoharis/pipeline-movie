@@ -1,0 +1,96 @@
+============================================================
+IMAGE VALIDATION CHECKLIST - "MIMPI YANG MENGEJAR"
+============================================================
+Gunakan sebelum gambar dikirim ke Wan I2V/TI2V/S2V.
+
+Bandingkan gambar kandidat dengan:
+  1. 01-project-bible/project-context.txt
+  2. 01-project-bible/character-bible.txt
+  3. 02-character/character-image-prompts.txt
+  4. Master face, master full body, dan reference sheet yang sudah APPROVED
+  5. Deskripsi shot bila gambar khusus shot
+
+============================================================
+KEPUTUSAN
+============================================================
+
+APPROVED:
+  Gambar dapat dipakai sebagai reference image video.
+
+REVISE:
+  Gambar masih bisa diperbaiki lewat image editing kecil.
+
+REJECTED:
+  Gambar harus dibuat ulang dari prompt.
+
+============================================================
+CHECKLIST WAJIB
+============================================================
+
+FORMAT FILE:
+  [ ] File adalah PNG asli, atau memiliki exception yang tercatat di
+      `08-quality-control/asset-status-report.txt`.
+  [ ] Jika file berekstensi .png tetapi format internalnya JPEG, status
+      APPROVED hanya sah bila exception tersebut sudah dicatat.
+  [ ] Tidak ada watermark, logo, signature, teks, UI, border.
+  [ ] Untuk aset video utama: aspect ratio 2.39:1 / 21:9.
+  [ ] Resolusi cukup untuk video: minimal 1792x768 atau setara.
+
+ADAM:
+  [ ] Wajah sama dengan 02-character/adam/02-master-face.png.
+  [ ] Tubuh/pakaian sama dengan 02-character/adam/03-master-fullbody.png.
+  [ ] Konsisten dengan 02-character/adam/04-reference-sheet.png.
+  [ ] Usia terlihat 28-32 tahun.
+  [ ] Rambut hitam pendek berantakan konsisten.
+  [ ] Stubble tipis konsisten.
+  [ ] Tahi lalat kecil di bawah mata kiri terlihat/terjaga.
+  [ ] Kulit medium tan warm undertone.
+  [ ] Kaos dark heather grey polos, tanpa logo.
+  [ ] Celana jogger hitam panjang.
+  [ ] Mimpi: sepatu kanvas hitam usang.
+  [ ] Realitas/kamar: barefoot atau kaus kaki tipis, tanpa sepatu.
+  [ ] Tidak ada jam tangan, kalung, tato, kacamata, topi.
+
+SANG PENGEJAR:
+  [ ] Tuxedo hitam, kemeja putih, dasi hitam.
+  [ ] Fedora hitam dipakai rendah.
+  [ ] Sarung tangan kulit hitam.
+  [ ] Sepatu oxford hitam.
+  [ ] Wajah sepenuhnya shadow/siluet.
+  [ ] Mata, hidung, mulut, identitas wajah tidak terlihat.
+  [ ] Kerah putih tetap terlihat sebagai anchor.
+  [ ] Pistol semi-auto hitam generik, tidak berlogo.
+
+SET DAN PROPERTI:
+  [ ] Kamar: ranjang sederhana, nakas kayu, gelas air, lampu amber.
+  [ ] Kamar: moonlight biru halus dari jendela.
+  [ ] Gang/underpass: mendung kering, debu, tidak hujan.
+  [ ] Fedora epilog sama bentuk dengan fedora Sang Pengejar.
+  [ ] Tidak ada objek penting baru tanpa instruksi.
+
+ANATOMI DAN KESIAPAN VIDEO:
+  [ ] Tangan natural, jumlah jari benar.
+  [ ] Proporsi tubuh natural.
+  [ ] Pose bisa dipakai sebagai image-to-video reference.
+  [ ] Tidak ada karakter tambahan.
+  [ ] Tidak ada blur wajah berlebihan pada reference utama.
+  [ ] Komposisi memberi ruang aman untuk crop 2.39:1.
+
+============================================================
+FORMAT LAPORAN
+============================================================
+
+FILE:
+KEPUTUSAN: APPROVED / REVISE / REJECTED
+FORMAT FILE:
+EXCEPTION FORMAT: YA / TIDAK
+
+Masalah:
+  - Bagian salah:
+  - Tingkat keparahan: CRITICAL / MAJOR / MINOR
+  - Instruksi revisi:
+  - Apakah wajah masih cukup konsisten:
+  - Risiko jika tetap dipakai ke video:
+
+Catatan continuity:
+  -

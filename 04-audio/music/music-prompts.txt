@@ -1,0 +1,326 @@
+============================================================
+PROMPT MUSIC - "MIMPI YANG MENGEJAR"
+============================================================
+
+Dokumen ini adalah master musik film.
+Fungsinya:
+- menentukan peran musik secara ketat dan minimal;
+- menjaga agar musik tidak mengambil alih sound design;
+- memberi prompt siap pakai untuk AI music generator atau library search;
+- membantu keputusan artistik saat mixing final.
+
+Prinsip utama musik film ini:
+- musik sangat sedikit;
+- film terutama digerakkan oleh ambience, SFX, napas, dan keheningan;
+- musik hanya masuk saat benar-benar dibutuhkan;
+- tidak ada tema melodi;
+- tidak ada groove, beat, atau ritme musik tradisional;
+- fokus pada rasa dread dan shock, bukan scoring yang "cantik".
+
+Elemen musik yang dipakai:
+- MUS-001 - Drone low
+- MUS-002 - Sting high
+
+Pendekatan rasa:
+- psychological thriller;
+- cold dread;
+- neo-noir horror minimal;
+- lebih dekat ke texture daripada "lagu".
+
+============================================================
+ALIAS NAMA CUE DI SHOT LIST
+============================================================
+
+Gunakan mapping berikut:
+
+- MUSIC-DRONE-LOW = MUS-001
+- MUSIC-STING-HIGH = MUS-002
+
+Aturan:
+- dokumen musik memakai kode master `MUS-00x`;
+- shot prompt boleh tetap memakai nama cue pendek di atas.
+
+============================================================
+ATURAN UMUM MUSIK FILM INI
+============================================================
+
+- jangan pakai melodi utama;
+- jangan pakai perkusi;
+- jangan pakai piano emosional;
+- jangan pakai string sentimental;
+- jangan membuat musik memimpin chase;
+- chase act 1 dan klimaks mimpi harus tetap didorong sound design;
+- musik hanya dipakai untuk build twist akhir dan amplifikasi shock.
+
+Spesifikasi output umum:
+- format: WAV;
+- sample rate: 48kHz;
+- stereo;
+- no clipping;
+- sisakan headroom untuk SFX gunshot;
+- jika AI menghasilkan tail terlalu panjang, rapikan saat edit.
+
+============================================================
+MUS-001 - DRONE LOW
+Sub-bass dread, loopable
+============================================================
+
+Used in:
+S17, S18, S19, S20
+
+Fungsi dramatis:
+Masuk perlahan di blok kamar saat realitas mulai retak. Fungsinya bukan
+menjadi musik utama, melainkan tekanan bawah sadar yang hampir tidak
+disadari penonton.
+
+Spesifikasi:
+- durasi target: 30 detik loopable;
+- karakter: low-frequency drone;
+- register utama: sub / low bass;
+- intensitas: rendah sampai sedang;
+- perkembangan: lambat, hampir statis;
+- tanpa ritme, tanpa hit, tanpa melodi.
+
+AI MUSIC GENERATOR PROMPT:
+Minimal cinematic sub-bass dread drone for a psychological thriller,
+very low sustained tone around deep bass range, slow evolving texture,
+subtle detuning and harmonic instability, cold and inevitable tension,
+no melody, no rhythm, no percussion, no pulses, no beautiful chords,
+no emotional swell. 30-second seamless loop. Stereo. Dark restrained
+underscoring texture only.
+
+ALT PROMPT UNTUK MUSIC AI YANG LEBIH TERSTRUKTUR:
+- style: cinematic drone, dark ambient, psychological thriller
+- mood: cold, ominous, inevitable, tense
+- instrumentation: sub-bass, low synth texture, barely audible upper haze
+- rhythm: none
+- melody: none
+- harmony: minimal dissonant sustain
+- duration: 30 seconds instrumental loop
+
+NEGATIVE PROMPT / HAL YANG HARUS DIHINDARI:
+- melody;
+- piano;
+- percussion;
+- pulse ritmis;
+- trailer boom;
+- heroic brass;
+- sentimental strings;
+- choir;
+- jump hit;
+- progression yang terlalu jelas;
+- bass yang terlalu besar sampai merusak dialogue/SFX.
+
+SOUND LIBRARY SEARCH:
+"sub bass drone"
+"dark ambient low drone"
+"thriller underscore minimal"
+"dread drone texture"
+"cinematic low tension drone"
+
+PEMERIKSAAN:
+[ ] Tidak terdengar seperti musik tema.
+[ ] Tidak punya ritme yang jelas.
+[ ] Cukup tipis untuk duduk di bawah ambience kamar.
+[ ] Build dread terasa lambat dan stabil.
+[ ] Loop 30 detik menyambung halus.
+
+------------------------------------------------------------
+PROMPT REVISI MUSIK
+------------------------------------------------------------
+Edit drone low yang baru dibuat.
+
+Pertahankan:
+- rasa dread dingin;
+- register rendah;
+- tanpa melodi;
+- perkembangan lambat.
+
+Ubah hanya:
+[DESKRIPSI_PERUBAHAN]
+
+Jangan menambahkan beat, hit, melodi, atau harmoni yang terlalu indah.
+
+============================================================
+MUS-002 - STING HIGH
+Jumpscare sting puncak
+============================================================
+
+Used in:
+S21
+
+Fungsi dramatis:
+Lapisan shock pendek untuk memperkeras momen twist akhir saat tembakan
+indoor terjadi. Sting ini harus sangat singkat dan tidak lebih dominan
+daripada gunshot utama.
+
+Spesifikasi:
+- durasi target: 1-1.5 detik;
+- attack: instan;
+- decay: cepat;
+- register: tinggi;
+- karakter: disonan, tajam, tidak nyaman.
+
+AI MUSIC GENERATOR PROMPT:
+Very short high-pitched dissonant horror sting for a jumpscare climax,
+instant attack, sharp upper-register string cluster or metallic screech,
+immediate decay, no melody, no rhythm, no long tail, designed to layer
+with a gunshot sound effect. 1 to 1.5 seconds. Stereo. Uncomfortable,
+brief, and precise.
+
+ALT PROMPT UNTUK MUSIC AI YANG LEBIH TERSTRUKTUR:
+- style: horror sting, cinematic shock accent
+- mood: shocking, dissonant, terrifying
+- instrumentation: high string cluster or metallic scrape
+- rhythm: none
+- melody: none
+- attack: immediate
+- decay: fast
+- duration: 1.5 seconds
+
+NEGATIVE PROMPT / HAL YANG HARUS DIHINDARI:
+- long riser;
+- whoosh;
+- giant trailer impact;
+- melody;
+- choir hit;
+- orchestral swell panjang;
+- bass drop besar;
+- comedy sting;
+- sci-fi laser feel.
+
+SOUND LIBRARY SEARCH:
+"horror sting short"
+"jumpscare stinger"
+"dissonant string hit"
+"metallic horror screech short"
+
+PEMERIKSAAN:
+[ ] Attack sangat cepat.
+[ ] Durasi singkat dan efisien.
+[ ] Tidak lebih besar dari gunshot indoor.
+[ ] Tidak punya ekor terlalu panjang.
+[ ] Cocok dilayer dengan SFX-005b.
+
+------------------------------------------------------------
+PROMPT REVISI MUSIK
+------------------------------------------------------------
+Edit sting high yang baru dibuat.
+
+Pertahankan:
+- attack instan;
+- register tinggi;
+- disonansi;
+- durasi sangat singkat.
+
+Ubah hanya:
+[DESKRIPSI_PERUBAHAN]
+
+Jangan menambahkan riser panjang, melodi, atau low boom berlebihan.
+
+============================================================
+DAFTAR FILE OUTPUT
+============================================================
+
+04-audio/music/mus-001-drone-low.wav
+04-audio/music/mus-002-sting-high.wav
+
+============================================================
+ATURAN PAKAI DI TIMELINE
+============================================================
+
+ACT 1 - mimpi chase:
+- tidak ada musik;
+- biarkan ambience, footsteps, napas, dan pistol bekerja sendiri.
+
+ACT 2 - klimaks mimpi:
+- tetap tanpa musik;
+- gunshot + silence sudah cukup kuat.
+
+ACT 3 awal - kamar / lega palsu:
+- tetap tanpa musik;
+- keheningan lebih efektif daripada underscore.
+
+TWIST BUILD:
+- mulai masukkan MUS-001 secara perlahan sekitar S17-S20;
+- treat seperti tekanan bawah sadar, bukan cue besar;
+- ambience kamar harus tetap terbaca jelas.
+
+TWIST IMPACT:
+- MUS-002 hanya muncul bersama SFX-005b di S21;
+- jangan biarkan sting menutupi gunshot.
+
+EPILOG:
+- tidak ada musik;
+- biarkan hening mengambil alih.
+
+============================================================
+REKOMENDASI LEVEL & MIXING
+============================================================
+
+MUS-001:
+- masuk sangat pelan;
+- bisa fade in bertahap dari sekitar -30 dB menuju area -16 dB atau
+  lebih rendah sesuai konteks mix;
+- jika terlalu terasa "musik", kecilkan lagi.
+
+MUS-002:
+- layer dengan gunshot indoor;
+- jangan lebih keras dari SFX utama;
+- treat sebagai accent, bukan event utama.
+
+Catatan mixing:
+- duck otomatis saat ada dialogue jika diperlukan;
+- cek area low end supaya drone tidak bentrok dengan ambience dan
+  impact gunshot;
+- bila perlu, HPF ringan pada music lain agar sub tetap terkendali.
+
+============================================================
+ALTERNATIF ARTISTIK
+TANPA MUSIK SAMA SEKALI
+============================================================
+
+Film ini sangat mungkin bekerja tanpa musik sama sekali.
+
+Versi tanpa musik akan memberi rasa:
+- lebih raw;
+- lebih realistis;
+- lebih kejam;
+- lebih mengandalkan shock dari keheningan.
+
+Jika memilih tanpa musik:
+- skip MUS-001;
+- skip MUS-002;
+- andalkan ambience, footsteps, gunshot, dan silence;
+- jika perlu weight tambahan di BANG, tambahkan sub impact pendek dari
+  sound design, bukan cue musik.
+
+Rekomendasi kerja:
+- buat 2 versi final:
+  1. versi dengan drone + sting minimal
+  2. versi pure sound design tanpa musik
+- bandingkan mana yang lebih kuat secara emosional.
+
+============================================================
+HAL YANG HARUS DIHINDARI
+============================================================
+
+- scoring terlalu indah;
+- melody hook;
+- musik terlalu awal masuk;
+- drone terlalu tebal;
+- sting terlalu panjang;
+- musik terasa seperti trailer;
+- penggunaan musik untuk chase act 1;
+- ending diberi musik padahal keheningan lebih kuat.
+
+============================================================
+QC FINAL MUSIC
+============================================================
+
+[ ] MUS-001 loopable 30 detik.
+[ ] MUS-001 tidak punya beat atau melodi.
+[ ] MUS-002 singkat dan tajam.
+[ ] MUS-002 tidak lebih dominan dari gunshot.
+[ ] Musik tidak merusak dominasi sound design.
+[ ] Versi tanpa musik juga sudah dipertimbangkan saat final mix.

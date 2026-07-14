@@ -1,0 +1,441 @@
+============================================================
+CHARACTER BIBLE — "MIMPI YANG MENGEJAR"
+============================================================
+Dokumen ini DIKUNCI sebagai acuan konsistensi untuk semua
+prompt image/video berikutnya. Jangan ubah tanpa sepengeta-
+huan sutradara.
+============================================================
+
+────────────────────────────────────────────────────────
+KARAKTER 1 — ADAM (Protagonis)
+────────────────────────────────────────────────────────
+
+IDENTITAS DASAR:
+  Nama internal : ADAM
+  Peran         : Protagonis
+  Gender        : Laki-laki
+  Usia          : 30 tahun (range 28-32)
+  Etnis         : Indonesia / Asia Tenggara
+  Pekerjaan     : Tidak disebut (pria biasa)
+  Bahasa        : Indonesia netral
+
+PENAMPILAN FISIK (DIKUNCI):
+  - Bentuk wajah   : Oval agak persegi, rahang tegas
+                      tapi tidak terlalu kotak.
+  - Kulit          : Sawo matang (medium tan, warm
+                      undertone).
+  - Rambut         : Hitam pendek, dipotong sisi, atas
+                      berantakan tidak tersisir. Bukan
+                      gondrong, bukan plontos.
+  - Jenggot        : Tipis 2-3 hari, rapi di garis
+                      rahang, tidak penuh tebal.
+  - Mata           : Coklat gelap, bentuk almond, brow
+                      bone agak menonjol. Lingkaran mata
+                      gelap (lelah/kurang tidur).
+  - Hidung         : Sedang, lurus, sedikit lebar di
+                      pangkal.
+  - Bibir          : Sedang, tidak terlalu penuh.
+  - Tinggi         : 172-175 cm.
+  - Postur         : Biasa, ringan berisi (bukan gemuk,
+                      bukan atletis). Bahu sedang.
+  - Ciri khas      : Tahi lalat kecil di bawah mata kiri
+                      (opsional, untuk konsistensi AI
+                      mudah).
+
+PAKAIAN (DIKUNCI — sama di mimpi & realitas):
+  - Atasan : Kaos katun crew neck warna ABU TUA / heather
+             grey, lusuh, agak longgar, tidak ada logo /
+             polos.
+  - Bawah  : Celana training (jogger) hitam PANJANG,
+             tali pinggang longgar, cuff di pergelangan.
+  - Sepatu :
+    * Di MIMPI     : Sepatu kanvas hitam usang (Vans/
+                     Converse generic), sol kusam.
+    * Di REALITAS  : TIDAK pakai sepatu, kaus kaki tipis
+                     atau telanjang kaki. (Clue halus
+                     naratif.)
+  - Aksesori : TIDAK ADA jam tangan, TIDAK ADA kalung,
+               TIDAK ADA tato terlihat. Bersih.
+
+EKSPRESI YANG DIBUTUHKAN (untuk reference sheet):
+  1. Netral lelah.
+  2. Panik / ngeri (alis terangkat, mata membelalak,
+     mulut terbuka).
+  3. Terengah (mulut terbuka, keringat, mata liar).
+  4. Shock (transisi ditembak — mata kosong).
+  5. Lega + senyum tipis (post-awakening).
+  6. Takut lambat / dread (membeku, mata melebar).
+
+────────────────────────────────────────────────────────
+KARAKTER 2 — SANG PENGEJAR (Antagonis)
+────────────────────────────────────────────────────────
+
+IDENTITAS DASAR:
+  Nama internal : SANG PENGEJAR
+  Peran         : Antagonis / antagonistic force
+  Gender        : Laki-laki (asumsi dari postur)
+  Usia          : Tidak teridentifikasi (tidak terlihat)
+  Etnis         : TIDAK TERLIHAT — wajah selalu siluet.
+  Bahasa        : TIDAK berbicara ( karakter bisu)
+
+PENAMPILAN (DIKUNCI):
+  - Postur         : Tinggi kurus ~185 cm, tegak dingin,
+                     bahu sempit lurus. Tidak atletis.
+  - Tuxedo         : Jas formal hitam, satu kancing,
+                     fit tailoring. Celana dress hitam
+                     lipatan tajam.
+  - Kemeja         : Putih, kerah spread, kancing.
+  - Dasi           : Hitam tipis simpul rapi (opsional
+                     tapi direkomendasi untuk konsistensi).
+  - Topi           : Fedora hitam wool/felt, blend lebar
+                     ~7cm, crown crease klasik. Dipakai
+                     rendah menutupi dahi → wajah shadow.
+  - Sarung tangan  : Kulit hitam licin, full finger.
+  - Sepatu         : Oxford hitam mengkilap.
+  - WAJAH          : SELALU dalam shadow. Tidak pernah
+                     terlihat jelas. Backlight atau low-
+                     key lighting. Hanya siluet + kerah
+                     putih sebagai penanda.
+
+SENJATA (DIKUNCI):
+  - Pistol semi-auto hitam generik. Slide metalik gelap,
+    grip polimer bertekstur. Bukan revolver. Bukan model
+    sci-fi. Mirip generik Glock/SIG tetapi TIDAK
+    bermerk / tidak ada logo.
+
+ATURAN VISUAL MUTLAK:
+  1. Jangan pernah generate wajah jelas Sang Pengejar.
+  2. Selalu backlight (rim light) + shadow wajah.
+  3. Shot paling dekat dengan wajah: medium shot dengan
+     wajah dalam shadow total, hanya bibir dagu samar.
+  4. Kerah putih & sarung tangan hitam = anchor visual.
+  5. Fedora harus menutupi dahi & mata selalu.
+
+EKSPRESI: N/A (tidak terlihat). Gerakan = tenang, dingin,
+  mekanis. Tidak terburu-buru walau Adam lari kencang.
+
+────────────────────────────────────────────────────────
+KONSISTENSI KESELURUHAN
+────────────────────────────────────────────────────────
+
+DO:
+  - Gunakan reference image yang sama untuk semua shot
+    Adam.
+  - Pertahankan tahi lalat kecil di bawah mata kiri Adam.
+  - Kerah putih tuxedo + sarung tangan hitam = konstanta
+    visual Sang Pengejar di tiap shot.
+  - Backlight Sang Pengejar selalu dari arah yang sama.
+
+DON'T:
+  - Jangan ubah model pistol antar shot.
+  - Jangan tampilkan wajah Sang Pengejar.
+  - Jangan ubah warna kaos Adam (abu tua / heather grey).
+  - Jangan tambahkan jam tangan / tato / aksesori baru.
+  - Jangan ubah usia Adam di tengah produksi.
+
+============================================================
+PROMPT GAMBAR KARAKTER ADAM
+============================================================
+CATATAN STATUS:
+  Bagian prompt gambar di character bible ini adalah arsip lama.
+  Sumber prompt gambar kanonis untuk produksi sekarang adalah:
+
+    02-character/character-image-prompts.txt
+
+  Gunakan file tersebut karena sudah diselaraskan dengan Universal
+  Hybrid AI Film Prompt Pack: master full body dibuat dahulu,
+  reference sheet setelah master disetujui, lalu validasi gambar
+  sebelum masuk Wan I2V/TI2V/S2V.
+
+(Arsip prompt lama tetap disimpan hanya sebagai referensi desain.)
+
+────────────────────────────────────────────────────────
+A. PORTRAIT / CLOSE-UP WAJAH (Reference utama)
+────────────────────────────────────────────────────────
+Photorealistic cinematic close-up portrait of a 30-year-
+old Indonesian man, oval face with a slightly square
+jawline, medium tan warm-undertone skin, short messy
+unkempt black hair (mid-length top, faded sides), thin
+2-3 day stubble along jaw, dark brown almond eyes with
+visible dark circles from exhaustion, small mole under
+his left eye, medium straight nose, neutral lips. Expression:
+tired neutral with subtle tension. Dressed in a worn loose
+crew-neck t-shirt in dark heather grey / charcoal. Lighting:
+soft directional key from upper-left, cool ambient fill,
+shallow depth of field, eyes catchlight. Background: blurred
+neutral dark grey, no text, no logo, no watermark, no
+decorative frame. Cinematic color grade, slight teal in
+shadows warm in highlights. 85mm lens look, photorealistic,
+anatomically correct, two hands not in frame. Aspect ratio
+2.39:1, ultra detailed, 4K.
+
+NEGATIVE PROMPT (untuk SD/FLUX):
+text, watermark, logo, signature, frame, border, cartoon,
+anime, 3d render, plastic skin, extra fingers, mutated
+hands, multiple people, busy background, jewelry, tattoo,
+eyewear, hat, sunglasses, smiling broadly, child, teenager,
+old man, bald, long hair, blonde hair, formal clothes,
+suit.
+
+────────────────────────────────────────────────────────
+B. FULL BODY — POSE BERLARI PANIK (untuk I2V chase)
+────────────────────────────────────────────────────────
+Photorealistic cinematic full-body shot of the same 30-
+year-old Indonesian man (oval face, messy black hair,
+thin stubble, mole under left eye, dark circles), running
+in panic through a narrow gritty urban alley, mid-stride
+dynamic pose, arms pumping, mouth open panting, eyes wide
+in fear, sweat on forehead. Wearing worn dark heather grey
+crew-neck t-shirt and black long jogger pants with loose
+drawstring, old black canvas sneakers. Background: narrow
+concrete alley with faded graffiti, overcast dry dusty
+yellow-grey sky, dust particles in flat tired light, no
+rain, no sun. Camera: tracking shot at subject's height,
+motion blur on background only, subject sharp. Cinematic
+2.39:1, 35mm lens, shallow depth of field, photorealistic,
+anatomically correct hands, no extra limbs. Mood: desperate
+flight thriller, neo-noir grit.
+
+NEGATIVE: text, watermark, logo, frame, cartoon, anime,
+3d render, multiple people, athletic bodybuilder, formal
+wear, jewelry, hat, eyewear, blue sky, sunshine, rain,
+rainbow, smiling, relaxed pose.
+
+────────────────────────────────────────────────────────
+C. MEDIUM SHOT — TERBANGUN DI KAMAR (untuk S2V dialog)
+────────────────────────────────────────────────────────
+Photorealistic cinematic medium shot of the same 30-year-
+old Indonesian man (oval face, messy black hair, thin
+stubble, mole under left eye), sitting on the edge of a
+simple bed in a small modest bedroom, just woken from a
+nightmare. Sweat on forehead and temples, chest heaving,
+eyes wide with lingering fear slowly turning into relief.
+Wearing worn dark heather grey crew-neck t-shirt, barefoot.
+Holding a half-full clear water glass in a trembling hand.
+Setting: simple bedroom, wooden nightstand on right with
+warm yellow bedside lamp (exposed bulb) and the glass,
+white rumpled bedsheet, small window with sheer curtain
+and faint blue moonlight behind. Lighting: warm amber key
+from lamp right, cool blue rim from window left, deep
+shadows. Mood: vulnerable relief turning to dread.
+Cinematic 2.39:1, 50mm lens, shallow depth of field,
+photorealistic, anatomically correct hands.
+
+NEGATIVE: text, watermark, logo, frame, cartoon, anime,
+3d render, multiple people, formal wear, suit, shoes,
+jewelry, tattoo, daytime, bright, sunny, modern luxury,
+smiling happy, child.
+
+────────────────────────────────────────────────────────
+D. REFERENCE SHEET ADAM — multi-angle / multi-expression
+   (untuk lock konsistensi AI video)
+────────────────────────────────────────────────────────
+Character reference sheet, photorealistic, of the same 30-
+year-old Indonesian man (oval face, square-ish jaw, messy
+short black hair, thin stubble, dark circles, small mole
+under left eye, medium tan skin), wearing dark heather
+grey crew-neck t-shirt. Neutral plain grey studio backdrop,
+even softbox studio lighting, no cinematic color grade.
+Grid layout showing 16 views:
+1. Front face close-up neutral
+2. Three-quarter left face
+3. Three-quarter right face
+4. Left profile
+5. Right profile
+6. Full body front standing
+7. Full body side
+8. Full body back
+9. Expression: neutral tired
+10. Expression: afraid (wide eyes, open mouth)
+11. Expression: angry
+12. Expression: sad
+13. Expression: relieved smile (small)
+14. Pose: standing natural
+15. Pose: walking
+16. Pose: running
+Small clean labels in the corner of each view only.
+Anatomically correct, consistent identity across all
+views — same face, same mole, same hair, same shirt.
+Photorealistic, no text overlay except tiny labels,
+no watermark, no decorative frame.
+
+NEGATIVE: text overlays covering face, watermark, logo,
+multiple different people, inconsistent face, anime,
+cartoon, 3d render, busy background, cinematic heavy
+color grade, fashion photo styling.
+
+============================================================
+PROMPT GAMBAR KARAKTER SANG PENGEJAR
+============================================================
+
+────────────────────────────────────────────────────────
+E. FULL-BODY SILUET — POSE BERDIRI MENGEJAR (Reference)
+────────────────────────────────────────────────────────
+Photorealistic cinematic full-body shot of a tall slim
+man (~185cm) standing in a narrow gritty alley, dressed
+in a sharp black one-button tuxedo jacket, black dress
+trousers with sharp crease, white spread-collar dress
+shirt, thin black tie, black wide-brim fedora hat (wool
+felt, ~7cm brim, classic center-crease crown) worn low
+covering forehead and eyes, black leather full-finger
+gloves, black polished oxford shoes. Face is COMPLETELY
+HIDDEN IN SHADOW under the hat brim — only faint silhouette
+of jawline, NO visible facial features. Right hand at his
+side holding a black generic semi-automatic pistol pointing
+down. Posture: upright, calm, cold, mechanical. Background:
+overcast dry dusty urban alley, faded graffiti, flat tired
+yellow-grey light, dust particles, no rain, no sun.
+Lighting: strong backlight rim light outlining his
+shoulders and hat, deep shadow on face and chest front,
+high contrast chiaroscuro. Cinematic 2.39:1, 35mm lens,
+photorealistic, anatomically correct hands, mysterious
+neo-noir villain, no extra limbs.
+
+NEGATIVE: visible face, visible eyes, smiling, bright
+lighting on face, front light, multiple people, casual
+clothes, sneakers, hat off, gloves off, daylight sunny,
+blue sky, rain, cartoon, anime, 3d render, text,
+watermark, logo, sci-fi weapon, fantasy weapon,
+brand logo.
+
+────────────────────────────────────────────────────────
+F. MEDIUM SHOT — PISTOL TERACUNG (untuk klimaks & twist)
+────────────────────────────────────────────────────────
+Photorealistic cinematic medium shot of the same tall slim
+man in black tuxedo, white shirt collar, thin black tie,
+black wide-brim fedora, black leather gloves, raising a
+black generic semi-auto pistol with both gloved hands,
+aiming forward at camera. Face COMPLETELY in deep shadow
+under hat brim — only the white collar and gloved hands
+are sharply lit. Posture: cold, steady, mechanical.
+Background: dark gritty alley / dim bedroom doorway
+(ambiguous), strong backlight, dust particles in light
+beam. Lighting: dramatic low-key chiaroscuro, white collar
+and gun as the only bright accents. Mood: cold inevitable
+threat. Cinematic 2.39:1, 50mm lens, shallow depth of
+field, photorealistic, anatomically correct hands, no
+extra fingers.
+
+NEGATIVE: visible face, visible eyes, smiling, casual
+clothes, bright lighting, sci-fi weapon, branded weapon,
+multiple people, cartoon, anime, 3d render, text,
+watermark, logo.
+
+────────────────────────────────────────────────────────
+G. REFERENCE SHEET SANG PENGEJAR — multi-angle siluet
+────────────────────────────────────────────────────────
+Character reference sheet, photorealistic, of the same
+tall slim man in black tuxedo (jacket, black trousers,
+white spread-collar shirt, thin black tie), black
+wide-brim fedora worn low, black leather gloves, black
+oxford shoes. Face MUST remain in deep shadow in every
+view — never visible. Plain dark grey studio backdrop,
+single strong backlight, deep shadow front. Grid layout
+showing:
+1. Front standing silhouette (hat brim shadowing face)
+2. Three-quarter left
+3. Three-quarter right
+4. Left profile (fedora silhouette clear)
+5. Right profile
+6. Full body front
+7. Full body side
+8. Full body back
+9. Holding pistol down at side
+10. Aiming pistol forward (both gloved hands)
+11. Walking pose (calm stride)
+12. Standing still (hands at sides)
+13. Holding hat brim (adjusting)
+14. Reaching forward
+15. Seated silhouette
+16. Back to camera, walking away
+Small clean labels only. Anatomically correct hands,
+consistent outfit across all views — same hat, same
+tuxedo, same gloves. Face NEVER lit. Photorealistic,
+no text overlay except tiny labels, no watermark.
+
+NEGATIVE: visible face, visible eyes, nose, mouth
+details, smiling, casual clothes, gloves missing, hat
+missing, multiple different people, anime, cartoon,
+3d render, front light on face, fashion editorial styling,
+text overlay covering figure.
+
+============================================================
+PROMPT GAMBAR PROP & SET DRESSING (INSERT REFERENCE)
+============================================================
+
+────────────────────────────────────────────────────────
+H. KAMAR ADAM (Set consistency reference)
+────────────────────────────────────────────────────────
+Photorealistic cinematic wide establishing shot of a small
+modest bedroom at night. Simple single bed with rumpled
+white sheet and thin pillow against the wall. Wooden
+nightstand on the right with a half-full clear water glass
+and a warm yellow bedside lamp with exposed filament bulb.
+Small window with sheer white curtain, faint blue moonlight
+seeping through. Bare wooden floor planks. A folded dark
+t-shirt and black pants draped over a chair in the corner.
+Walls plain off-white, slightly aged. Lighting: warm amber
+pool from lamp right, cool blue rim from window, deep
+shadows in corners. Mood: claustrophobic vulnerability.
+Cinematic 2.39:1, 24mm wide lens, deep focus, photorealistic,
+no people, no text, no watermark.
+
+NEGATIVE: people, modern luxury, large room, bright
+lighting, daytime, sunny, text, watermark, logo, cartoon,
+anime, 3d render.
+
+────────────────────────────────────────────────────────
+I. FEDORA DI LANTAI (Epilog key frame)
+────────────────────────────────────────────────────────
+Photorealistic cinematic close-up still life of a single
+black wool-felt wide-brim fedora hat (~7cm brim, classic
+center-crease crown) lying slightly tilted on bare aged
+wooden floor planks in a dim bedroom. Soft warm amber light
+falling from off-frame right (lamp), dust particles drifting
+slowly in the light beam. Mood: ominous ambiguous aftermath.
+Cinematic 2.39:1, 50mm lens, shallow depth of field, deep
+shadow around, photorealistic, no people, no text, no
+watermark.
+
+NEGATIVE: people, hands, bright lighting, daytime,
+multiple hats, colorful hat, text, watermark, logo,
+cartoon, anime, 3d render.
+
+============================================================
+URUTAN PEMBUATAN GAMBAR KARAKTER (WORKFLOW)
+============================================================
+1. Generate A (Adam portrait) → pilih hasil terbaik,
+   jadikan reference utama.
+2. Generate D (Adam reference sheet) dengan seed/img2img
+   dari hasil A → lock wajah untuk semua angle.
+3. Generate B (Adam running) dengan ref A → chase I2V ref.
+4. Generate C (Adam di kamar) dengan ref A → S2V ref.
+5. Generate E (Pengejar full) → pilih terbaik, ref utama.
+6. Generate G (Pengejar reference sheet) → lock outfit.
+7. Generate F (Pengejar aiming) → klimaks & twist ref.
+8. Generate H (kamar) → set consistency.
+9. Generate I (fedora) → epilog key frame.
+
+CATATAN STATUS WORKFLOW:
+  Bagian ini adalah arsip workflow lama. Struktur canonical yang dipakai
+  sekarang berada di:
+
+    02-character/adam/
+    02-character/sang-pengejar/
+    02-character/set-props/
+    02-character/shot-images/
+
+  Jangan gunakan file flat lama di root `02-character/` sebagai master
+  final. Jika tool atau prompt lama masih menyebut nama seperti
+  `adam-portrait.png`, `adam-running.png`, `adam-bedroom.png`,
+  `pengejar-full.png`, atau `pengejar-aiming.png`, nama tersebut harus
+  dianggap sebagai alias kompatibilitas yang merujuk ke asset APPROVED
+  di struktur canonical, bukan ke kandidat lama yang sudah REJECTED.
+
+  Status final asset mengikuti:
+
+    08-quality-control/asset-status-report.txt
+
+  Sumber prompt gambar canonical tetap:
+
+    02-character/character-image-prompts.txt

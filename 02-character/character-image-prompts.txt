@@ -1,0 +1,1127 @@
+============================================================
+STEP-BY-STEP GENERATE KARAKTER DENGAN CHATGPT IMAGES
+"MIMPI YANG MENGEJAR"
+============================================================
+
+Dokumen ini adalah workflow resmi untuk membuat aset karakter.
+Strukturnya mengikuti contoh ChatGPT Images yang diberikan, lalu
+disesuaikan dengan Universal Hybrid AI Film Prompt Pack.
+
+Prinsip utama:
+  - Jangan lanjut ke tahap berikutnya sebelum tahap sebelumnya APPROVED.
+  - Kunci wajah sebelum membuat tubuh.
+  - Kunci tubuh, pakaian, dan proporsi sebelum membuat pose.
+  - Jangan membuat shot dari teks kosong; selalu lampirkan master face,
+    master fullbody, dan reference sheet.
+  - Hanya gambar APPROVED yang boleh dikirim ke Wan I2V/TI2V/S2V.
+
+============================================================
+STRUKTUR HASIL YANG DIPAKAI
+============================================================
+
+02-character/
+├── character-image-prompts.txt
+├── adam/
+│   ├── 01-character-spec.md
+│   ├── 02-master-face.png
+│   ├── 03-master-fullbody.png
+│   ├── 04-reference-sheet.png
+│   ├── 05-expression-sheet.png
+│   ├── 06-pose-sheet.png
+│   ├── 07-wardrobe-sheet.png
+│   └── shot-images/
+│
+├── sang-pengejar/
+│   ├── 01-character-spec.md
+│   ├── 02-master-silhouette.png
+│   ├── 03-master-fullbody.png
+│   ├── 04-aiming-reference.png
+│   ├── 05-reference-sheet.png
+│   └── shot-images/
+│
+├── set-props/
+│   ├── set-bedroom.png
+│   └── insert-fedora.png
+│
+└── shot-images/
+    ├── shot-01-keyframe.png
+    ├── shot-02-keyframe.png
+    └── ...
+
+Catatan kompatibilitas:
+  Jika tool/video prompt lama masih meminta nama file flat seperti
+  adam-portrait.png atau pengejar-full.png, gunakan salinan dari file
+  approved berikut:
+
+  - adam/02-master-face.png        -> adam-portrait.png
+  - adam/03-master-fullbody.png    -> adam-master-fullbody.png
+  - adam/06-pose-sheet.png         -> adam-running.png jika perlu
+  - adam/shot-images/shot-15*.png  -> adam-bedroom.png jika perlu
+  - sang-pengejar/03-master-fullbody.png -> pengejar-full.png
+  - sang-pengejar/04-aiming-reference.png -> pengejar-aiming.png
+  - sang-pengejar/05-reference-sheet.png -> pengejar-reference-sheet.png
+
+  Penting:
+  - nama flat di atas hanya alias kompatibilitas;
+  - jangan memakai kandidat lama di root `02-character/` bila statusnya
+    REJECTED di `08-quality-control/asset-status-report.txt`;
+  - untuk shot final, canonical keyframe berada di
+    `02-character/shot-images/shot-XX-keyframe.png`;
+  - status APPROVED/REJECTED di asset status report mengalahkan nama file
+    lama yang muncul di prompt.
+
+============================================================
+ADAM - CHARACTER IDENTITY LOCK
+============================================================
+
+Nama:
+  ADAM
+
+Peran:
+  Protagonis.
+
+Identitas:
+  Pria Indonesia, sekitar 30 tahun, orang biasa, terlihat lelah
+  dan rentan, bukan pahlawan aksi atletis.
+
+Wajah:
+  Oval agak persegi, rahang tegas tetapi tidak terlalu kotak,
+  dahi sedang, alis hitam natural agak tebal, mata coklat gelap
+  berbentuk almond dengan lingkaran mata lelah, jarak antarmata
+  normal, hidung sedang lurus sedikit lebar di pangkal, bibir
+  sedang, dagu natural.
+
+Kulit:
+  Sawo matang / medium tan dengan warm undertone, tekstur kulit
+  manusiawi, tidak terlalu mulus seperti iklan.
+
+Rambut:
+  Hitam pendek, sisi lebih pendek, bagian atas berantakan tidak
+  tersisir. Bukan gondrong, bukan plontos.
+
+Ciri khas:
+  Tahi lalat kecil di bawah mata kiri. Stubble tipis 2-3 hari
+  di rahang dan dagu.
+
+Tubuh:
+  Tinggi terlihat 172-175 cm, tubuh biasa ringan berisi, bahu
+  sedang, bukan bodybuilder, bukan kurus ekstrem.
+
+Pakaian utama / WARDROBE A - SLEEPWEAR CHASE:
+  Kaos katun crew neck dark heather grey / abu tua, lusuh,
+  agak longgar, polos tanpa logo. Celana jogger/training hitam
+  panjang dengan tali pinggang longgar dan cuff di pergelangan.
+
+Sepatu:
+  Mimpi: sepatu kanvas hitam usang, sol kusam.
+  Realitas/kamar: barefoot atau kaus kaki tipis, tanpa sepatu.
+
+Aksesori:
+  Tidak ada jam tangan, kalung, cincin, tato terlihat, kacamata,
+  atau topi.
+
+Ekspresi default:
+  Netral lelah dengan ketegangan halus.
+
+Yang tidak boleh berubah:
+  Wajah, mata, hidung, bibir, rahang, rambut, usia, warna kulit,
+  bentuk tubuh, kaos abu tua, jogger hitam, tahi lalat bawah mata
+  kiri, dan stubble tipis.
+
+============================================================
+LANGKAH 1 - ADAM CHARACTER SPECIFICATION
+File: adam/01-character-spec.md
+============================================================
+
+Gunakan prompt ini bila ingin meminta ChatGPT menyusun spesifikasi
+tertulis ulang. Jangan menghasilkan gambar pada tahap ini.
+
+PROMPT:
+Saya sedang membuat karakter orisinal untuk film pendek AI berjudul
+"Mimpi Yang Mengejar".
+
+Bantu saya menyusun Character Specification yang sangat spesifik dan
+dapat digunakan berulang kali untuk menghasilkan karakter yang konsisten.
+
+Informasi dasar:
+Nama: Adam
+Jenis kelamin: laki-laki
+Usia: 30 tahun
+Kewarganegaraan/latar daerah: Indonesia / Asia Tenggara
+Peran dalam cerita: protagonis, pria biasa yang dikejar dalam mimpi
+Kepribadian: rentan, panik, bingung, tidak heroik, bertahan hidup
+Pekerjaan: tidak disebut
+Kondisi ekonomi dan sosial: kelas menengah bawah/urban sederhana
+Gaya visual film: fotorealistis sinematik, thriller psikologis,
+neo-noir realistis
+
+Berdasarkan data tersebut, tentukan secara konsisten:
+1. Bentuk wajah.
+2. Bentuk dahi.
+3. Bentuk alis.
+4. Bentuk dan warna mata.
+5. Jarak antarmata.
+6. Bentuk hidung.
+7. Bentuk bibir.
+8. Bentuk rahang dan dagu.
+9. Warna dan tekstur kulit.
+10. Tanda lahir, bekas luka, atau ciri khusus.
+11. Model, panjang, dan warna rambut.
+12. Tinggi badan.
+13. Bentuk tubuh.
+14. Postur.
+15. Gaya pakaian.
+16. Pakaian utama.
+17. Sepatu.
+18. Aksesori.
+19. Bahasa tubuh.
+20. Ekspresi default.
+
+Karakter harus:
+- terlihat seperti orang Indonesia yang natural;
+- memiliki desain orisinal;
+- tidak menyerupai selebritas atau tokoh publik;
+- mudah dikenali dari shot ke shot;
+- memiliki ciri khas yang tidak terlalu rumit;
+- realistis digunakan dalam film;
+- mudah dipertahankan oleh image generator dan video generator.
+
+Setelah itu, buat bagian bernama CHARACTER IDENTITY LOCK.
+
+CHARACTER IDENTITY LOCK harus berisi deskripsi final yang tidak boleh
+berubah pada gambar berikutnya, terutama:
+- wajah;
+- mata;
+- hidung;
+- bibir;
+- rahang;
+- rambut;
+- usia;
+- warna kulit;
+- bentuk tubuh;
+- pakaian utama;
+- aksesori;
+- ciri khas.
+
+Jangan menghasilkan gambar pada tahap ini.
+
+============================================================
+LANGKAH 2 - ADAM MASTER FACE
+File: adam/02-master-face.png
+Aspect ratio: 4:5 portrait
+============================================================
+
+PROMPT:
+Buat gambar master wajah untuk karakter film orisinal berikut.
+
+CHARACTER IDENTITY LOCK:
+Pria Indonesia berusia 30 tahun, wajah oval agak persegi dengan rahang
+tegas tetapi tidak terlalu kotak, dahi sedang, alis hitam natural agak
+tebal, mata coklat gelap berbentuk almond dengan lingkaran mata lelah,
+jarak antarmata normal, hidung sedang lurus sedikit lebar di pangkal,
+bibir sedang, dagu natural, kulit sawo matang medium tan warm undertone
+dengan tekstur manusiawi, rambut hitam pendek dengan sisi lebih pendek
+dan bagian atas berantakan tidak tersisir, stubble tipis 2-3 hari di
+rahang dan dagu, tahi lalat kecil di bawah mata kiri. Terlihat seperti
+pria Indonesia biasa, bukan model iklan, bukan selebritas.
+
+Komposisi:
+- close-up portrait;
+- kepala dan bahu terlihat;
+- wajah menghadap lurus ke kamera;
+- kepala tidak miring;
+- ekspresi netral dan natural, lelah dengan ketegangan halus;
+- kedua mata melihat ke kamera;
+- bibir tertutup secara natural;
+- telinga terlihat apabila sesuai dengan gaya rambut.
+
+Pencahayaan:
+- pencahayaan studio lembut;
+- merata pada wajah;
+- tidak terlalu dramatis;
+- tidak ada bayangan keras yang menyembunyikan fitur wajah.
+
+Latar:
+- polos;
+- warna abu-abu netral;
+- tidak ada objek lain.
+
+Gaya:
+- fotorealistis;
+- detail kulit natural;
+- karakter film sinematik;
+- tidak terlihat seperti foto paspor;
+- tidak menggunakan beauty filter berlebihan;
+- tekstur wajah manusiawi;
+- usia harus terlihat sekitar 30 tahun.
+
+Ketentuan wajib:
+- hanya satu karakter;
+- tidak menyerupai tokoh publik;
+- tidak ada teks;
+- tidak ada watermark;
+- tidak ada logo;
+- tidak ada aksesori tambahan;
+- jangan mengubah ciri yang sudah dikunci;
+- jangan membuat wajah terlalu sempurna atau seperti model iklan;
+- jangan menyamarkan tekstur kulit;
+- anatomi wajah harus natural.
+
+Aspect ratio:
+4:5 portrait.
+
+Hasil ini akan menjadi MASTER FACE dan referensi identitas untuk seluruh
+gambar serta video berikutnya.
+
+PEMERIKSAAN:
+[ ] Usia sesuai.
+[ ] Wajah khas dan natural Indonesia.
+[ ] Mata, hidung, rahang, rambut sesuai lock.
+[ ] Tahi lalat di bawah mata kiri terlihat.
+[ ] Tidak menyerupai orang terkenal.
+[ ] Tidak ada teks/watermark/logo.
+
+============================================================
+PROMPT REVISI MASTER FACE
+============================================================
+
+Edit gambar master wajah yang baru saja dibuat.
+
+Pertahankan secara identik:
+- identitas orang;
+- bentuk wajah;
+- mata;
+- hidung;
+- bibir;
+- rahang;
+- warna kulit;
+- rambut;
+- usia;
+- tahi lalat kecil di bawah mata kiri.
+
+Ubah hanya hal berikut:
+[DESKRIPSI_PERUBAHAN]
+
+Jangan membuat orang baru. Jangan mengubah fitur lain. Jangan mengubah
+sudut kamera, latar, atau pencahayaan.
+
+============================================================
+LANGKAH 3 - ADAM MASTER FULL BODY
+File: adam/03-master-fullbody.png
+Aspect ratio: 2:3 portrait
+============================================================
+
+Lampirkan adam/02-master-face.png.
+
+PROMPT:
+Gunakan gambar MASTER FACE yang saya lampirkan sebagai identitas karakter.
+
+Buat gambar full-body dari orang yang sama persis.
+
+CHARACTER IDENTITY LOCK:
+Pertahankan secara presisi wajah, usia, bentuk mata, hidung, bibir,
+rahang, warna kulit, model rambut, stubble tipis, dan tahi lalat kecil
+di bawah mata kiri dari MASTER FACE.
+
+Tubuh:
+- tinggi terlihat sekitar 172-175 cm;
+- tubuh biasa ringan berisi, bahu sedang;
+- bukan atletis/bodybuilder, bukan kurus ekstrem;
+- postur natural;
+- proporsi realistis;
+- tangan natural;
+- kedua kaki dan sepatu terlihat lengkap.
+
+Pakaian utama:
+- kaos katun crew neck dark heather grey / abu tua, lusuh, agak longgar,
+  polos tanpa logo;
+- celana jogger/training hitam panjang dengan tali pinggang longgar dan
+  cuff di pergelangan;
+- sepatu kanvas hitam usang dengan sol kusam.
+
+Aksesori:
+- tidak ada jam tangan;
+- tidak ada kalung;
+- tidak ada cincin;
+- tidak ada tato terlihat;
+- tidak ada kacamata;
+- tidak ada topi.
+
+Pose:
+- berdiri menghadap kamera;
+- postur natural;
+- kedua tangan di samping tubuh secara rileks;
+- kedua kaki terlihat;
+- tidak bergaya seperti model fashion.
+
+Latar:
+- studio polos warna abu-abu netral.
+
+Pencahayaan:
+- lembut;
+- merata;
+- sama seperti master face.
+
+Komposisi:
+- full body;
+- kepala sampai sepatu tidak terpotong;
+- kamera setinggi dada;
+- tidak menggunakan perspektif ekstrem.
+
+Gaya:
+- fotorealistis;
+- karakter film sinematik;
+- tekstur pakaian realistis;
+- detail tubuh natural.
+
+Ketentuan:
+- ini harus merupakan orang yang sama dengan MASTER FACE;
+- jangan mengubah wajah;
+- jangan mengubah usia;
+- jangan mengubah rambut;
+- jangan menambahkan pakaian atau aksesori;
+- jangan menambahkan karakter lain;
+- jangan menambahkan teks atau watermark;
+- tangan dan jari harus anatomis;
+- sepatu harus terlihat jelas.
+
+Aspect ratio:
+2:3 portrait.
+
+============================================================
+LANGKAH 4 - ADAM CHARACTER REFERENCE SHEET
+File: adam/04-reference-sheet.png
+Aspect ratio: landscape lebar
+============================================================
+
+Lampirkan:
+- adam/02-master-face.png
+- adam/03-master-fullbody.png
+
+PROMPT:
+Gunakan dua gambar terlampir sebagai sumber identitas resmi:
+1. MASTER FACE sebagai referensi utama wajah.
+2. MASTER FULL BODY sebagai referensi tubuh, pakaian, dan proporsi.
+
+Buat character reference sheet untuk produksi film AI.
+
+Karakter pada seluruh panel harus merupakan orang yang sama persis.
+
+Tampilkan:
+
+BARIS PERTAMA - WAJAH
+1. Wajah dari depan.
+2. Sudut tiga perempat kiri.
+3. Profil kiri.
+4. Sudut tiga perempat kanan.
+5. Profil kanan.
+
+BARIS KEDUA - TUBUH
+6. Full body dari depan.
+7. Full body sudut tiga perempat.
+8. Full body dari samping.
+9. Full body dari belakang.
+
+Pertahankan:
+- identitas wajah;
+- usia;
+- struktur tulang wajah;
+- mata;
+- hidung;
+- bibir;
+- rahang;
+- rambut;
+- warna kulit;
+- tahi lalat kecil di bawah mata kiri;
+- tinggi;
+- bentuk tubuh;
+- pakaian;
+- sepatu;
+- aksesori.
+
+Ekspresi:
+Netral pada seluruh tampilan.
+
+Latar:
+- putih atau abu-abu sangat terang;
+- bersih;
+- tanpa dekorasi.
+
+Pencahayaan:
+- studio lembut;
+- merata;
+- konsisten pada seluruh panel.
+
+Gaya:
+- fotorealistis;
+- bukan ilustrasi;
+- bukan concept art;
+- bukan kartun;
+- tidak menggunakan pencahayaan sinematik berat.
+
+Ketentuan:
+- jangan membuat variasi orang;
+- jangan mengubah bentuk wajah dari panel ke panel;
+- jangan mengubah pakaian;
+- jangan mengubah rambut;
+- jangan mengubah tinggi atau bentuk tubuh;
+- jangan menambahkan properti;
+- seluruh tubuh harus terlihat pada panel full-body;
+- tidak ada bagian tubuh terpotong;
+- tidak ada tangan atau jari tambahan.
+
+Aspect ratio:
+Landscape lebar.
+
+============================================================
+LANGKAH 5 - ADAM EXPRESSION SHEET
+File: adam/05-expression-sheet.png
+Aspect ratio: landscape
+============================================================
+
+Lampirkan:
+- adam/02-master-face.png
+- adam/04-reference-sheet.png
+
+PROMPT:
+Gunakan MASTER FACE dan CHARACTER REFERENCE SHEET yang saya lampirkan.
+
+Buat expression sheet dari karakter yang sama persis.
+
+Tampilkan close-up wajah dengan ekspresi:
+1. Netral lelah.
+2. Lega tipis.
+3. Sedih.
+4. Marah tertahan.
+5. Takut.
+6. Panik.
+7. Terkejut.
+8. Curiga.
+9. Lelah berat.
+10. Menahan sakit.
+11. Menelan takut / dread.
+12. Berteriak.
+
+Pertahankan secara presisi:
+- identitas wajah;
+- struktur tulang;
+- bentuk mata;
+- hidung;
+- bibir;
+- rahang;
+- rambut;
+- usia;
+- warna kulit;
+- tahi lalat kecil di bawah mata kiri.
+
+Ketentuan:
+- perubahan hanya pada ekspresi;
+- jangan mengubah identitas;
+- jangan mengubah gaya rambut;
+- jangan menambahkan kerutan yang mengubah usia;
+- jangan mengubah pakaian;
+- jangan menggunakan ekspresi kartun;
+- gerakan otot wajah harus realistis;
+- gigi terlihat natural apabila mulut terbuka;
+- tidak ada perubahan bentuk wajah antar-panel.
+
+Latar:
+Polos dan netral.
+
+Pencahayaan:
+Studio lembut dan konsisten.
+
+Gaya:
+Fotorealistis untuk referensi akting film.
+
+Aspect ratio:
+Landscape.
+
+============================================================
+LANGKAH 6 - ADAM POSE SHEET
+File: adam/06-pose-sheet.png
+Aspect ratio: landscape lebar
+============================================================
+
+Lampirkan:
+- adam/03-master-fullbody.png
+- adam/04-reference-sheet.png
+
+PROMPT:
+Gunakan MASTER FULL BODY dan CHARACTER REFERENCE SHEET yang saya lampirkan.
+
+Buat pose reference sheet dari karakter yang sama persis.
+
+Tampilkan pose berikut:
+1. Berdiri netral.
+2. Berjalan santai.
+3. Berjalan cepat.
+4. Berlari dari depan.
+5. Berlari dari samping.
+6. Menoleh ke belakang sambil berlari.
+7. Membungkuk untuk berlindung.
+8. Berjongkok.
+9. Duduk di tepi ranjang tanpa sepatu.
+10. Berdiri setelah terjatuh.
+11. Menahan tubuh karena terluka.
+12. Mengangkat satu tangan untuk melindungi wajah.
+
+Pertahankan:
+- wajah;
+- usia;
+- rambut;
+- warna kulit;
+- tinggi badan;
+- bentuk tubuh;
+- pakaian;
+- sepatu sesuai konteks pose;
+- tanpa aksesori.
+
+Ketentuan:
+- karakter harus sama pada seluruh panel;
+- pose harus anatomis;
+- berat tubuh dan keseimbangan harus realistis;
+- tangan dan kaki tidak boleh terdistorsi;
+- jangan membuat karakter melayang;
+- pakaian harus mengikuti gerakan tubuh secara natural;
+- jangan mengubah kostum;
+- jangan menambahkan senjata atau properti;
+- ekspresi wajah netral atau menyesuaikan pose secara ringan.
+
+Latar:
+Polos dan netral.
+
+Pencahayaan:
+Studio merata.
+
+Gaya:
+Fotorealistis.
+
+Aspect ratio:
+Landscape lebar.
+
+============================================================
+LANGKAH 7 - ADAM WARDROBE LOCK
+File: adam/07-wardrobe-sheet.png
+============================================================
+
+Lampirkan:
+- adam/02-master-face.png
+- adam/03-master-fullbody.png
+- adam/04-reference-sheet.png
+
+PROMPT:
+Gunakan MASTER FACE, MASTER FULL BODY, dan CHARACTER REFERENCE SHEET
+yang saya lampirkan.
+
+Buat wardrobe reference sheet untuk karakter yang sama persis.
+
+WARDROBE A - MIMPI / CHASE
+Kaos katun crew neck dark heather grey / abu tua, lusuh, agak longgar,
+polos tanpa logo. Celana jogger/training hitam panjang dengan tali
+pinggang longgar dan cuff di pergelangan. Sepatu kanvas hitam usang,
+sol kusam. Tidak ada aksesori.
+
+WARDROBE B - KAMAR / REALITAS
+Kaos katun crew neck dark heather grey / abu tua yang sama, celana
+jogger/training hitam panjang yang sama. Barefoot atau kaus kaki tipis.
+Tidak ada sepatu. Tidak ada aksesori.
+
+Untuk setiap wardrobe, tampilkan:
+1. Full body dari depan.
+2. Full body dari samping.
+3. Full body dari belakang.
+4. Detail pakaian dan sepatu/kaki.
+
+Pertahankan:
+- identitas wajah;
+- tubuh;
+- rambut;
+- usia;
+- tinggi;
+- proporsi;
+- pakaian sesuai masing-masing wardrobe.
+
+Ketentuan:
+- hanya sepatu/kondisi kaki yang berubah antara mimpi dan realitas;
+- jangan mengubah tubuh atau wajah;
+- jangan mencampur elemen wardrobe;
+- jangan menambahkan logo atau merek;
+- material dan tekstur pakaian realistis.
+
+Latar:
+Polos dan netral.
+
+Pencahayaan:
+Studio lembut dan konsisten.
+
+Gaya:
+Fotorealistis.
+
+============================================================
+SANG PENGEJAR - IDENTITY LOCK
+============================================================
+
+Sang Pengejar adalah antagonis misterius. Wajahnya tidak pernah boleh
+terlihat. Identitas visualnya adalah siluet tinggi kurus, tuxedo hitam,
+fedora hitam, kerah putih, sarung tangan hitam, sepatu oxford hitam,
+dan pistol semi-auto hitam generik.
+
+Yang tidak boleh berubah:
+- wajah selalu shadow total;
+- mata, hidung, mulut tidak terlihat;
+- tuxedo hitam satu kancing;
+- kemeja putih dengan kerah terlihat;
+- dasi hitam tipis;
+- fedora hitam dipakai rendah;
+- sarung tangan kulit hitam;
+- tubuh tinggi kurus sekitar 185 cm;
+- pistol semi-auto hitam generik tanpa logo.
+
+============================================================
+LANGKAH P1 - SANG PENGEJAR MASTER SILHOUETTE
+File: sang-pengejar/02-master-silhouette.png
+Aspect ratio: 4:5 portrait atau 2:3 portrait
+============================================================
+
+PROMPT:
+Buat master silhouette untuk karakter antagonis film orisinal.
+
+Karakter:
+Pria misterius tinggi kurus sekitar 185 cm, postur tegak dingin,
+mengenakan tuxedo hitam satu kancing, celana dress hitam, kemeja putih
+kerah spread, dasi hitam tipis, fedora hitam wool/felt dipakai rendah
+menutupi dahi dan mata, sarung tangan kulit hitam full-finger, sepatu
+oxford hitam mengkilap.
+
+Wajah:
+- sepenuhnya dalam shadow/siluet;
+- mata tidak terlihat;
+- hidung tidak terlihat;
+- mulut tidak terlihat;
+- tidak ada identitas wajah.
+
+Pose:
+- berdiri menghadap kamera;
+- tangan rileks di samping tubuh;
+- satu tangan boleh memegang pistol semi-auto hitam generik mengarah
+  ke bawah;
+- postur tenang, mekanis, tidak ekspresif.
+
+Pencahayaan:
+- strong backlight / rim light dari belakang;
+- wajah dan dada depan tetap gelap;
+- kerah putih terlihat sebagai anchor.
+
+Latar:
+Polos gelap atau gang urban gelap yang sederhana.
+
+Ketentuan:
+- jangan memperlihatkan wajah;
+- jangan membuat mata bersinar;
+- jangan menambahkan karakter lain;
+- jangan menambahkan teks/watermark/logo;
+- jangan memakai senjata sci-fi;
+- pistol harus generik tanpa logo.
+
+Gaya:
+Fotorealistis, sinematik, low-key, neo-noir.
+
+============================================================
+LANGKAH P2 - SANG PENGEJAR FULL BODY
+File: sang-pengejar/03-master-fullbody.png
+============================================================
+
+Lampirkan sang-pengejar/02-master-silhouette.png.
+
+PROMPT:
+Gunakan MASTER SILHOUETTE yang saya lampirkan sebagai identitas visual.
+Buat full-body reference dari sosok yang sama persis.
+
+Pertahankan:
+- tubuh tinggi kurus;
+- tuxedo hitam;
+- kemeja putih;
+- dasi hitam;
+- fedora hitam dipakai rendah;
+- sarung tangan kulit hitam;
+- sepatu oxford hitam;
+- wajah sepenuhnya shadow.
+
+Tampilkan seluruh tubuh dari kepala sampai sepatu, postur berdiri
+tenang, latar polos gelap, pencahayaan backlight kuat, kerah putih
+terlihat.
+
+Jangan memperlihatkan mata, hidung, mulut, atau detail wajah apa pun.
+
+============================================================
+LANGKAH P3 - SANG PENGEJAR AIMING REFERENCE
+File: sang-pengejar/04-aiming-reference.png
+============================================================
+
+Lampirkan:
+- sang-pengejar/02-master-silhouette.png
+- sang-pengejar/03-master-fullbody.png
+
+PROMPT:
+Gunakan gambar referensi terlampir sebagai identitas visual resmi.
+Buat medium shot dari Sang Pengejar yang sama, mengangkat pistol
+semi-auto hitam generik dengan kedua tangan bersarung tangan, mengarah
+ke kamera.
+
+Pertahankan tuxedo, fedora, kerah putih, sarung tangan, tubuh tinggi
+kurus, dan wajah shadow total. Hanya kerah putih, tangan bersarung
+tangan, dan pistol yang terlihat jelas. Wajah tidak boleh terlihat.
+
+Gaya fotorealistis, low-key, backlight kuat, 2.39:1 jika memungkinkan.
+
+============================================================
+LANGKAH P4 - SANG PENGEJAR REFERENCE SHEET
+File: sang-pengejar/05-reference-sheet.png
+============================================================
+
+Lampirkan:
+- sang-pengejar/02-master-silhouette.png
+- sang-pengejar/03-master-fullbody.png
+- sang-pengejar/04-aiming-reference.png
+
+PROMPT:
+Buat reference sheet Sang Pengejar untuk produksi film AI.
+
+Tampilkan:
+1. Berdiri depan.
+2. Tiga perempat kiri.
+3. Tiga perempat kanan.
+4. Profil kiri.
+5. Profil kanan.
+6. Full body belakang.
+7. Memegang pistol ke bawah.
+8. Mengangkat pistol dua tangan.
+9. Berjalan tenang.
+10. Berdiri di ambang pintu.
+
+Pertahankan:
+- wajah selalu shadow total;
+- tuxedo hitam;
+- kerah putih;
+- fedora hitam;
+- sarung tangan hitam;
+- sepatu oxford;
+- tubuh tinggi kurus;
+- pistol semi-auto hitam generik.
+
+Ketentuan:
+- jangan pernah memperlihatkan mata/hidung/mulut;
+- jangan membuat variasi outfit;
+- jangan menambahkan karakter lain;
+- jangan menambahkan teks besar/watermark/logo.
+
+============================================================
+SET DAN PROP
+============================================================
+
+SET BEDROOM
+File: set-props/set-bedroom.png
+
+PROMPT:
+Photorealistic cinematic wide establishing shot of a small modest
+bedroom at night. Simple single bed with rumpled white sheet and thin
+pillow against the wall. Wooden nightstand on the right with a half-full
+clear water glass and a warm yellow bedside lamp with exposed filament
+bulb. Small window with sheer white curtain, faint blue moonlight seeping
+through. Bare wooden floor planks. Plain off-white slightly aged walls.
+No people. Warm amber pool from lamp right, cool blue rim from window,
+deep shadows in corners. Mood: claustrophobic vulnerability. Cinematic
+2.39:1, photorealistic. No text, no watermark, no logo.
+
+INSERT FEDORA
+File: set-props/insert-fedora.png
+
+PROMPT:
+Photorealistic cinematic close-up still life of a single black wool-felt
+wide-brim fedora hat, about 7cm brim, classic center-crease crown, lying
+slightly tilted on bare aged wooden floor planks in a dim bedroom. Soft
+warm amber light falling from off-frame right, dust particles drifting
+slowly in the light beam. No people, no hands, no text, no watermark,
+no logo. Mood ominous and ambiguous. Cinematic 2.39:1.
+
+============================================================
+LANGKAH 8 - GAMBAR KEYFRAME UNTUK SETIAP SHOT
+============================================================
+
+Simpan di:
+  02-character/shot-images/
+  atau per karakter:
+  02-character/adam/shot-images/
+  02-character/sang-pengejar/shot-images/
+
+Lampirkan minimal:
+- adam/02-master-face.png
+- adam/03-master-fullbody.png
+- adam/04-reference-sheet.png
+
+Tambahkan sesuai kebutuhan:
+- adam/05-expression-sheet.png
+- adam/06-pose-sheet.png
+- adam/07-wardrobe-sheet.png
+- sang-pengejar/05-reference-sheet.png
+- set-props/set-bedroom.png
+
+PROMPT UNIVERSAL PER SHOT:
+Gunakan seluruh gambar referensi terlampir sebagai sumber identitas
+resmi karakter. Karakter pada gambar baru harus merupakan orang yang
+sama persis.
+
+SHOT INFORMATION
+
+Shot number:
+[SHOT_NUMBER]
+
+Tujuan shot:
+[TUJUAN_SHOT]
+
+Lokasi:
+[LOKASI]
+
+Waktu:
+[PAGI / SIANG / MALAM]
+
+Cuaca:
+[CUACA]
+
+Wardrobe:
+[WARDROBE_A_MIMPI_CHASE / WARDROBE_B_KAMAR_REALITAS]
+
+Aksi karakter:
+[AKSI]
+
+Pose:
+[POSE]
+
+Ekspresi:
+[EKSPRESI]
+
+Jenis frame:
+[CLOSE-UP / MEDIUM / FULL-BODY / WIDE]
+
+Sudut kamera:
+[EYE_LEVEL / LOW_ANGLE / HIGH_ANGLE / SIDE_VIEW / DLL.]
+
+Posisi kamera:
+[DESKRIPSI]
+
+Pencahayaan:
+[PENCAHAYAAN]
+
+Gaya visual:
+Fotorealistis, sinematik, natural.
+
+Aspect ratio:
+2.39:1
+
+IDENTITY LOCK
+
+Pertahankan secara presisi:
+- wajah;
+- mata;
+- hidung;
+- bibir;
+- rahang;
+- rambut;
+- usia;
+- warna kulit;
+- bentuk tubuh;
+- tinggi;
+- pakaian;
+- sepatu sesuai wardrobe;
+- aksesori.
+
+Ketentuan:
+- jangan membuat orang baru;
+- jangan mengubah identitas;
+- jangan mengubah pakaian di luar wardrobe yang dipilih;
+- jangan menambahkan karakter baru;
+- jangan menambahkan properti yang tidak diminta;
+- anatomi tangan dan tubuh harus natural;
+- komposisi harus sesuai jenis shot;
+- karakter harus terlihat jelas;
+- gambar harus memiliki ruang gerak yang cukup untuk video generation;
+- hindari motion blur berat;
+- hindari wajah yang terlalu kecil apabila shot membutuhkan konsistensi
+  wajah;
+- tidak ada teks, watermark, atau logo.
+
+============================================================
+PROMPT REVISI GAMBAR SHOT
+============================================================
+
+REVISI IDENTITAS:
+Edit gambar shot terakhir.
+
+Gunakan MASTER FACE dan CHARACTER REFERENCE SHEET terlampir sebagai
+sumber identitas.
+
+Masalah yang harus diperbaiki:
+[DESKRIPSI_MASALAH]
+
+Pertahankan tanpa perubahan:
+- pose;
+- posisi tubuh;
+- pakaian;
+- kamera;
+- lokasi;
+- pencahayaan;
+- komposisi;
+- aspect ratio.
+
+Ubah hanya identitas wajah agar sama dengan MASTER FACE.
+Jangan membuat ulang seluruh adegan. Jangan mengubah bagian lain.
+
+REVISI POSE:
+Edit gambar shot terakhir.
+
+Pertahankan secara identik:
+- wajah;
+- rambut;
+- pakaian;
+- tubuh;
+- lokasi;
+- pencahayaan;
+- warna;
+- kamera;
+- komposisi.
+
+Ubah hanya pose berikut:
+[DARI_POSE_LAMA]
+menjadi
+[POSE_BARU]
+
+Gerakan harus anatomis, realistis, dan memiliki keseimbangan tubuh yang
+benar. Jangan mengubah identitas atau elemen lain.
+
+REVISI LOKASI:
+Edit gambar shot terakhir.
+
+Pertahankan secara identik:
+- karakter;
+- wajah;
+- rambut;
+- pakaian;
+- pose;
+- ekspresi;
+- kamera;
+- pencahayaan pada karakter.
+
+Ganti hanya latar atau lokasi menjadi:
+[LOKASI_BARU]
+
+Pastikan perspektif, skala, arah cahaya, dan bayangan sesuai dengan
+posisi karakter. Jangan membuat ulang karakter.
+
+============================================================
+VALIDASI SEBELUM DIKIRIM KE WAN
+============================================================
+
+Gunakan:
+  ../08-quality-control/image-validation-checklist.txt
+
+Prompt validasi:
+Bertindak sebagai visual continuity supervisor untuk produksi film AI.
+
+Bandingkan GAMBAR SHOT KANDIDAT dengan:
+1. MASTER FACE.
+2. MASTER FULL BODY.
+3. CHARACTER REFERENCE SHEET.
+4. EXPRESSION SHEET.
+5. POSE SHEET.
+6. CHARACTER IDENTITY LOCK.
+
+Periksa:
+- identitas wajah;
+- mata;
+- hidung;
+- bibir;
+- rahang;
+- rambut;
+- usia;
+- warna kulit;
+- ciri khas;
+- tinggi;
+- bentuk tubuh;
+- proporsi;
+- tangan;
+- jari;
+- pakaian;
+- sepatu;
+- pose;
+- ekspresi;
+- sudut kamera;
+- komposisi;
+- lokasi;
+- perspektif;
+- pencahayaan;
+- bayangan;
+- kesiapan image-to-video.
+
+Berikan salah satu keputusan:
+
+APPROVED
+Gambar siap dikirim ke Wan.
+
+REVISE
+Gambar dapat diperbaiki tanpa dibuat ulang.
+
+REJECTED
+Gambar harus dibuat ulang.
+
+Format:
+
+KEPUTUSAN:
+[APPROVED / REVISE / REJECTED]
+
+IDENTITY CONSISTENCY:
+[SKOR 0-100]
+
+VIDEO READINESS:
+[SKOR 0-100]
+
+MASALAH:
+[DAFTAR_MASALAH]
+
+RISIKO SAAT VIDEO GENERATION:
+[DAFTAR_RISIKO]
+
+PROMPT REVISI:
+Berikan satu prompt revisi spesifik yang dapat langsung digunakan pada
+ChatGPT Images.
+
+Jangan menyetujui gambar apabila wajah, pakaian, anatomi, atau
+komposisinya tidak konsisten.
+
+============================================================
+FORMAT NAMA FILE
+============================================================
+
+Pola di bawah adalah pola generik bila membuat asset baru. Untuk project
+ini, struktur canonical yang sudah dipakai tetap:
+
+  02-character/adam/
+  02-character/sang-pengejar/
+  02-character/set-props/
+  02-character/shot-images/
+
+Jangan mengganti nama asset approved hanya demi mengikuti contoh pola
+generik.
+
+Gunakan pola generik:
+  [karakter]_[jenis-aset]_[versi].[format]
+
+Contoh:
+  adam_master-face_v01.png
+  adam_master-fullbody_v01.png
+  adam_reference-sheet_v01.png
+  adam_expression-sheet_v01.png
+  adam_pose-sheet_v01.png
+  adam_shot-015_v03-approved.png
+  pengejar_master-silhouette_v01.png
+  pengejar_aiming-reference_v01.png

@@ -1,0 +1,15 @@
+============================================================
+SHOT 01 — COLD OPEN: KAKI BERLARI (TI2V/T2V)
+============================================================
+DURASI: 3 detik | Model: TI2V/T2V | 2.39:1 | 24fps
+Ref: (none — generic)
+
+PROMPT VIDEO UTAMA:
+Extreme close-up of worn black canvas sneakers slapping against damp-dusty asphalt in a narrow gritty alley, running in panicked uneven strides, dust particles kicking up with each step. Concrete walls with faded graffiti at sides. Overcast dry yellow-grey flat tired light, no rain, no sun. Camera tracks laterally fast at ground level keeping shoes in frame, slight handheld shake. Cinematic 2.39:1, photorealistic, gritty neo-noir thriller mood.
+
+NEGATIVE PROMPT:
+face visible, another character, calm steps, rhythmic steps, sunlight, rain, blue sky, cartoon, anime, 3d render, text, watermark.
+
+DIALOG: (none)
+SOUND: SFX-FOOTSTEPS-CHASE + AMB-ALLEY-DUST + distant panting
+TRANSISI: Hard cut ke SHOT 02

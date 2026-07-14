@@ -1,0 +1,17 @@
+============================================================
+SHOT 10 — GANG BUNTU (Wide reveal, I2V)
+============================================================
+DURASI: 4 detik | Model: I2V | 2.39:1 | 24fps
+Ref: 02-character/shot-images/shot-10-keyframe.png +
+     02-character/adam/04-reference-sheet.png
+
+PROMPT VIDEO UTAMA:
+Same 30-year-old Indonesian man (oval face, messy black hair, thin stubble, mole under left eye, dark heather grey t-shirt, black joggers, black canvas sneakers) stopping abruptly at a dead-end alley corner, tall concrete wall in front, rusty iron staircase. Chest heaving, looking left and right desperately — no way out. Background dead-end alley, overcast flat dusty yellow-grey light, dust particles. Camera frontal eye-level, slight slow push-in. Cinematic 2.39:1, 35mm lens, photorealistic.
+
+NEGATIVE PROMPT:
+exit door, additional characters, smile, daytime, sunlight, cartoon, anime, 3d render, text, watermark.
+
+DIALOG: VOCAL-NONVERB-PANT (tertahan)
+SOUND: AMB-ALLEY-DUST + SFX-FOOTSTEPS-PENGEJAR (mendekat)
+TRANSISI: Hard cut ke SHOT 11
+KONTINUITAS: Gang buntu, tangga besi berkarat di belakang.

@@ -1,0 +1,360 @@
+============================================================
+KONTEKS PROYEK FILM — "MIMPI YANG MENGEJAR"
+============================================================
+
+JUDUL SEMENTARA:
+  Mimpi Yang Mengejar
+  (Judul kerja alternatif: "Sang Pengejar", "Hati-Hati
+   Dengan Mimpimu")
+
+JENIS PRODUKSI:
+  Short film
+
+GENRE:
+  Thriller / Aksi — psikologis dengan elemen dream-horror
+
+PREMIS:
+  Seorang pria muda berlari panik di gang kota yang
+  dingin dan berdebu, dikejar sosok misterius ber-tuxedo
+  hitam dengan wajah siluet. Setelah ditembak dan terbangun
+  di kamarnya, dia mengira itu hanya mimpi buruk — sampai
+  sang pengejar muncul kembali, dan batas antara mimpi dan
+  kenyataan runtuh.
+
+TARGET PENONTON:
+  Dewasa muda 18-35 tahun, penyuka thriller psikologis,
+  dream-horror, dan short film dengan twist ending.
+  Audiens YouTube / festival short film.
+
+BAHASA UTAMA:
+  Bahasa Indonesia
+
+DIALEK / GAYA PERCAKAPAN:
+  Indonesia netral (baku yang natural, mudah dipahami
+  semua daerah). Dialog minimum — mayoritas vokal non-
+  verbal (napas, erangan, teriakan). Hanya 2-3 kalimat
+  terucap.
+
+LOKASI & PERIODE WAKTU:
+  Kota modern (tidak spesifik kota), masa kini.
+  - Scene mimpi: gang sempit antar gedung, kolong
+    jembatan, area industri / pasar tutup. Mendung kering,
+    berdebu, siang-sore menjelang gelap.
+  - Scene realitas: kamar tidur kecil sederhana, malam,
+    lampu meja kuning hangat.
+
+DURASI TARGET:
+  150–180 detik (2,5–3 menit)
+
+ASPECT RATIO:
+  2.39:1 (Cinemascope — letterbox sinematik)
+
+RESOLUSI TARGET:
+  1080p (1920x800 untuk 2.39:1) atau 4K jika memungkinkan
+
+FRAME RATE:
+  24 fps (sinematik)
+
+GAYA VISUAL:
+  Realistis sinematik dengan nuansa neo-noir.
+  Kontras tinggi, deep shadow, grain halus.
+
+REFERENSI SINEMATOGRAFI:
+  - Thriller urban dengan handheld intimacy (vibe
+    "Sicario" chase, "The Bourne Identity" gritty).
+  - Dream-horror dread ala "It Follows" (tegang lambat,
+    sosok yang tak bisa dihindari).
+  - Neo-noir silhouette & shadow (vibe "Sin City" yang
+    dilembutkan, tanpa stylisasi berlebihan).
+  - *Acuan suasana saja, bukan meniru persis.*
+
+PALET WARNA:
+  - Scene mimpi: abu-abu kekuningan / sepia dingin, debu
+    tebal, langit mendung muram. Highlight kuning lembab,
+    shadow biru gelap.
+  - Scene realitas: hangat amber (lampu meja), kontras
+    dengan blue moonlight dari jendela. Setelah twist:
+    desaturasi cepat.
+  - Twist & gelap: desaturated, hampir monokrom di frame
+    terakhir.
+
+TINGKAT REALISME:
+  Fotorealistis / sinematik.
+
+TONE CERITA:
+  Panik (act 1) → shock fake-awakening (act 2) → dread
+  lambat → burst jumpscare (act 3). Multi-tafsir di akhir.
+
+============================================================
+KARAKTER UTAMA
+============================================================
+
+1. ADAM — Protagonis
+   - Pria Indonesia, sekitar 30 tahun.
+   - Rambut hitam pendek berantakan, jenggot tipis,
+     mata lelah.
+   - Di mimpi: kaos lusuh + celana training (pakaian
+     tidur = konsisten dengan scene realitas → clue halus
+     bahwa mimpi terjadi di saat dia tidur).
+   - Kepribadian: pria biasa, terkejut & bingung, tidak
+     tahu kenapa dikejar.
+   - Tujuan: bertahan hidup / lari.
+   - Latar belakang: tidak dijelaskan (multi-tafsir — bisa
+     dosa masa lalu, guilt, kematian menjemput, atau loop
+     mimpi).
+
+2. SANG PENGEJAR — Antagonis
+   - Pria misterius, tinggi kurus, postur tegak dingin.
+   - Tuxedo hitam lengkap + topi fedora hitam.
+   - Wajah: SILUET / gelap total, tidak teridentifikasi.
+     Hanya kerah putih tuxedo yang terlihat kontras.
+   - Tidak berbicara. Bergerak tenang, tak terburu-buru,
+     tapi selalu mengejar.
+   - Senjata: pistol (warna gelap, bisa revolver atau
+     semi-auto).
+   - Simbolisme: multi-tafsir (kematian, dosa, bayangan
+     diri, hukuman, atau murni mimpi).
+
+============================================================
+KONFLIK UTAMA
+============================================================
+Adam berusaha lolos dari sosok yang mengejarnya tanpa tahu
+sebabnya. Setelah "terbangun", dia percaya bahaya sudah
+berlalu — tetapi bahaya itu justru berpindah dari mimpi
+ke realitas, menunjukkan bahwa pelarian itu sendiri sia-sia.
+
+RISIKO: nyawa Adam (secara literal maupun metaforis).
+
+PERUBAHAN EMOSIONAL ADAM:
+  Panik → lari putus asa → shock ditembak → lega palsu
+  (cukup untuk tersenyum) → dread perlahan → horror final.
+
+============================================================
+BATASAN KONTEN
+============================================================
+  - Rating: 13+ (thriller, kekerasan implisit).
+  - Tampilkan tembakan dan dampaknya secara sugestif /
+    audio-driven, BUKAN gore detail.
+  - Tidak ada darah berlebihan, tidak ada close-up luka.
+  - Tidak ada konten seksual, SARA, atau bahasa kasar.
+  - Jumpscare diperbolehkan tapi 1x saja (di klimaks).
+  - Wajah Sang Pengejar TIDAK boleh terlihat jelas di
+    frame manapun — tetap siluet.
+
+============================================================
+KETENTUAN KONSISTENSI
+============================================================
+  - Pertahankan identitas wajah Adam di semua shot.
+  - Adam pakai kaos lusuh + celana training di SEMUA scene
+    (mimpi = pakaian tidur = realitas) → ini clue
+    konsistensi sekaligus naratif.
+  - Sang Pengejar: tuxedo hitam + fedora hitam, wajah
+    selalu dalam shadow/siluet, kerah putih tuxedo tetap
+    terlihat sebagai penanda.
+  - Pistol: tipe & warna sama di semua shot.
+  - Lokasi mimpi: cuaca mendung kering + debu konsisten.
+  - Lokasi kamar: nakas + gelas air + lampu meja kuning
+    konsisten di seluruh scene realitas.
+  - Jangan tambahkan karakter atau objek penting tanpa
+    instruksi.
+  - Gunakan desain orisinal, jangan menyerupai tokoh
+    publik atau karakter berhak cipta.
+
+============================================================
+STRUKTUR CERITA (3-ACT, ~170 DETIK)
+============================================================
+  ACT 1 — MIMPI / KEJAR-KEJARAN   (~70 detik)
+    Adam berlari panik di gang. Cuaca mendung berdebu.
+    Menoleh melihat Sang Pengejar (tuxedo+fedora, siluet).
+    Ditembak, menghindar, terus lari. Tersandung.
+    Klimaks mimpi: Sang Pengejar menyusul, menembak.
+    Adam teriak → LAYAR GELAP.
+
+  ACT 2 — FALSE AWAKENING         (~40 detik)
+    Adam terbangun di kamar, napas terengah, keringat.
+    Minum air dari gelas di nakas. Mengusap keringat.
+    "Untunglah hanya mimpi." Senyum tipis lega.
+
+  ACT 3 — TWIST                   (~60 detik)
+    (Hybrid C→A) Hening sejenak → langkah kaki / ketukan
+    → Adam membeku, menoleh lambat → bayangan tuxedo
+    membesar di dinding (recycle siluet dari mimpi) →
+    pistol teracung → "TIDAAAAK!" + BANG → LAYAR GELAP.
+    FRAME TERAKHIR (1-2 dtk): topi fedora hitam tergeletak
+    di lantai kamar. Fade ke tagline:
+    "Hati-hatilah dengan mimpimu."
+
+============================================================
+PRODUCTION ARCHITECTURE
+============================================================
+Project ini memakai pendekatan Hybrid AI Film Production:
+creative pre-production dilakukan manual dan human-in-the-loop,
+sementara video rendering POC dirancang memakai Wan2.2 self-hosted
+dan media assembly headless.
+
+Keputusan arsitektur formal berada di:
+
+  docs/architecture/
+
+Dokumen ini menjelaskan konteks produksi dan harus tetap selaras dengan
+ADR, README, dan AGENTS.md.
+
+Komponen utama:
+  1. ChatGPT manual
+     - ide cerita;
+     - project bible;
+     - screenplay;
+     - dialog Bahasa Indonesia;
+     - shot list;
+     - prompt per shot;
+     - master character;
+     - character reference sheet;
+     - keyframe image setiap shot.
+
+  2. ElevenLabs
+     - dialogue voice;
+     - ambience;
+     - Foley;
+     - sound effects.
+
+  3. Music provider optional
+     - ElevenLabs Music;
+     - Suno;
+     - library berlisensi.
+     Project tidak dikunci ke satu provider musik.
+
+  4. Wan2.2 self-hosted
+     - Wan2.2 I2V atau TI2V untuk action shot, establishing shot,
+       insert shot, dan shot tanpa dialog;
+     - Wan2.2-S2V untuk shot dialog yang membutuhkan lip-sync.
+
+  5. FFmpeg internal/headless
+     - muxing dialogue audio bila output model belum memiliki audio;
+     - mixing ambience, Foley, SFX, dan music;
+     - concatenation seluruh shot final;
+     - ffprobe validation dasar.
+
+Wan2.2 adalah video-generation engine. Wan2.2 bukan sistem final
+mixing untuk seluruh film.
+
+FFmpeg bukan AI dan tidak membuat lip-sync. Lip-sync dibuat oleh
+Wan2.2-S2V berdasarkan final dialogue master.
+
+DaVinci Resolve bukan bagian wajib pipeline utama. DaVinci hanya
+fallback opsional untuk koreksi manual, color grading manual,
+perbaikan audio manual, fine editing, atau kebutuhan editorial yang
+tidak bisa diselesaikan otomatis.
+
+============================================================
+MANUAL POC WORKFLOW
+============================================================
+Fase sekarang masih manual dan human-in-the-loop:
+
+  1. Kunci screenplay, character bible, dan shot list.
+  2. Approve master character dan keyframe image.
+  3. Generate dialogue voice dan pilih dialogue master final.
+  4. Lock dialogue master sebelum shot dialog diproses S2V.
+  5. Generate/approve ambience, Foley, SFX, dan music optional.
+  6. Jalankan POC Wan2.2:
+     - satu shot I2V/TI2V tanpa dialog;
+     - satu shot S2V dengan final dialogue master.
+  7. Simpan output mentah sebagai `shot-XX-video-raw.mp4`.
+  8. Lakukan media assembly headless menjadi `shot-XX-final.mp4`.
+  9. Validasi hasil shot melalui checklist video.
+ 10. Hanya shot APPROVED yang boleh masuk final film assembly.
+
+Dialogue master harus berupa audio bersih: tidak mengandung musik,
+ambience, Foley, atau sound effect. Setelah dipakai untuk S2V,
+tempo, jeda, dan durasinya tidak boleh diubah.
+
+============================================================
+FUTURE AUTOMATED WORKFLOW
+============================================================
+AI Director adalah arah pengembangan masa depan, bukan bagian yang
+dibangun pada fase sekarang.
+
+Peran AI Director nanti:
+  - menerjemahkan screenplay menjadi shot plan;
+  - menghasilkan metadata emosi;
+  - menghasilkan voice direction;
+  - menghasilkan image prompt;
+  - menghasilkan video prompt;
+  - menghasilkan audio asset plan;
+  - menghasilkan timeline manifest.
+
+Workflow otomatis masa depan tetap harus menghormati human approval
+gates. Tidak boleh ada keyframe yang otomatis dikirim ke Wan2.2 tanpa
+status APPROVED. Tidak boleh ada shot yang otomatis masuk final film
+tanpa status APPROVED.
+
+Rujukan arsitektur:
+  docs/architecture/ADR-007-ai-director-separation.md
+
+============================================================
+HUMAN APPROVAL POLICY
+============================================================
+Human approval wajib pada:
+
+  1. screenplay approval;
+  2. master character approval;
+  3. keyframe image approval;
+  4. dialogue master approval;
+  5. generated shot approval;
+  6. final film approval.
+
+Status APPROVED harus jelas di dokumen status, metadata, atau laporan
+validasi terkait. Asset berstatus REJECTED, CANDIDATE, atau belum
+ditinjau tidak boleh dipakai sebagai input final.
+
+============================================================
+TOOL RESPONSIBILITIES
+============================================================
+ChatGPT:
+  - membantu membuat dan menjaga dokumen kreatif;
+  - menghasilkan prompt;
+  - membantu validasi dokumentasi;
+  - tidak mengubah creative lock tanpa instruksi.
+
+ElevenLabs:
+  - membuat dialogue voice, non-verbal vocal, ambience, Foley, dan SFX;
+  - output dialogue master harus bersih untuk S2V.
+
+Music provider:
+  - optional;
+  - dapat berasal dari ElevenLabs Music, Suno, atau library berlisensi;
+  - tidak boleh menjadi dependency tunggal pipeline.
+
+Wan2.2 I2V/TI2V:
+  - menghasilkan visual shot dari approved image/prompt;
+  - dipakai untuk action shot, establishing shot, insert shot, dan shot
+    tanpa dialog.
+
+Wan2.2-S2V:
+  - menghasilkan video dan lip-sync dari approved image + final dialogue
+    master;
+  - dapat mengeluarkan MP4 dengan audio dialogue yang sama.
+
+FFmpeg:
+  - digunakan internal/headless;
+  - melakukan muxing, mixing, concatenation, dan ffprobe validation;
+  - tidak membuat lip-sync.
+
+DaVinci Resolve:
+  - fallback opsional untuk koreksi editorial manual;
+  - bukan syarat pipeline utama.
+
+============================================================
+NON-GOALS UNTUK FASE SEKARANG
+============================================================
+Fase sekarang tidak mencakup:
+
+  - membangun aplikasi;
+  - membuat backend;
+  - membuat Dockerfile;
+  - membuat script pipeline otomatis;
+  - membuat output video palsu;
+  - mengganti cerita, screenplay, karakter, urutan 22 shot, gambar,
+    atau creative direction yang sudah disetujui;
+  - mengunci project ke satu provider musik;
+  - menjadikan DaVinci Resolve sebagai requirement wajib;
+  - menganggap FFmpeg sebagai pembuat lip-sync.

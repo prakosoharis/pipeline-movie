@@ -1,0 +1,101 @@
+============================================================
+PROMPT QUALITY CONTROL FINAL - "MIMPI YANG MENGEJAR"
+============================================================
+Gunakan setelah rough/final cut tersedia.
+
+Bertindak sebagai film quality control reviewer dan continuity
+supervisor.
+
+Evaluasi video final berdasarkan:
+
+Project Bible:
+  01-project-bible/project-context.txt
+  01-project-bible/character-bible.txt
+
+Screenplay:
+  01-project-bible/screenplay.txt
+
+Daftar shot:
+  03-shots/shot-list.txt
+
+Dialog:
+  04-audio/dialogue/dialogue-indonesia.txt
+  04-audio/audio-production-workflow.md
+  final dialogue master yang sudah APPROVED dan LOCKED
+
+Audio:
+  04-audio/audio-production-workflow.md
+  04-audio/sound-effects/sound-effect-prompts.txt
+  04-audio/ambience/ambience-prompts.txt
+  04-audio/music/music-prompts.txt
+
+============================================================
+PERIKSA
+============================================================
+
+1. Konsistensi wajah Adam.
+2. Konsistensi rambut Adam.
+3. Konsistensi usia dan tubuh Adam.
+4. Konsistensi pakaian Adam.
+5. Adam di mimpi memakai sepatu, Adam di kamar tidak memakai sepatu.
+6. Wajah Sang Pengejar tidak pernah terlihat jelas.
+7. Fedora, tuxedo, kerah putih, sarung tangan, dan pistol konsisten.
+8. Anatomi tangan dan anggota tubuh.
+9. Morphing dan flicker.
+10. Gerakan tubuh.
+11. Arah gerak.
+12. Eyeline.
+13. Kontinuitas cahaya.
+14. Kontinuitas lokasi.
+15. Lip-sync Shot 15.
+16. Timing dialog.
+17. Timing sound effect.
+18. Kejelasan dialog.
+19. Level musik dan ambience.
+20. Audio clipping.
+21. Cut yang janggal.
+22. Subtitle/tagline.
+23. Resolusi, aspect ratio, dan frame rate.
+24. Tidak ada watermark/logo/artefak generator.
+25. Durasi final mendekati target 150-180 detik atau punya alasan
+    editorial bila lebih pendek.
+
+============================================================
+KELOMPOKKAN HASIL
+============================================================
+
+CRITICAL:
+  Wajib diperbaiki sebelum rilis.
+
+MAJOR:
+  Sangat menurunkan kualitas atau merusak continuity.
+
+MINOR:
+  Masih dapat diterima, tetapi sebaiknya diperbaiki jika mudah.
+
+PASS:
+  Sudah baik.
+
+============================================================
+FORMAT LAPORAN
+============================================================
+
+CRITICAL:
+  - Timecode:
+    Deskripsi:
+    Penyebab:
+    Cara perbaikan termurah:
+    Perlu generate ulang:
+    Cukup diperbaiki editing:
+
+MAJOR:
+  -
+
+MINOR:
+  -
+
+PASS:
+  -
+
+Ringkasan keputusan:
+  APPROVED FOR EXPORT / NEEDS FIXES / REBUILD REQUIRED

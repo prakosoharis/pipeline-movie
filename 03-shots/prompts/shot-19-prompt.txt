@@ -1,0 +1,18 @@
+============================================================
+SHOT 19 — CU ADAM: MENOLEH KE DINDING (I2V)
+============================================================
+DURASI: 3 detik | Model: I2V | 2.39:1 | 24fps
+Ref: 02-character/shot-images/shot-19-keyframe.png +
+     02-character/adam/02-master-face.png +
+     02-character/set-props/set-bedroom.png
+
+PROMPT VIDEO UTAMA:
+Close-up profile of same 30-year-old Indonesian man (oval face, messy black hair, thin stubble, mole under left eye, dark heather grey t-shirt) turning his head slowly toward a wall, eyes widening in horror as he sees something off-frame. Swallowing hard, breath held. Warm amber lamp light, deep shadow. Camera profile, slow push-in. Cinematic 2.39:1, 85mm lens, photorealistic.
+
+NEGATIVE PROMPT:
+smile, calm, twist appearing too early, daytime, cartoon, anime, 3d render, extra limbs, text, watermark.
+
+DIALOG: VOCAL-NONVERB-SWALLOW (menelan ludah)
+SOUND: SFX-FOOTSTEPS-WOOD + AMB-BEDROOM-NIGHT + MUSIC-DRONE-LOW
+TRANSISI: Hard cut ke SHOT 20
+KONTINUITAS: Adam duduk di tepi ranjang.
