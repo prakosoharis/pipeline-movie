@@ -25,8 +25,8 @@ PREFLIGHT_ARGS=()
 [[ -n "$ENV_FILE" ]] && PREFLIGHT_ARGS+=(--env-file "$ENV_FILE")
 "$PIPELINE_DIR/preflight.sh" "${PREFLIGHT_ARGS[@]}"
 
-WAN_REPO_DIR="${WAN_REPO_DIR:?Set WAN_REPO_DIR in environment or env file}"
-WAN_S2V_CKPT_DIR="${WAN_S2V_CKPT_DIR:?Set WAN_S2V_CKPT_DIR in environment or env file}"
+WAN_REPO_DIR="${WAN_REPO_DIR:-$PROJECT_ROOT/external/Wan2.2}"
+WAN_S2V_CKPT_DIR="${WAN_S2V_CKPT_DIR:-$PROJECT_ROOT/models/Wan2.2-S2V-14B}"
 IMAGE="$PROJECT_ROOT/02-character/shot-images/shot-15-keyframe.png"
 AUDIO="$PROJECT_ROOT/04-audio/dialogue/beat-05-untunglah-hanya-mimpi.wav"
 PROMPT_FILE="$PROJECT_ROOT/03-shots/prompts/shot-15-wan-prompt.txt"

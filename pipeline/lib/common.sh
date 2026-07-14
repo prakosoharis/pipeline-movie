@@ -42,6 +42,22 @@ if len(text) > 2000:
 PY
 }
 
+prompt_for_inference() {
+  local prompt_file="$1"
+  python3 - "$prompt_file" <<'PY'
+from pathlib import Path
+import sys
+
+text = Path(sys.argv[1]).read_text(encoding="utf-8")
+marker = "PROMPT VIDEO UTAMA:"
+if marker in text:
+    text = text.split(marker, 1)[1]
+    if "NEGATIVE PROMPT:" in text:
+        text = text.split("NEGATIVE PROMPT:", 1)[0]
+print(text.strip())
+PY
+}
+
 load_env_file() {
   local env_file="${1:-}"
   if [[ -n "$env_file" ]]; then

@@ -1,7 +1,8 @@
 # Wan2.2 POC Execution Guide
 
-This guide runs the approved shot-15 POC first. The scripts do not install
-dependencies, download models, retry failed inference, or assemble the film.
+This guide runs the approved shot-15 POC first. The setup script performs
+one-time dependency and checkpoint preparation. The runner scripts do not
+retry failed inference.
 
 ## Vast.ai setup
 
@@ -10,11 +11,21 @@ dependencies, download models, retry failed inference, or assemble the film.
    PyTorch >= 2.4.0, visible CUDA, installable `flash_attn`, `ffmpeg`, and
    `git`. The official Wan2.2 documentation does not lock a specific Python,
    CUDA, or driver version, so do not treat one as guaranteed here.
-2. Clone this project and enter its root:
+2. Clone this project into the standard path and enter its root:
 
    ```sh
-   git clone <project-film-repository-url> project-film
-   cd project-film
+   mkdir -p /workspace
+   git clone <project-film-repository-url> /workspace/project-film
+   cd /workspace/project-film
+   ```
+
+   The scripts use these default paths, so `config/poc.env` is optional when
+   this layout is used:
+
+   ```text
+   /workspace/project-film/
+   ├── external/Wan2.2/
+   └── models/Wan2.2-S2V-14B/
    ```
 
 3. Clone the official Wan2.2 repository:
@@ -36,19 +47,35 @@ dependencies, download models, retry failed inference, or assemble the film.
      --local-dir ./models/Wan2.2-S2V-14B
    ```
 
-5. Copy the example environment file and edit paths for the instance:
+5. The checkpoint must be at `models/Wan2.2-S2V-14B/` for the default
+   layout. Copying an environment file is optional; use it only when paths
+   differ:
 
    ```sh
    cp config/poc.env.example config/poc.env
    ${EDITOR:-vi} config/poc.env
    ```
 
-6. Run preflight, then the POC:
+6. Run preflight, then the POC. With the standard layout, the shortest form
+   is:
 
    ```sh
-   bash pipeline/preflight.sh --env-file config/poc.env
-   bash pipeline/run-poc.sh --env-file config/poc.env
+   bash pipeline/run-poc.sh
    ```
+
+   When using non-default paths, pass `--env-file config/poc.env`.
+
+   To perform the one-time setup automatically after SSH, use the repository
+   setup script. It installs only missing OS packages, verifies the GPU and
+   PyTorch, clones the official Wan2.2 repository, installs its requirements,
+   downloads the S2V checkpoint if absent, and runs preflight:
+
+   ```sh
+   bash pipeline/vastai-setup.sh
+   ```
+
+   The setup downloads the S2V-14B and TI2V-5B checkpoints. This is required
+   for the full production manifest.
 
 7. Review `05-generated-video/shot-15/shot-15-video-raw.mp4` and its metadata.
    Human approval is required before proceeding.
@@ -61,21 +88,29 @@ and is not changed.
    reference and add only validated, correctly assigned shots. Do not invent
    model or audio assignments.
 
-9. Download the approved raw shot outputs and run production:
+9. Download the approved raw shot outputs and run production. With the
+   standard layout:
 
    ```sh
-   bash pipeline/run-production.sh --env-file config/poc.env
+   bash pipeline/run-production.sh
    ```
 
 10. Download all accepted outputs, then destroy the Vast.ai instance.
+
+The production manifest contains all 22 shots in shot order. Dialogue shots
+use S2V-14B with their dialogue WAV; non-dialogue shots use TI2V-5B. After all
+raw shot MP4 files are available, `run-production.sh` normalizes them with
+FFmpeg and writes the assembled film to `07-final/film-final.mp4`. Shots with
+no generation audio receive a silent audio track during normalization so the
+concat input has consistent streams.
 
 For local validation without a GPU, use `--dry-run`. It validates project
 paths and prints the official `generate.py` command without installing,
 downloading, probing media, or creating a video:
 
 ```sh
-bash pipeline/run-poc.sh --env-file config/poc.env --dry-run
-bash pipeline/run-production.sh --env-file config/poc.env --dry-run
+bash pipeline/run-poc.sh --dry-run
+bash pipeline/run-production.sh --dry-run
 ```
 
 Optional local macOS audio validation:
