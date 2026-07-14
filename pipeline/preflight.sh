@@ -67,7 +67,7 @@ except Exception as exc:
     print(f"IMPORT_ERROR:{exc}")
     raise SystemExit(1)
 print(torch.__version__)
-print(torch.cuda.is_available())
+print(str(torch.cuda.is_available()).lower())
 if torch.cuda.is_available():
     print(torch.cuda.get_device_name(0))
     print(torch.cuda.get_device_properties(0).total_memory)
