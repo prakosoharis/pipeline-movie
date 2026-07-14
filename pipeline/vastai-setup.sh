@@ -131,8 +131,8 @@ python3 -m pip install -r "$filtered_requirements"
 log "Installing Wan2.2 S2V requirements."
 python3 -m pip install -r requirements_s2v.txt
 
-log "Installing flash-attn last with MAX_JOBS=$MAX_JOBS."
-MAX_JOBS="$MAX_JOBS" python3 -m pip install flash-attn --no-build-isolation
+log "Installing flash-attn last with MAX_JOBS=$MAX_JOBS without changing PyTorch."
+MAX_JOBS="$MAX_JOBS" python3 -m pip install flash-attn --no-build-isolation --no-deps
 rm -f "$filtered_requirements"
 trap - EXIT
 
