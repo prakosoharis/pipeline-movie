@@ -42,6 +42,37 @@ PY
 log "Shot 15 approval confirmed: $SHOT15_APPROVAL_FILE"
 
 has_cmd python3 || fail "python3 is required"
+
+log "Validating Wan2.2 production runtime before model download."
+python3 - "$WAN_REPO_DIR" <<'PY'
+import sys
+from pathlib import Path
+
+from packaging.version import Version
+
+wan_repo = Path(sys.argv[1])
+sys.path.insert(0, str(wan_repo))
+
+import diffusers
+import flash_attn
+import peft
+import torch
+import wan
+
+if not torch.cuda.is_available():
+    raise SystemExit("CUDA is not available to PyTorch")
+if Version(peft.__version__) < Version("0.17.0"):
+    raise SystemExit(f"peft>=0.17.0 is required; found {peft.__version__}")
+
+print(f"torch: {torch.__version__}")
+print(f"torch CUDA: {torch.version.cuda}")
+print(f"GPU: {torch.cuda.get_device_name(0)}")
+print(f"diffusers: {diffusers.__version__}")
+print(f"peft: {peft.__version__}")
+print(f"flash_attn: {getattr(flash_attn, '__version__', 'installed')}")
+print("Wan2.2 import: PASS")
+PY
+
 if has_cmd huggingface-cli; then
   hf_command=huggingface-cli
 elif has_cmd hf; then

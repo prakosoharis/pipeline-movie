@@ -123,7 +123,7 @@ cd "$WAN_REPO_DIR"
 log "Installing deterministic build prerequisites."
 python3 -m pip install packaging psutil ninja setuptools wheel
 log "Installing Wan2.2 runtime dependency: peft."
-python3 -m pip install peft==0.15.2 --no-deps
+python3 -m pip install peft==0.17.0 --no-deps
 
 filtered_requirements="$(mktemp)"
 trap 'rm -f "$filtered_requirements"' EXIT
