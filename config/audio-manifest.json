@@ -1,0 +1,185 @@
+{
+  "version": 1,
+  "output": {
+    "width": 1440,
+    "height": 608,
+    "fps": 24,
+    "audio_sample_rate": 48000
+  },
+  "shots": [
+    {
+      "shot_id": "shot-01",
+      "layers": [
+        {"file": "04-audio/ambience/amb-001-alley-dust.wav", "gain_db": -28, "loop": true},
+        {"file": "04-audio/sound-effects/sfx-001-footsteps-chase.wav", "gain_db": -12, "start_seconds": 0},
+        {"file": "04-audio/dialogue/nv-01-pant.wav", "gain_db": -18, "start_seconds": 0.2}
+      ]
+    },
+    {
+      "shot_id": "shot-02",
+      "layers": [
+        {"file": "04-audio/ambience/amb-001-alley-dust.wav", "gain_db": -28, "loop": true},
+        {"file": "04-audio/sound-effects/sfx-001-footsteps-chase.wav", "gain_db": -14, "start_seconds": 0},
+        {"file": "04-audio/dialogue/nv-01-pant.wav", "gain_db": -20, "start_seconds": 0}
+      ]
+    },
+    {
+      "shot_id": "shot-03",
+      "layers": [
+        {"file": "04-audio/ambience/amb-001-alley-dust.wav", "gain_db": -28, "loop": true},
+        {"file": "04-audio/sound-effects/sfx-002-footsteps-pengejar.wav", "gain_db": -14, "start_seconds": 0.5}
+      ]
+    },
+    {
+      "shot_id": "shot-04",
+      "layers": [
+        {"file": "04-audio/ambience/amb-001-alley-dust.wav", "gain_db": -28, "loop": true},
+        {"file": "04-audio/dialogue/nv-01-pant.wav", "gain_db": -12, "start_seconds": 0}
+      ]
+    },
+    {
+      "shot_id": "shot-05",
+      "layers": [
+        {"file": "04-audio/ambience/amb-002-underpass-echo.wav", "gain_db": -26, "loop": true},
+        {"file": "04-audio/sound-effects/sfx-001-footsteps-chase.wav", "gain_db": -13, "start_seconds": 0.2},
+        {"file": "04-audio/dialogue/nv-01-pant.wav", "gain_db": -18, "start_seconds": 0}
+      ]
+    },
+    {
+      "shot_id": "shot-06",
+      "layers": [
+        {"file": "04-audio/ambience/amb-002-underpass-echo.wav", "gain_db": -27, "loop": true},
+        {"file": "04-audio/sound-effects/sfx-001-footsteps-chase.wav", "gain_db": -15, "start_seconds": 0},
+        {"file": "04-audio/dialogue/nv-01-pant.wav", "gain_db": -22, "start_seconds": 0}
+      ]
+    },
+    {
+      "shot_id": "shot-07",
+      "layers": [
+        {"file": "04-audio/ambience/amb-002-underpass-echo.wav", "gain_db": -27, "loop": true},
+        {"file": "04-audio/sound-effects/sfx-001-footsteps-chase.wav", "gain_db": -14, "start_seconds": 0},
+        {"file": "04-audio/sound-effects/sfx-010-impact-body-fall.wav", "gain_db": -6, "start_seconds": 1.2},
+        {"file": "04-audio/sound-effects/sfx-006-debris-concrete.wav", "gain_db": -10, "start_seconds": 1.3},
+        {"file": "04-audio/dialogue/nv-02-grunt.wav", "gain_db": -9, "start_seconds": 1.25}
+      ]
+    },
+    {
+      "shot_id": "shot-08",
+      "layers": [
+        {"file": "04-audio/ambience/amb-002-underpass-echo.wav", "gain_db": -28, "loop": true},
+        {"file": "04-audio/sound-effects/sfx-004-gunshot-concrete.wav", "gain_db": -3, "start_seconds": 1.35},
+        {"file": "04-audio/sound-effects/sfx-006-debris-concrete.wav", "gain_db": -9, "start_seconds": 1.55}
+      ]
+    },
+    {
+      "shot_id": "shot-09",
+      "layers": [
+        {"file": "04-audio/ambience/amb-002-underpass-echo.wav", "gain_db": -27, "loop": true},
+        {"file": "04-audio/sound-effects/sfx-001-footsteps-chase.wav", "gain_db": -12, "start_seconds": 0},
+        {"file": "04-audio/dialogue/nv-01-pant.wav", "gain_db": -16, "start_seconds": 0}
+      ]
+    },
+    {
+      "shot_id": "shot-10",
+      "layers": [
+        {"file": "04-audio/ambience/amb-001-alley-dust.wav", "gain_db": -28, "loop": true},
+        {"file": "04-audio/sound-effects/sfx-002-footsteps-pengejar.wav", "gain_db": -15, "start_seconds": 1},
+        {"file": "04-audio/dialogue/nv-01-pant.wav", "gain_db": -18, "start_seconds": 0}
+      ]
+    },
+    {
+      "shot_id": "shot-11",
+      "layers": [
+        {"file": "04-audio/ambience/amb-001-alley-dust.wav", "gain_db": -29, "loop": true},
+        {"file": "04-audio/sound-effects/sfx-002-footsteps-pengejar.wav", "gain_db": -17, "start_seconds": 0},
+        {"file": "04-audio/dialogue/nv-03-swallow.wav", "gain_db": -14, "start_seconds": 0.35}
+      ]
+    },
+    {
+      "shot_id": "shot-12",
+      "layers": [
+        {"file": "04-audio/ambience/amb-001-alley-dust.wav", "gain_db": -30, "loop": true},
+        {"file": "04-audio/sound-effects/sfx-005a-gunshot-main-outdoor.wav", "gain_db": -2, "start_seconds": 1}
+      ]
+    },
+    {
+      "shot_id": "shot-13",
+      "layers": [
+        {"file": "04-audio/ambience/amb-003-bedroom-night.wav", "gain_db": -28, "loop": true},
+        {"file": "04-audio/dialogue/nv-01-pant.wav", "gain_db": -10, "start_seconds": 0}
+      ]
+    },
+    {
+      "shot_id": "shot-14",
+      "layers": [
+        {"file": "04-audio/ambience/amb-003-bedroom-night.wav", "gain_db": -28, "loop": true},
+        {"file": "04-audio/sound-effects/sfx-007-drink-water.wav", "gain_db": -10, "start_seconds": 0.35},
+        {"file": "04-audio/sound-effects/sfx-009-glass-set-down.wav", "gain_db": -11, "start_seconds": 3.45},
+        {"file": "04-audio/dialogue/nv-04-sigh.wav", "gain_db": -16, "start_seconds": 3.7}
+      ]
+    },
+    {
+      "shot_id": "shot-15",
+      "layers": [
+        {"file": "04-audio/ambience/amb-003-bedroom-night.wav", "gain_db": -30, "loop": true},
+        {"file": "04-audio/dialogue/nv-04-sigh.wav", "gain_db": -20, "start_seconds": 0}
+      ]
+    },
+    {
+      "shot_id": "shot-16",
+      "layers": [
+        {"file": "04-audio/ambience/amb-003-bedroom-night.wav", "gain_db": -29, "loop": true},
+        {"file": "04-audio/sound-effects/sfx-003-footsteps-wood.wav", "gain_db": -18, "start_seconds": 3}
+      ]
+    },
+    {
+      "shot_id": "shot-17",
+      "layers": [
+        {"file": "04-audio/ambience/amb-003-bedroom-night.wav", "gain_db": -29, "loop": true},
+        {"file": "04-audio/sound-effects/sfx-003-footsteps-wood.wav", "gain_db": -13, "start_seconds": 0},
+        {"file": "04-audio/dialogue/nv-05-gasp.wav", "gain_db": -10, "start_seconds": 0.7},
+        {"file": "04-audio/music/mus-001-drone-low.wav", "gain_db": -30, "loop": true, "seek_seconds": 0}
+      ]
+    },
+    {
+      "shot_id": "shot-18",
+      "layers": [
+        {"file": "04-audio/ambience/amb-003-bedroom-night.wav", "gain_db": -30, "loop": true},
+        {"file": "04-audio/sound-effects/sfx-003-footsteps-wood.wav", "gain_db": -16, "start_seconds": 0},
+        {"file": "04-audio/music/mus-001-drone-low.wav", "gain_db": -28, "loop": true, "seek_seconds": 5.042}
+      ]
+    },
+    {
+      "shot_id": "shot-19",
+      "layers": [
+        {"file": "04-audio/ambience/amb-003-bedroom-night.wav", "gain_db": -30, "loop": true},
+        {"file": "04-audio/sound-effects/sfx-003-footsteps-wood.wav", "gain_db": -18, "start_seconds": 0},
+        {"file": "04-audio/dialogue/nv-03-swallow.wav", "gain_db": -9, "start_seconds": 0.65},
+        {"file": "04-audio/music/mus-001-drone-low.wav", "gain_db": -26, "loop": true, "seek_seconds": 10.084}
+      ]
+    },
+    {
+      "shot_id": "shot-20",
+      "layers": [
+        {"file": "04-audio/ambience/amb-003-bedroom-night.wav", "gain_db": -30, "loop": true},
+        {"file": "04-audio/sound-effects/sfx-008-door-creak.wav", "gain_db": -8, "start_seconds": 0},
+        {"file": "04-audio/sound-effects/sfx-003-footsteps-wood.wav", "gain_db": -16, "start_seconds": 1.5},
+        {"file": "04-audio/music/mus-001-drone-low.wav", "gain_db": -24, "loop": true, "seek_seconds": 15.126}
+      ]
+    },
+    {
+      "shot_id": "shot-21",
+      "layers": [
+        {"file": "04-audio/ambience/amb-003-bedroom-night.wav", "gain_db": -32, "loop": true},
+        {"file": "04-audio/sound-effects/sfx-005b-gunshot-main-indoor.wav", "gain_db": -1, "start_seconds": 0.75},
+        {"file": "04-audio/music/mus-002-sting-high.wav", "gain_db": -7, "start_seconds": 0.72}
+      ]
+    },
+    {
+      "shot_id": "shot-22",
+      "layers": [
+        {"file": "04-audio/ambience/amb-003-bedroom-night.wav", "gain_db": -34, "loop": true}
+      ]
+    }
+  ]
+}

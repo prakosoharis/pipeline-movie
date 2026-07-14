@@ -1,7 +1,7 @@
 # Headless Media Assembly
 
-Dokumen ini menjelaskan rancangan media assembly headless untuk "Mimpi
-Yang Mengejar". Ini dokumentasi arsitektur, bukan script implementasi.
+Dokumen ini menjelaskan media assembly headless yang diimplementasikan untuk
+"Mimpi Yang Mengejar".
 
 Rujukan arsitektur:
 - `docs/architecture/ADR-004-headless-ffmpeg-assembly.md`
@@ -82,6 +82,44 @@ FFmpeg bukan AI dan tidak membuat lip-sync.
    - pertahankan timing dialogue master;
    - export final shot.
 
+Implementasi:
+- mapping layer: `config/audio-manifest.json`;
+- mixing/normalisasi: `pipeline/mix-audio.sh`;
+- final concatenation: `pipeline/assemble-final.sh`;
+- orkestrasi end-to-end: `pipeline/run-production.sh`.
+
+## Pengaturan Audio Pipeline
+
+Setiap entri shot di `config/audio-manifest.json` mempunyai array `layers`.
+Layer dapat berupa ambience, Foley/SFX, music, atau vocal nonverbal:
+
+```json
+{
+  "file": "04-audio/sound-effects/sfx-008-door-creak.wav",
+  "gain_db": -8,
+  "start_seconds": 0,
+  "seek_seconds": 0,
+  "loop": false
+}
+```
+
+Arti field:
+- `file`: path asset audio relatif terhadap root repository;
+- `gain_db`: volume layer dalam desibel;
+- `start_seconds`: waktu layer mulai di dalam shot;
+- `seek_seconds`: posisi awal yang diambil dari file sumber;
+- `loop`: ulangi asset sampai durasi shot terpenuhi.
+
+Dialogue utama shot S2V tidak perlu diduplikasi sebagai layer. Dialogue
+berasal dari field `audio` di `config/production-manifest.json`, digunakan
+Wan2.2-S2V untuk lip-sync, lalu dipertahankan sebagai base audio saat mixing.
+Jika raw S2V tidak membawa stream audio, production runner memasukkan dialogue
+master yang sama tanpa menjalankan inference ulang.
+
+Mengubah ambience, SFX, nonverbal, music, gain, atau timing hanya memerlukan
+media assembly ulang. Mengubah dialogue master setelah S2V memerlukan render
+S2V dan human validation ulang karena gerak bibir terikat pada audio tersebut.
+
 6. Simpan final shot dan report:
 
 ```text
@@ -95,7 +133,8 @@ FFmpeg bukan AI dan tidak membuat lip-sync.
 
 ## Alur Final Film
 
-Final film dibangun dari seluruh shot final yang sudah APPROVED:
+Final film dibangun dari 22 shot final yang tercantum dalam audio manifest.
+Human review tetap wajib sebelum output diberi status final APPROVED:
 
 ```text
 shot-01-final.mp4

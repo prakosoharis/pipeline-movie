@@ -21,12 +21,13 @@ Tujuan saat ini:
 - menjaga source of truth kreatif;
 - mengunci referensi karakter, keyframe, dialog, audio plan, dan shot
   plan;
-- mendokumentasikan pipeline hybrid terbaru sebelum implementasi;
-- menyiapkan audio asset approval dan POC Wan2.2.
+- menjalankan pipeline hybrid secara manual dan human-in-the-loop;
+- menyiapkan audio asset approval dan production media assembly.
 
-Implementation pipeline belum dimulai. Jangan membuat output video
-palsu, backend, script, Dockerfile, atau pipeline otomatis kecuali ada
-instruksi terpisah.
+Pipeline deployment Wan2.2 sudah tersedia sebagai script manual. Adapter
+model, runtime registry, dan AI Director masih dokumentasi future dan belum
+diimplementasikan. Jangan membuat output video palsu, backend, Dockerfile,
+atau otomasi baru tanpa instruksi terpisah.
 
 ---
 
@@ -49,7 +50,9 @@ project-film/
 │       ├── ADR-004-headless-ffmpeg-assembly.md
 │       ├── ADR-005-davinci-optional-only.md
 │       ├── ADR-006-human-approval-gates.md
-│       └── ADR-007-ai-director-separation.md
+│       ├── ADR-007-ai-director-separation.md
+│       ├── ADR-0005-model-adapter-architecture.md
+│       └── MODEL-REGISTRY.md
 ├── 02-character/
 │   ├── character-image-prompts.txt
 │   ├── adam/
@@ -75,6 +78,16 @@ project-film/
     ├── video-shot-validation-checklist.txt
     ├── final-quality-control-prompt.txt
     └── asset-status-report.txt
+├── pipeline/
+│   ├── adapters/
+│   ├── benchmarks/
+│   ├── runtimes/
+│   ├── manifest.json
+│   ├── preflight.sh
+│   ├── setup-poc.sh
+│   ├── setup-production-models.sh
+│   ├── run-poc.sh
+│   └── run-production.sh
 ```
 
 ---
@@ -94,12 +107,19 @@ Selesai / approved:
 Sedang / berikutnya:
 - dialogue generation dan approval dialogue master;
 - ambience, Foley/SFX, dan music asset generation atau approval;
-- POC Wan2.2 I2V/TI2V dan Wan2.2-S2V;
-- validasi shot video per output.
+- final audio mix per shot dan film;
+- validasi shot video per output;
+- production render seluruh shot.
 
-Belum dimulai:
-- Wan2.2 POC render;
-- final shot assembly;
+Sudah berjalan:
+- environment Wan2.2 S2V/TI2V tervalidasi di Vast.ai;
+- Shot 15 S2V berhasil dirender dan disetujui untuk melanjutkan fase
+  production;
+- model TI2V production sudah disiapkan setelah approval Shot 15.
+
+Belum selesai:
+- seluruh 22 shot production;
+- final audio mix ambience, SFX, dan music;
 - final film assembly ke `07-final/film-final.mp4`.
 
 Jangan menandai asset final selesai sebelum file finalnya tersedia dan
@@ -156,13 +176,19 @@ untuk seluruh film.
 FFmpeg digunakan secara internal dan headless di pipeline self-hosted.
 Pengguna tidak harus menjalankan FFmpeg secara manual.
 
-FFmpeg bertanggung jawab untuk:
+Arsitektur media assembly menargetkan tanggung jawab berikut:
 - muxing dialogue audio ke video jika output model belum memiliki audio;
 - mencampur ambience, Foley, SFX, dan music untuk setiap shot;
 - menjaga sinkronisasi dialogue master;
 - menyambungkan 22 shot final sesuai timeline manifest;
 - menghasilkan `scene-final.mp4` atau `07-final/film-final.mp4`;
 - validasi dasar dengan ffprobe.
+
+Production runner menjalankan media assembly secara otomatis setelah semua
+raw shot tersedia. Mapping audio berasal dari `config/audio-manifest.json`;
+runner mempertahankan dialogue S2V sebagai base audio, menambahkan ambience,
+Foley/SFX, nonverbal, dan music, lalu menormalisasi seluruh shot ke format
+video/audio yang sama sebelum final assembly.
 
 FFmpeg bukan AI dan tidak membuat lip-sync. Lip-sync dibuat oleh
 Wan2.2-S2V berdasarkan final dialogue master.
@@ -185,17 +211,39 @@ S2V:
 - workflow self-hosted boleh memasukkan audio dialogue yang sama ke MP4
   output secara otomatis.
 
-Media assembly:
+Media assembly yang diimplementasikan:
 - menerima raw video dari Wan2.2;
 - menjaga dialogue master tetap sinkron;
 - menambahkan ambience, Foley, SFX, dan music;
 - menghasilkan final MP4 per shot dan final film.
 
+Satu perintah production menghasilkan raw shot yang belum tersedia, audio
+mix per shot, dan film final lengkap:
+
+```sh
+bash pipeline/run-production.sh --env-file config/poc.env
+```
+
+Urutan internalnya adalah:
+
+```text
+validate config/audio-manifest.json and all referenced audio
+        -> generate or resume raw Wan2.2 shots
+        -> pipeline/mix-audio.sh
+        -> 22 x shot-XX-final.mp4
+        -> pipeline/assemble-final.sh
+        -> 07-final/film-final.mp4
+```
+
+Jika proses dijalankan ulang, raw MP4 yang valid dilewati. Audio mix dan
+final assembly dibuat ulang secara atomik sehingga file lama tidak dianggap
+berhasil bila FFmpeg berhenti di tengah proses.
+
 ---
 
 ## Output Per Shot
 
-Setiap shot dirancang menghasilkan struktur berikut:
+Struktur output yang direncanakan per shot:
 
 ```text
 05-generated-video/
@@ -212,8 +260,9 @@ diperlukan. Metadata mencatat input image, dialogue, ambience, SFX,
 music, model, prompt, seed, duration, dan status. Validation mencatat
 hasil human atau automated review.
 
-Struktur ini masih dokumentasi rancangan. Jangan membuat file output
-palsu.
+Runner saat ini menyimpan raw MP4 dan metadata; file final per shot serta
+mix audio lengkap harus dianggap belum tersedia sampai benar-benar dibuat
+dan lolos approval.
 
 ---
 
@@ -309,8 +358,46 @@ Lihat juga `docs/architecture/ADR-005-davinci-optional-only.md`.
 
 1. Approve dialogue master untuk semua beat dialog dan vokal non-verbal.
 2. Generate/approve ambience, Foley/SFX, dan music optional.
-3. Jalankan POC Wan2.2:
-   - satu shot I2V/TI2V tanpa dialog;
-   - satu shot S2V dengan dialogue master final.
-4. Validasi raw vs final shot convention.
-5. Dokumentasikan hasil POC di metadata dan validation per shot.
+3. Jalankan production render dari `config/production-manifest.json`.
+4. Lengkapi per-shot audio mix dan validasi final shot.
+5. Jalankan final FFmpeg assembly dan final quality control.
+
+---
+
+## Roadmap Model
+
+### v1 Current Champion
+
+```text
+ChatGPT Images
+      |
+      v
+Wan2.2
+      |
+      v
+Final MP4
+```
+
+Wan2.2 tetap menjadi model champion dan pipeline production saat ini tidak
+berubah.
+
+### Future Architecture
+
+```text
+ChatGPT Images
+      |
+      v
+Model Adapter
+      |
+      v
+Renderer
+      |
+      v
+Final MP4
+```
+
+Model adapter akan menjadi boundary untuk Wan2.2, LTX Video, HunyuanVideo,
+Open-Sora, dan kandidat future lainnya. Arah ini bersifat dokumentatif dan
+belum diimplementasikan. Lihat
+`docs/architecture/ADR-0005-model-adapter-architecture.md` dan
+`docs/architecture/MODEL-REGISTRY.md`.

@@ -1,0 +1,21 @@
+{
+  "shot_id": "shot-01",
+  "task": "ti2v-5B",
+  "model": "ti2v-5B",
+  "checkpoint_dir": "/workspace/project-film/models/Wan2.2-TI2V-5B",
+  "image": "null",
+  "audio": "null",
+  "prompt_file": "/workspace/project-film/03-shots/prompts/shot-01-prompt.txt",
+  "output": "/workspace/project-film/05-generated-video/shot-01/shot-01-video-raw.mp4",
+  "resolution": "1280x704",
+  "audio_duration_seconds": 0.0,
+  "video_duration_seconds": 5.042,
+  "gpu": "unknown",
+  "torch_version": "unknown",
+  "cuda_version": "unknown",
+  "started_at": "2026-07-14T09:18:14Z",
+  "finished_at": "2026-07-14T09:25:47Z",
+  "elapsed_seconds": 453.0,
+  "status": "GENERATED",
+  "audio_muxed_by_ffmpeg": false
+}

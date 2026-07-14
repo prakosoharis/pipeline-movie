@@ -18,6 +18,10 @@
       "setup_script": "pipeline/setup-production-models.sh",
       "runner_script": "pipeline/run-production.sh",
       "preflight_script": "pipeline/preflight.sh",
+      "audio_manifest": "config/audio-manifest.json",
+      "audio_mix_script": "pipeline/mix-audio.sh",
+      "final_assembly_script": "pipeline/assemble-final.sh",
+      "final_output": "07-final/film-final.mp4",
       "required_models": [
         "Wan-AI/Wan2.2-S2V-14B",
         "Wan-AI/Wan2.2-TI2V-5B"
@@ -27,6 +31,7 @@
   },
   "notes": [
     "This manifest describes deployment phases; it does not replace the shot manifest.",
+    "Production validates audio assets before inference and finishes with audio mixing and final assembly.",
     "No I2V checkpoint is downloaded by the current deployment workflow.",
     "Inference remains manual and human-in-the-loop."
   ]

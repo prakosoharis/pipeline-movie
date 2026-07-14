@@ -1,0 +1,21 @@
+{
+  "shot_id": "shot-15",
+  "task": "s2v-14B",
+  "model": "Wan2.2-S2V-14B",
+  "checkpoint_dir": "/workspace/project-film/models/Wan2.2-S2V-14B",
+  "image": "/workspace/project-film/02-character/shot-images/shot-15-keyframe.png",
+  "audio": "/workspace/project-film/04-audio/dialogue/beat-05-untunglah-hanya-mimpi.wav",
+  "prompt_file": "/workspace/project-film/03-shots/prompts/shot-15-wan-prompt.txt",
+  "output": "/workspace/project-film/05-generated-video/shot-15/shot-15-video-raw.mp4",
+  "resolution": "1280x512",
+  "audio_duration_seconds": 3.160833,
+  "video_duration_seconds": 3.313,
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+  "torch_version": "2.7.1+cu128",
+  "cuda_version": "12.8",
+  "started_at": "2026-07-14T08:35:35Z",
+  "finished_at": "2026-07-14T09:04:07Z",
+  "elapsed_seconds": 1712.0,
+  "status": "GENERATED",
+  "audio_muxed_by_ffmpeg": false
+}

@@ -99,15 +99,21 @@ run-production.sh (all approved READY shots)
 ```
 
 The production manifest contains all 22 shots in shot order. Dialogue shots
-use S2V-14B with their dialogue WAV; non-dialogue shots use TI2V-5B. After all
-raw shot MP4 files are available, `run-production.sh` normalizes them with
-FFmpeg and writes the assembled film to `07-final/film-final.mp4`. Shots with
-no generation audio receive a silent audio track during normalization so the
-concat input has consistent streams.
+use S2V-14B with their dialogue WAV; non-dialogue shots use TI2V-5B. Before
+inference, `run-production.sh` validates `config/audio-manifest.json` and all
+referenced audio assets. After all raw MP4 files are available, it mixes
+dialogue/nonverbal, ambience, Foley/SFX, and music into normalized per-shot
+files, then writes the complete film to `07-final/film-final.mp4`.
+
+The production command is resumable. Existing valid raw shot outputs are
+skipped; a missing, empty, or invalid existing raw output stops the run rather
+than silently entering final assembly. Per-shot mix and final-film writes are
+atomic, so an interrupted FFmpeg command does not replace the last valid
+output.
 
 For local validation without a GPU, use `--dry-run`. It validates project
-paths and prints the official `generate.py` command without installing,
-downloading, probing media, or creating a video:
+paths and audio-manifest references and prints the official `generate.py`
+command without installing, downloading, or creating a video:
 
 ```sh
 bash pipeline/run-poc.sh --dry-run

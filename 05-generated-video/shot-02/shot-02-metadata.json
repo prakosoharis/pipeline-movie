@@ -1,0 +1,21 @@
+{
+  "shot_id": "shot-02",
+  "task": "s2v-14B",
+  "model": "s2v-14B",
+  "checkpoint_dir": "/workspace/project-film/models/Wan2.2-S2V-14B",
+  "image": "/workspace/project-film/02-character/shot-images/shot-02-keyframe.png",
+  "audio": "/workspace/project-film/04-audio/dialogue/beat-01-tidak-tidak.wav",
+  "prompt_file": "/workspace/project-film/03-shots/prompts/shot-02-prompt.txt",
+  "output": "/workspace/project-film/05-generated-video/shot-02/shot-02-video-raw.mp4",
+  "resolution": "1280x512",
+  "audio_duration_seconds": 7.392667,
+  "video_duration_seconds": 7.563,
+  "gpu": "unknown",
+  "torch_version": "unknown",
+  "cuda_version": "unknown",
+  "started_at": "2026-07-14T09:25:47Z",
+  "finished_at": "2026-07-14T10:22:48Z",
+  "elapsed_seconds": 3421.0,
+  "status": "GENERATED",
+  "audio_muxed_by_ffmpeg": false
+}

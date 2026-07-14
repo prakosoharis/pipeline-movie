@@ -1,0 +1,7 @@
+timestamp: 2026-07-14T08:25:54Z
+python: Python 3.11.13
+torch: 2.7.1+cu128
+torch_cuda_runtime: 12.8
+nvcc: 12.8
+gpu: NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition
+flash_attn: 2.8.3.post1

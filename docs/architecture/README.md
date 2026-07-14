@@ -17,6 +17,9 @@ dan harus dibaca bersama `README.md`, `AGENTS.md`, dan
 | ADR-005 | Accepted | DaVinci Resolve optional only |
 | ADR-006 | Accepted | Human approval gates |
 | ADR-007 | Proposed | AI Director separation |
+| ADR-0005 | Proposed | Model adapter architecture |
+
+Future model registry: `MODEL-REGISTRY.md`.
 
 ## Prinsip Pemakaian
 

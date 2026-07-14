@@ -1,0 +1,21 @@
+{
+  "shot_id": "shot-06",
+  "task": "s2v-14B",
+  "model": "s2v-14B",
+  "checkpoint_dir": "/workspace/project-film/models/Wan2.2-S2V-14B",
+  "image": "/workspace/project-film/02-character/shot-images/shot-06-keyframe.png",
+  "audio": "/workspace/project-film/04-audio/dialogue/beat-02-tolong.wav",
+  "prompt_file": "/workspace/project-film/03-shots/prompts/shot-06-prompt.txt",
+  "output": "/workspace/project-film/05-generated-video/shot-06/shot-06-video-raw.mp4",
+  "resolution": "1280x512",
+  "audio_duration_seconds": 1.410625,
+  "video_duration_seconds": 1.563,
+  "gpu": "unknown",
+  "torch_version": "unknown",
+  "cuda_version": "unknown",
+  "started_at": "2026-07-14T10:45:01Z",
+  "finished_at": "2026-07-14T11:13:05Z",
+  "elapsed_seconds": 1684.0,
+  "status": "GENERATED",
+  "audio_muxed_by_ffmpeg": false
+}

@@ -1,0 +1,24 @@
+[2026-07-14T08:34:33Z] Starting shot-15 S2V inference.
+Traceback (most recent call last):
+  File "/workspace/project-film/external/Wan2.2/generate.py", line 17, in <module>
+    import wan
+  File "/workspace/project-film/external/Wan2.2/wan/__init__.py", line 2, in <module>
+    from . import configs, distributed, modules
+  File "/workspace/project-film/external/Wan2.2/wan/modules/__init__.py", line 3, in <module>
+    from .model import WanModel
+  File "/workspace/project-film/external/Wan2.2/wan/modules/model.py", line 6, in <module>
+    from diffusers.configuration_utils import ConfigMixin, register_to_config
+  File "/opt/conda/lib/python3.11/site-packages/diffusers/__init__.py", line 5, in <module>
+    from .utils import (
+  File "/opt/conda/lib/python3.11/site-packages/diffusers/utils/__init__.py", line 21, in <module>
+    from .constants import (
+  File "/opt/conda/lib/python3.11/site-packages/diffusers/utils/constants.py", line 66, in <module>
+    dep_version_check("peft")
+  File "/opt/conda/lib/python3.11/site-packages/diffusers/dependency_versions_check.py", line 34, in dep_version_check
+    require_version(deps[pkg], hint)
+  File "/opt/conda/lib/python3.11/site-packages/diffusers/utils/versions.py", line 110, in require_version
+    _compare_versions(op, got_ver, want_ver, requirement, pkg, hint)
+  File "/opt/conda/lib/python3.11/site-packages/diffusers/utils/versions.py", line 43, in _compare_versions
+    raise ImportError(
+ImportError: peft>=0.17.0 is required for a normal functioning of this module, but found peft==0.15.2.
+[2026-07-14T08:34:35Z] ERROR: Wan2.2 inference failed. Log: /workspace/project-film/logs/shot-15-20260714T083433Z.log

@@ -1,0 +1,65 @@
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x6008f151cf40] Auto-inserting h264_mp4toannexb bitstream filter
+Input #0, concat, from '/workspace/project-film/07-final/.assembly-audio/concat.txt':
+  Duration: N/A, start: -0.021333, bitrate: 4378 kb/s
+  Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 1440x608 [SAR 1:1 DAR 45:19], 4187 kb/s, 24 fps, 24 tbr, 12288 tbn, 48 tbc
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+  Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 191 kb/s
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, mp4, to '/workspace/project-film/07-final/film-final-with-audio.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 1440x608 [SAR 1:1 DAR 45:19], q=2-31, 4187 kb/s, 24 fps, 24 tbr, 12288 tbn, 12288 tbc
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+  Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 192 kb/s
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc58.134.100 aac
+frame=    3 fps=0.0 q=-1.0 size=       0kB time=00:00:00.02 bitrate=  17.9kbits/s speed= 563x    [mov,mp4,m4a,3gp,3g2,mj2 @ 0x6008f151cf40] Auto-inserting h264_mp4toannexb bitstream filter
+    Last message repeated 2 times
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x6008f1577e80] Auto-inserting h264_mp4toannexb bitstream filter
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x6008f151cf40] Auto-inserting h264_mp4toannexb bitstream filter
+frame=  668 fps=0.0 q=-1.0 size=   10496kB time=00:00:27.73 bitrate=3100.5kbits/s speed=55.3x    [mov,mp4,m4a,3gp,3g2,mj2 @ 0x6008f1577e80] Auto-inserting h264_mp4toannexb bitstream filter
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x6008f151cf40] Auto-inserting h264_mp4toannexb bitstream filter
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x6008f1577e80] Auto-inserting h264_mp4toannexb bitstream filter
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x6008f151cf40] Auto-inserting h264_mp4toannexb bitstream filter
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x6008f1577e80] Auto-inserting h264_mp4toannexb bitstream filter
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x6008f151cf40] Auto-inserting h264_mp4toannexb bitstream filter
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x6008f1577e80] Auto-inserting h264_mp4toannexb bitstream filter
+frame= 1379 fps=1377 q=-1.0 size=   27392kB time=00:00:57.36 bitrate=3912.1kbits/s speed=57.3x    [mov,mp4,m4a,3gp,3g2,mj2 @ 0x6008f151cf40] Auto-inserting h264_mp4toannexb bitstream filter
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x6008f1577e80] Auto-inserting h264_mp4toannexb bitstream filter
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x6008f151cf40] Auto-inserting h264_mp4toannexb bitstream filter
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x6008f1577e80] Auto-inserting h264_mp4toannexb bitstream filter
+frame= 1866 fps=1242 q=-1.0 size=   34304kB time=00:01:17.65 bitrate=3618.9kbits/s speed=51.7x    [mov,mp4,m4a,3gp,3g2,mj2 @ 0x6008f151cf40] Auto-inserting h264_mp4toannexb bitstream filter
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x6008f1577e80] Auto-inserting h264_mp4toannexb bitstream filter
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x6008f151cf40] Auto-inserting h264_mp4toannexb bitstream filter
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x6008f1577e80] Auto-inserting h264_mp4toannexb bitstream filter
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x6008f151cf40] Auto-inserting h264_mp4toannexb bitstream filter
+frame= 2309 fps=1152 q=-1.0 size=   40960kB time=00:01:36.11 bitrate=3491.1kbits/s speed=47.9x    [mp4 @ 0x6008f154d600] Starting second pass: moving the moov atom to the beginning of the file
+frame= 2428 fps=1175 q=-1.0 Lsize=   43915kB time=00:01:41.19 bitrate=3555.2kbits/s speed=  49x    
+video:41870kB audio:1975kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.160317%
+[aac @ 0x6008f1580500] Qavg: 31493.254
+Final film with audio: /workspace/project-film/07-final/film-final-with-audio.mp4
+Shots: 22
+Duration: 101.212000s

@@ -1,0 +1,10 @@
+[2026-07-14T08:32:05Z] Starting shot-15 S2V inference.
+Traceback (most recent call last):
+  File "/workspace/project-film/external/Wan2.2/generate.py", line 17, in <module>
+    import wan
+  File "/workspace/project-film/external/Wan2.2/wan/__init__.py", line 7, in <module>
+    from .animate import WanAnimate
+  File "/workspace/project-film/external/Wan2.2/wan/animate.py", line 14, in <module>
+    from peft import set_peft_model_state_dict
+ModuleNotFoundError: No module named 'peft'
+[2026-07-14T08:32:11Z] ERROR: Wan2.2 inference failed. Log: /workspace/project-film/logs/shot-15-20260714T083205Z.log

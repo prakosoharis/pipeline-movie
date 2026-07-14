@@ -189,8 +189,8 @@ PRODUCTION ARCHITECTURE
 ============================================================
 Project ini memakai pendekatan Hybrid AI Film Production:
 creative pre-production dilakukan manual dan human-in-the-loop,
-sementara video rendering POC dirancang memakai Wan2.2 self-hosted
-dan media assembly headless.
+sementara video rendering Wan2.2 dijalankan melalui deployment script
+manual dan media assembly headless.
 
 Keputusan arsitektur formal berada di:
 
@@ -230,9 +230,14 @@ Komponen utama:
 
   5. FFmpeg internal/headless
      - muxing dialogue audio bila output model belum memiliki audio;
-     - mixing ambience, Foley, SFX, dan music;
+     - target mixing ambience, Foley, SFX, dan music;
      - concatenation seluruh shot final;
      - ffprobe validation dasar.
+
+  6. Model adapter architecture future
+     - adapter, runtime, dan benchmark didokumentasikan;
+     - belum ada adapter model baru yang diimplementasikan;
+     - Wan2.2 tetap menjadi current champion.
 
 Wan2.2 adalah video-generation engine. Wan2.2 bukan sistem final
 mixing untuk seluruh film.
@@ -255,13 +260,13 @@ Fase sekarang masih manual dan human-in-the-loop:
   3. Generate dialogue voice dan pilih dialogue master final.
   4. Lock dialogue master sebelum shot dialog diproses S2V.
   5. Generate/approve ambience, Foley, SFX, dan music optional.
-  6. Jalankan POC Wan2.2:
-     - satu shot I2V/TI2V tanpa dialog;
-     - satu shot S2V dengan final dialogue master.
-  7. Simpan output mentah sebagai `shot-XX-video-raw.mp4`.
-  8. Lakukan media assembly headless menjadi `shot-XX-final.mp4`.
-  9. Validasi hasil shot melalui checklist video.
- 10. Hanya shot APPROVED yang boleh masuk final film assembly.
+  6. Jalankan `pipeline/setup-poc.sh` dan `pipeline/run-poc.sh` untuk Shot 15.
+  7. Review dan approve hasil Shot 15 secara human.
+  8. Jalankan `pipeline/setup-production-models.sh` untuk menambahkan TI2V.
+  9. Jalankan `pipeline/run-production.sh` secara berurutan sesuai manifest.
+ 10. Simpan output mentah sebagai `shot-XX-video-raw.mp4` dan validasi
+     hasil shot melalui checklist video.
+ 11. Hanya shot APPROVED yang boleh masuk final film assembly.
 
 Dialogue master harus berupa audio bersih: tidak mengandung musik,
 ambience, Foley, atau sound effect. Setelah dipakai untuk S2V,
@@ -351,7 +356,7 @@ Fase sekarang tidak mencakup:
   - membangun aplikasi;
   - membuat backend;
   - membuat Dockerfile;
-  - membuat script pipeline otomatis;
+  - membangun otomasi baru di luar script deployment yang sudah ada;
   - membuat output video palsu;
   - mengganti cerita, screenplay, karakter, urutan 22 shot, gambar,
     atau creative direction yang sudah disetujui;

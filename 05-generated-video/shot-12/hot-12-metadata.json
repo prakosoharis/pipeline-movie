@@ -1,0 +1,21 @@
+{
+  "shot_id": "shot-12",
+  "task": "s2v-14B",
+  "model": "s2v-14B",
+  "checkpoint_dir": "/workspace/project-film/models/Wan2.2-S2V-14B",
+  "image": "/workspace/project-film/02-character/shot-images/shot-12-keyframe.png",
+  "audio": "/workspace/project-film/04-audio/dialogue/beat-04-tidaaa-cut.wav",
+  "prompt_file": "/workspace/project-film/03-shots/prompts/shot-12-prompt.txt",
+  "output": "/workspace/project-film/05-generated-video/shot-12/shot-12-video-raw.mp4",
+  "resolution": "1280x512",
+  "audio_duration_seconds": 1.489,
+  "video_duration_seconds": 1.813,
+  "gpu": "unknown",
+  "torch_version": "unknown",
+  "cuda_version": "unknown",
+  "started_at": "2026-07-14T12:10:27Z",
+  "finished_at": "2026-07-14T12:38:24Z",
+  "elapsed_seconds": 1677.0,
+  "status": "GENERATED",
+  "audio_muxed_by_ffmpeg": false
+}

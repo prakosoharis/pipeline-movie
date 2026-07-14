@@ -43,6 +43,27 @@ The project uses Hybrid AI Film Production:
 FFmpeg is internal/headless and does not create lip-sync. Lip-sync comes
 from Wan2.2-S2V using the final dialogue master.
 
+Wan2.2 is the current champion. Future model extensibility is documented in
+`docs/architecture/ADR-0005-model-adapter-architecture.md` and
+`docs/architecture/MODEL-REGISTRY.md`; no adapter or alternate runtime is
+implemented yet. Deployment remains manual through:
+
+```text
+pipeline/setup-poc.sh
+    -> pipeline/run-poc.sh
+    -> human approval
+    -> pipeline/setup-production-models.sh
+    -> pipeline/run-production.sh
+       -> pipeline/mix-audio.sh
+       -> pipeline/assemble-final.sh
+       -> 07-final/film-final.mp4
+```
+
+`config/audio-manifest.json` is the source of truth for per-shot ambience,
+dialogue/nonverbal, Foley/SFX, and music placement. The production runner
+must validate it before inference and must not bypass the audio mix when
+creating the canonical final film.
+
 Architecture decisions are recorded in `docs/architecture/`. Keep those
 ADRs aligned with `README.md` and `01-project-bible/project-context.txt`.
 

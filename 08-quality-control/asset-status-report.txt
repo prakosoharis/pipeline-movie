@@ -1,7 +1,7 @@
 ============================================================
 ASSET STATUS REPORT - "MIMPI YANG MENGEJAR"
 ============================================================
-Tanggal audit: 2026-07-12
+Tanggal audit: 2026-07-14
 
 Tujuan:
   Mencatat status aset agar tidak ada gambar yang belum lolos QC
@@ -242,22 +242,29 @@ STATUS VIDEO GENERATION DAN ASSEMBLY
 ============================================================
 
 Wan2.2 POC
-  Status: NOT STARTED
-  Keputusan: Belum dijalankan.
-  Catatan: belum ada bukti output raw Wan2.2 I2V/TI2V/S2V yang disimpan
-  sebagai `05-generated-video/shot-XX/shot-XX-video-raw.mp4`.
+  Status: SHOT-15 RENDERED / APPROVED
+  Keputusan: Shot 15 S2V berhasil dirender di Vast.ai dan disetujui human.
+  Catatan: output raw dan validation harus tetap disinkronkan ke repository
+  sebelum dianggap tersedia sebagai asset lokal source of truth.
+
+Production model setup
+  Status: TI2V CHECKPOINT PREPARED
+  Keputusan: checkpoint TI2V production disiapkan setelah approval Shot 15.
+  Catatan: ini bukan bukti bahwa seluruh 22 shot sudah dirender.
 
 Per-shot final MP4
-  Status: NOT STARTED
-  Keputusan: Belum tersedia.
-  Catatan: belum ada `05-generated-video/shot-XX/shot-XX-final.mp4`
-  yang tercatat sebagai hasil media assembly final.
+  Status: GENERATED ON VAST.AI / REVIEW REQUIRED
+  Keputusan: First-pass mix untuk 22 shot berhasil dibuat dan divalidasi
+  secara teknis pada 2026-07-14.
+  Catatan: file per-shot belum disinkronkan ke working copy lokal ini dan
+  belum boleh dianggap final APPROVED tanpa human review.
 
 Final film assembly
-  Status: NOT STARTED
-  Keputusan: Belum dijalankan.
-  Catatan: `07-final/film-final.mp4` belum dibuat melalui assembly 22
-  approved shot.
+  Status: FIRST PASS GENERATED / REVIEW REQUIRED
+  Keputusan: First-pass `film-final-with-audio.mp4` berhasil dirakit dari
+  22 shot dengan dialogue, ambience, Foley/SFX, dan music.
+  Catatan: pipeline berikutnya menghasilkan path kanonik
+  `07-final/film-final.mp4`; approval final masih wajib dilakukan manusia.
 
 Architecture Decision Records
   Status: EXISTS

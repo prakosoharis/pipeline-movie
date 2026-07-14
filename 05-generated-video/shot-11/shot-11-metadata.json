@@ -1,0 +1,21 @@
+{
+  "shot_id": "shot-11",
+  "task": "s2v-14B",
+  "model": "s2v-14B",
+  "checkpoint_dir": "/workspace/project-film/models/Wan2.2-S2V-14B",
+  "image": "/workspace/project-film/02-character/shot-images/shot-11-keyframe.png",
+  "audio": "/workspace/project-film/04-audio/dialogue/beat-03-siapa-kamu.wav",
+  "prompt_file": "/workspace/project-film/03-shots/prompts/shot-11-prompt.txt",
+  "output": "/workspace/project-film/05-generated-video/shot-11/shot-11-video-raw.mp4",
+  "resolution": "1280x512",
+  "audio_duration_seconds": 3.866125,
+  "video_duration_seconds": 4.063,
+  "gpu": "unknown",
+  "torch_version": "unknown",
+  "cuda_version": "unknown",
+  "started_at": "2026-07-14T11:42:27Z",
+  "finished_at": "2026-07-14T12:10:27Z",
+  "elapsed_seconds": 1680.0,
+  "status": "GENERATED",
+  "audio_muxed_by_ffmpeg": false
+}
