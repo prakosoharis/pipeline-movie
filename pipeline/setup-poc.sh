@@ -122,6 +122,8 @@ log "Wan2.2 commit: $(<"$LOG_DIR/wan2.2-commit.txt")"
 cd "$WAN_REPO_DIR"
 log "Installing deterministic build prerequisites."
 python3 -m pip install packaging psutil ninja setuptools wheel
+log "Installing Wan2.2 runtime dependency: peft."
+python3 -m pip install peft==0.15.2 --no-deps
 
 filtered_requirements="$(mktemp)"
 trap 'rm -f "$filtered_requirements"' EXIT
