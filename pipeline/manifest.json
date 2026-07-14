@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "project": "Mimpi Yang Mengejar",
+  "mode": "manual-human-in-the-loop",
+  "shot_manifest": "config/production-manifest.json",
+  "phases": {
+    "poc": {
+      "setup_script": "pipeline/setup-poc.sh",
+      "runner_script": "pipeline/run-poc.sh",
+      "preflight_script": "pipeline/preflight.sh",
+      "required_models": [
+        "Wan-AI/Wan2.2-S2V-14B"
+      ],
+      "target_shot": "shot-15",
+      "approval_gate": "Human approval of Shot 15 is required"
+    },
+    "production": {
+      "setup_script": "pipeline/setup-production-models.sh",
+      "runner_script": "pipeline/run-production.sh",
+      "preflight_script": "pipeline/preflight.sh",
+      "required_models": [
+        "Wan-AI/Wan2.2-S2V-14B",
+        "Wan-AI/Wan2.2-TI2V-5B"
+      ],
+      "approval_gate": "Shot 15 must be explicitly APPROVED before TI2V download"
+    }
+  },
+  "notes": [
+    "This manifest describes deployment phases; it does not replace the shot manifest.",
+    "No I2V checkpoint is downloaded by the current deployment workflow.",
+    "Inference remains manual and human-in-the-loop."
+  ]
+}

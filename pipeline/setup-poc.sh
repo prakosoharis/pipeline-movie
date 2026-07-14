@@ -2,16 +2,15 @@
 
 set -euo pipefail
 
-# One-time setup for the standard Vast.ai POC layout.
+# Phase 1 setup for the standard Vast.ai POC layout.
 PROJECT_ROOT="${PROJECT_ROOT:-/workspace/project-film}"
 WAN_REPO_DIR="${WAN_REPO_DIR:-$PROJECT_ROOT/external/Wan2.2}"
 WAN_S2V_CKPT_DIR="${WAN_S2V_CKPT_DIR:-$PROJECT_ROOT/models/Wan2.2-S2V-14B}"
-WAN_TI2V_CKPT_DIR="${WAN_TI2V_CKPT_DIR:-$PROJECT_ROOT/models/Wan2.2-TI2V-5B}"
 MIN_VRAM_GIB="${MIN_VRAM_GIB:-86}"
 MAX_JOBS="${MAX_JOBS:-8}"
 LOG_DIR="$PROJECT_ROOT/logs"
 
-log() { printf '[vastai-setup] %s\n' "$*"; }
+log() { printf '[setup-poc] %s\n' "$*"; }
 fail() { log "ERROR: $*" >&2; exit 1; }
 has_cmd() { command -v "$1" >/dev/null 2>&1; }
 
@@ -124,12 +123,74 @@ python3 -m pip install packaging psutil ninja setuptools wheel
 
 filtered_requirements="$(mktemp)"
 trap 'rm -f "$filtered_requirements"' EXIT
-awk 'tolower($0) !~ /^flash[-_]attn([<>=].*)?$/ {print}' requirements.txt > "$filtered_requirements"
+awk '
+  tolower($0) !~ /^[[:space:]]*flash[-_]attn([[:space:]<>=!~].*)?$/
+  { print }
+' requirements.txt > "$filtered_requirements"
 
 log "Installing Wan2.2 requirements without flash-attn."
 python3 -m pip install -r "$filtered_requirements"
 log "Installing Wan2.2 S2V requirements."
 python3 -m pip install -r requirements_s2v.txt
+
+log "Validating PyTorch and CUDA toolkit compatibility before flash-attn."
+python3 - "$cuda_toolkit_version" <<'PY'
+import sys
+
+import torch
+from packaging.version import Version
+
+
+def cuda_tuple(value):
+    try:
+        major, minor = value.split(".", 1)
+        return int(major), int(minor)
+    except (AttributeError, ValueError) as exc:
+        raise SystemExit(f"Could not parse CUDA version: {value!r}") from exc
+
+
+nvcc_cuda = sys.argv[1]
+torch_cuda = torch.version.cuda
+if torch_cuda is None:
+    raise SystemExit("PyTorch does not expose a CUDA runtime version")
+
+torch_cuda_parts = cuda_tuple(torch_cuda)
+nvcc_cuda_parts = cuda_tuple(nvcc_cuda)
+print(f"torch CUDA runtime: {torch_cuda}")
+print(f"nvcc CUDA toolkit: {nvcc_cuda}")
+
+if torch_cuda_parts != nvcc_cuda_parts:
+    raise SystemExit(
+        "CUDA version mismatch: PyTorch uses "
+        f"{torch_cuda}, but nvcc reports {nvcc_cuda}. "
+        "Install a matching CUDA devel toolkit before building flash-attn."
+    )
+
+if not torch.cuda.is_available():
+    raise SystemExit("CUDA is not available to PyTorch")
+
+torch_version = Version(torch.__version__.split("+", 1)[0])
+capability = torch.cuda.get_device_capability(0)
+arch_list = torch.cuda.get_arch_list()
+print(f"PyTorch: {torch.__version__}")
+print(f"GPU: {torch.cuda.get_device_name(0)}")
+print(f"compute capability: {capability[0]}.{capability[1]}")
+print(f"PyTorch architectures: {', '.join(arch_list)}")
+
+if capability == (12, 0):
+    if torch_version < Version("2.7.0"):
+        raise SystemExit("Compute capability 12.0 requires PyTorch >= 2.7")
+    if torch_cuda_parts < (12, 8):
+        raise SystemExit("Compute capability 12.0 requires PyTorch CUDA >= 12.8")
+    if nvcc_cuda_parts < (12, 8):
+        raise SystemExit("Compute capability 12.0 requires nvcc CUDA >= 12.8")
+    if "sm_120" not in arch_list:
+        raise SystemExit(
+            "Compute capability 12.0 requires sm_120 in "
+            "torch.cuda.get_arch_list()"
+        )
+    print("Blackwell sm_120 compatibility checks: PASS")
+PY
 
 log "Installing flash-attn last with MAX_JOBS=$MAX_JOBS without changing PyTorch."
 MAX_JOBS="$MAX_JOBS" python3 -m pip install flash-attn --no-build-isolation --no-deps
@@ -163,7 +224,6 @@ ensure_checkpoint() {
 }
 
 ensure_checkpoint "Wan-AI/Wan2.2-S2V-14B" "$WAN_S2V_CKPT_DIR"
-ensure_checkpoint "Wan-AI/Wan2.2-TI2V-5B" "$WAN_TI2V_CKPT_DIR"
 
 environment_log="$LOG_DIR/wan2.2-environment.txt"
 {
@@ -194,7 +254,8 @@ WAN_REPO_DIR="$WAN_REPO_DIR" \
 WAN_S2V_CKPT_DIR="$WAN_S2V_CKPT_DIR" \
   bash pipeline/preflight.sh
 
-log "Setup complete. Run:"
+log "POC setup complete. Run:"
 log "  bash pipeline/run-poc.sh"
 log "After human approval of shot-15:"
+log "  bash pipeline/setup-production-models.sh"
 log "  bash pipeline/run-production.sh"

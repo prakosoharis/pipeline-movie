@@ -1,8 +1,9 @@
 # Wan2.2 POC Execution Guide
 
-This guide runs the approved shot-15 POC first. The setup script performs
-one-time dependency and checkpoint preparation. The runner scripts do not
-retry failed inference.
+This guide runs the Shot 15 POC first and adds the production checkpoint only
+after human approval. The setup scripts do not retry failed inference.
+The deployment phases are recorded in `pipeline/manifest.json`; the 22-shot
+generation assignments remain in `config/production-manifest.json`.
 
 ## Vast.ai setup
 
@@ -28,74 +29,74 @@ retry failed inference.
    └── models/Wan2.2-S2V-14B/
    ```
 
-3. Clone the official Wan2.2 repository:
-
-   ```sh
-   mkdir -p external
-   git clone https://github.com/Wan-Video/Wan2.2.git external/Wan2.2
-   cd external/Wan2.2
-   pip install -r requirements.txt
-   pip install -r requirements_s2v.txt
-   cd ../..
-   ```
-
-4. Download only the POC checkpoint first:
-
-   ```sh
-   mkdir -p models
-   huggingface-cli download Wan-AI/Wan2.2-S2V-14B \
-     --local-dir ./models/Wan2.2-S2V-14B
-   ```
-
-5. The checkpoint must be at `models/Wan2.2-S2V-14B/` for the default
-   layout. Copying an environment file is optional; use it only when paths
-   differ:
+3. Copying an environment file is optional; use it only when paths differ:
 
    ```sh
    cp config/poc.env.example config/poc.env
    ${EDITOR:-vi} config/poc.env
    ```
 
-6. Run preflight, then the POC. With the standard layout, the shortest form
-   is:
+4. Run the Phase 1 setup. It installs dependencies, validates CUDA and
+   PyTorch, installs FlashAttention, clones Wan2.2 if needed, downloads only
+   `Wan-AI/Wan2.2-S2V-14B`, and runs preflight:
+
+   ```sh
+   bash pipeline/setup-poc.sh
+   ```
+
+5. Render Shot 15:
 
    ```sh
    bash pipeline/run-poc.sh
    ```
 
-   When using non-default paths, pass `--env-file config/poc.env`.
+6. Review `05-generated-video/shot-15/shot-15-video-raw.mp4` and its metadata.
+   Record the human decision in `05-generated-video/shot-15/shot-15-validation.md`
+   with an explicit line:
 
-   To perform the one-time setup automatically after SSH, use the repository
-   setup script. It installs only missing OS packages, verifies the GPU and
-   PyTorch, clones the official Wan2.2 repository, installs its requirements,
-   downloads the S2V checkpoint if absent, and runs preflight:
-
-   ```sh
-   bash pipeline/vastai-setup.sh
+   ```text
+   APPROVAL STATUS: APPROVED
    ```
 
-   The setup downloads the S2V-14B and TI2V-5B checkpoints. This is required
-   for the full production manifest.
-
-7. Review `05-generated-video/shot-15/shot-15-video-raw.mp4` and its metadata.
-   Human approval is required before proceeding.
+   Do not run the production model setup unless this approval exists.
 
 The POC sends only `03-shots/prompts/shot-15-wan-prompt.txt` to Wan2.2. The
 longer `03-shots/prompts/shot-15-prompt.txt` remains creative documentation
 and is not changed.
 
-8. After approval, keep `shot-15` in the manifest as the first completed
-   reference and add only validated, correctly assigned shots. Do not invent
-   model or audio assignments.
+7. Add the production TI2V checkpoint. This validates the S2V checkpoint and
+   Shot 15 approval, then downloads only `Wan-AI/Wan2.2-TI2V-5B`. It does not
+   reinstall PyTorch, CUDA, FlashAttention, or run inference:
 
-9. Download the approved raw shot outputs and run production. With the
-   standard layout:
+   ```sh
+   bash pipeline/setup-production-models.sh
+   ```
+
+8. Run production. With the standard layout:
 
    ```sh
    bash pipeline/run-production.sh
    ```
 
-10. Download all accepted outputs, then destroy the Vast.ai instance.
+9. Download all accepted outputs, then destroy the Vast.ai instance.
+
+The deployment flow is:
+
+```text
+setup-poc.sh
+        |
+        v
+run-poc.sh (Shot 15)
+        |
+        v
+Human Review / Approval Shot 15
+        |
+        v
+setup-production-models.sh (TI2V only)
+        |
+        v
+run-production.sh (all approved READY shots)
+```
 
 The production manifest contains all 22 shots in shot order. Dialogue shots
 use S2V-14B with their dialogue WAV; non-dialogue shots use TI2V-5B. After all
