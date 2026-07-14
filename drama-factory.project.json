@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "project_id": "nightmare-film",
+  "engine": {
+    "name": "ai-drama-factory",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "scenes": "03-shots",
+    "audio": "04-audio",
+    "generated_video": "05-generated-video",
+    "final": "07-final"
+  }
+}

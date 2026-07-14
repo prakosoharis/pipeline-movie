@@ -1,6 +1,12 @@
 Project Name:
 AI Film Production
 
+Archive Status:
+V1 is archived as a historical baseline. The planned baseline tag is
+`v1.0-baseline` (not yet created). Further product and engine development
+continues in the separate `ai-drama-factory` repository; this repository
+remains the creative project and V1 test case.
+
 Mission:
 Membangun pipeline AI-native untuk menghasilkan film sinematik berkualitas tinggi dengan biaya serendah mungkin menggunakan kombinasi SaaS dan self-hosted AI.
 
